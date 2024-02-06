@@ -1,0 +1,32 @@
+::ng-deep{
+    .dark-mode{
+        .swal2-popup{
+            background:#30304d !important;
+            color: #fff !important;
+        }
+        .swal2-title{
+            color: #fff;
+        }
+        .swal2-html-container{
+            color: #ccc !important;
+        }
+    }
+    .swal2-styled.swal2-default-outline:focus {
+        box-shadow: 0 0 0 3px rgb(115 103 240 / 20%) !important;
+    }
+    .swal2-popup {
+        padding: 1.25em;
+    }
+    .transparent-mode{
+        .swal2-popup{
+            background:var(--transparent-body) !important;
+            color: #fff !important;
+        }
+        .swal2-title{
+            color: #fff;
+        }
+        .swal2-html-container{
+            color: #ccc !important;
+        }
+    }
+}

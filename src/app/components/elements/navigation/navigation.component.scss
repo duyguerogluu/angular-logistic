@@ -1,0 +1,13 @@
+.nav-items{
+        min-width: 2rem;
+        transition: .3s color;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+}
+
+.dropdown-menu{
+        min-height: fit-content;
+}

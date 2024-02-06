@@ -1,0 +1,674 @@
+<div class="row butonlar-div mb-2" >
+  <div class="d-flex justify-content-between ">
+      <span class="m-2 color-mavi mt-3 ml-4 fs-12">Müşteri Tedarikçi</span>
+      <span >
+          <button type="button" class="btn btn-primary btn1 m-1">+</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Filitrele</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Temizle</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Kapat</button>
+      </span>
+ </div>
+</div>
+
+<div class="row mt-2">
+     <div class="col-md-3">
+         <div class="card">
+             <div class="card-header">
+                 <h4 class="card-title">Genel Bilgiler</h4>
+             </div>
+             <div class="card-body">
+                         <form class="form-horizontal">
+                             <div class=" row">
+                                 <label class="col-md-3 form-label">Kod</label>
+                                 <div class="col-md-9 inputShadow">
+                                     <input type="text" class="form-control inputShadow" value="">
+                                 </div>
+                             </div> <!--Kod-->
+                             <div class=" row ">
+                                 <label class="col-md-3 form-label">Ad</label>
+                                 <div class="col-md-9">
+                                    <input type="text" class="form-control" value="">
+                                 </div>
+                             </div> <!--Ad-->
+                             <div class=" row ">
+                                  <label class="col-md-3 form-label">Tam Ünvanı</label>
+                                  <div class="col-md-9">
+                                    <input type="text" class="form-control" value="">
+                                 </div>
+                               </div> <!--Tam Ünvanı-->
+                               <div class=" row">
+                                   <label class="col-md-3 form-label">Yetkili Kişi</label>
+                                   <div class="col-md-9">
+                                     <input type="text" class="form-control" value="">
+                                  </div>
+                                </div> <!--Yetkili Kişi-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Yetkili Kişi Tel</label>
+                                   <div class="col-md-9">
+                                     <input type="tel" class="form-control" value="">
+                                  </div>
+                                </div> <!--Yetkili Kişi Tel-->
+                             <div class=" row">
+                                 <label class="col-md-3 form-label" for="example-email">Email</label>
+                                 <div class="col-md-9">
+                                     <input type="text" id="example-email" name="example-email" class="form-control"
+                                         placeholder="Email">
+                                 </div>
+                             </div><!--Email-->
+                              <div class=" row">
+                              <label class="col-md-3 form-label">Not</label>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control" value="">
+                             </div>
+                           </div><!--Not-->
+                             <div class="form-group m-0">
+                              <div class="custom-controls-stacked">
+                                <div class="row d-flex  justify-content-around" >
+                                  <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox1"
+                                          value="option1" checked>
+                                      <span class="custom-control-label">Müşteri mi?</span>
+                                  </label>
+                                  <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox2"
+                                          value="option2">
+                                      <span class="custom-control-label">Tedarikçi mi?</span>
+                                  </label>
+                                  <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox3"
+                                          value="option3" >
+                                      <span class="custom-control-label">Gönderici</span>
+                                  </label>
+                                  <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" name="example-checkbox4"
+                                          value="option4" checked >
+                                      <span class="custom-control-label">Alıcı</span>
+                                  </label>
+                                  <label class="custom-control custom-checkbox">
+                                   <input type="checkbox" class="custom-control-input" name="example-checkbox4"
+                                       value="option4" checked >
+                                   <span class="custom-control-label">Aktif</span>
+                                  </label>
+                                </div>
+                                </div>
+                            </div><!--Checkboxes-->
+                         </form>
+             </div>
+         </div>
+     </div>
+     <div class="col-md-3">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Muhasebesel Bilgiler</h4>
+              </div>
+              <div class="card-body">
+                          <form class="form-horizontal">
+                              <div class=" row">
+                                  <label class="col-md-3 form-label">Vergi Dairesi</label>
+                                  <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                  </div>
+                              </div> <!--Vergi Dairesi-->
+                              <div class=" row">
+                                  <label class="col-md-3 form-label">Tür</label>
+                                  <div class="col-md-9">
+                                     <input type="" class="form-control" value="">
+                                  </div>
+                              </div> <!--Tür Combobox-->
+                              <div class=" row">
+                                   <label class="col-md-3 form-label">Vergi No</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Vergi No-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Tc Kimlik No</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Tc Kimlik No-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Vade Günü</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Vade Günü-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Posta Kutusu Etiketi</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Posta Kutusu Etiketi-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Gönderi Bildirim Etiketi</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Gönderi Bildirim Etiketi-->
+                                <div class=" row">
+                                    <label class="col-md-3 form-label">Ödeme Türü</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Ödeme Türü Combo Box-->
+                                 <div class=" row">
+                                   <label class="col-md-3 form-label">Kredi Limiti</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Kredi Limiti-->
+                                <div class=" row">
+                                   <label class="col-md-3 form-label">Kredi Risk Limiti</label>
+                                   <div class="col-md-9">
+                                     <input type="number" class="form-control" value="">
+                                  </div>
+                                </div> <!--Kredi Risk Limiti-->
+
+
+                          </form>
+              </div>
+          </div>
+     </div>
+     <div class="col-md-6">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Adreslerr</h4>
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                         <button type="button" class="btn btn-primary" (click)="value=!value">Adres Ekle</button>
+
+                         <div class="scrolbar ScrollShadow p-2 mt-2"  [hidden]="value" >
+                               <form class="form-horizontal" >
+                              <div class=" row ">
+                                  <label class="col-md-3 form-label">Kod</label>
+                                  <div class="col-md-9 inputShadow">
+                                      <input type="text" class="form-control inputShadow" value="">
+                                  </div>
+                              </div> <!--Kod-->
+                              <div class=" row ">
+                                  <label class="col-md-3 form-label">Adres Türü</label>
+                                  <div class="col-md-9">
+                                     <input type="text" class="form-control" value="">
+                                  </div>
+                              </div> <!--Adres Türü Combobox-->
+                              <div class=" row ">
+                                   <label class="col-md-3 form-label ">Adres1</label>
+                                   <div class="col-md-9">
+                                     <input type="text" class="form-control" value="">
+                                  </div>
+                                </div> <!--Adres1-->
+                                <div class=" row">
+                                    <label class="col-md-3 form-label">Adres2</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Adres2-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Adres3</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Adres3-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Ülke </label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Ülke-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Şehir</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Şehir-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">İlçe</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--İlçe-->
+                                 <div class=" row ">
+                                    <label class="col-md-3 form-label">Semt</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Semt-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Mahalle</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Mahalle-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Sokak</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Sokak-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Kapı No</label>
+                                    <div class="col-md-9">
+                                      <input type="number" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Kapı No-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Posta Kodu</label>
+                                    <div class="col-md-9">
+                                      <input type="text" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Posta Kodu-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Tel 1</label>
+                                    <div class="col-md-9">
+                                      <input type="tel" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Tel1-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Tel 2</label>
+                                    <div class="col-md-9">
+                                      <input type="tel" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Tel2-->
+                                 <div class=" row">
+                                    <label class="col-md-3 form-label">Faks</label>
+                                    <div class="col-md-9">
+                                      <input type="tel" class="form-control" value="">
+                                   </div>
+                                 </div> <!--Faks-->
+
+                                   <!--Enlem--><!--Boylam--><!--Adres Çapı eklenecek-->
+                          </form>
+                          <button type="button" class="btn btn-primary" (click)="value=!value">Kaydet</button>
+
+                      </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6">
+                        <div class="card-header p-1">
+                            <a class="btn btn-primary btn-sm rounded-11 me-2 m-0"
+                                        ngbTooltip="Edit"><i><svg class="table-edit"
+                                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                                width="16">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z" />
+                                            </svg></i></a>
+                                    <a class="btn btn-danger btn-sm rounded-11 m-0"
+
+                                        ngbTooltip="Delete"><i><svg class="table-delete"
+                                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                                width="16">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+                                            </svg></i></a>
+                        </div>
+
+                        <div class="card-body pt-2 pb-2">
+                            <div class="d-md-flex align-items-center" style="margin: 0;">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Kod</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Adres Türü</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Merkez</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Ülke</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Türkiye</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center ">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Şehir</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Mersin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center ">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">İlçe</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center ">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Semt</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Çamlıbel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Mahalle</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Atatürk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center ">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Sokak</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">1998</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center ">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">İlçe</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Semt</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Mahalle</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Sokak</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Posta Kodu</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Tel1</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                     <p class="fs-12 my-auto mb-0">Tel2</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center">
+                                <div class="d-flex">
+                                    <p class="fs-12 my-auto mb-0">Faks</p>
+                                </div>
+                                <div class="ms-auto my-auto">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card col-lg-4 col-md-6">
+                      <div class="card-header p-1">
+                          <a class="btn btn-primary btn-sm rounded-11 me-2 m-0"
+                                      ngbTooltip="Edit"><i><svg class="table-edit"
+                                              xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                              width="16">
+                                              <path d="M0 0h24v24H0V0z" fill="none" />
+                                              <path
+                                                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z" />
+                                          </svg></i></a>
+                                  <a class="btn btn-danger btn-sm rounded-11 m-0"
+
+                                      ngbTooltip="Delete"><i><svg class="table-delete"
+                                              xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                              width="16">
+                                              <path d="M0 0h24v24H0V0z" fill="none" />
+                                              <path
+                                                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+                                          </svg></i></a>
+                      </div>
+
+                      <div class="card-body pt-2 pb-2">
+                          <div class="d-md-flex align-items-center" style="margin: 0;">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Kod</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">1</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Adres Türü</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Merkez</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Ülke</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Türkiye</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center ">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Şehir</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Mersin</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center ">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">İlçe</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center ">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Semt</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Çamlıbel</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Mahalle</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Atatürk</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center ">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Sokak</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">1998</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center ">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">İlçe</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Semt</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Mahalle</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Sokak</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Posta Kodu</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Tel1</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                   <p class="fs-12 my-auto mb-0">Tel2</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="d-md-flex align-items-center">
+                              <div class="d-flex">
+                                  <p class="fs-12 my-auto mb-0">Faks</p>
+                              </div>
+                              <div class="ms-auto my-auto">
+                                  <div class="d-flex flex-wrap">
+                                      <span class="my-auto ms-auto fs-12">Akdeniz</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+ </div>
+
+ <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Banka Bilgileri</h4>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+ <button type="button" class="btn btn-primary">Kaydet</button>

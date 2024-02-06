@@ -1,0 +1,51 @@
+::ng-deep{
+    .dark-mode{
+        .bs-popover-top>.arrow::after, .bs-popover-auto[placement^="top"]>.arrow::after
+        {
+            border-top-color: #22223d !important;
+        }
+        .bs-popover-bottom>.arrow::after, .bs-popover-auto[placement^="bottom"]>.arrow::after{
+            border-bottom-color: #22223d;
+        }
+        .bs-popover-left>.arrow::after, .bs-popover-auto[placement^="left"]>.arrow::after{
+            border-left-color: #22223d !important;
+        }
+        .bs-popover-right>.arrow::after, .bs-popover-auto[placement^="right"]>.arrow::after{
+            border-right-color: #22223d !important;
+        }
+        .popover-primary.bs-popover-top .arrow::after, .popover-primary.bs-popover-auto[placement^="top"] .arrow::after {
+            border-top-color: #6259ca !important;
+        }
+        .popover-secondary.bs-popover-bottom .arrow::after, .popover-secondary.bs-popover-auto[placement^="bottom"] .arrow::after {
+            border-bottom-color: #fb6b25 !important;
+        }
+        .bs-popover-bottom>.arrow::before, .bs-popover-auto[placement^="bottom"]>.arrow::before {
+            border-bottom-color: rgba(255, 255, 255,0.2);
+        }
+        .bs-popover-top>.arrow::before, .bs-popover-auto[placement^="top"]>.arrow::before {
+            border-top-color: rgba(255, 255, 255,0.2);
+        }
+        .bs-popover-left>.arrow::before, .bs-popover-auto[placement^="left"]>.arrow::before {
+            border-left-color: rgba(255, 255, 255,0.2);
+        }
+        .bs-popover-right>.arrow::before, .bs-popover-auto[placement^="right"]>.arrow::before {
+            border-right-color: rgba(255, 255, 255,0.2);
+        }
+    }
+    @media (max-width: 991.9px){
+        .col-sm-6.col-lg-3.mt-2.mb-2{
+            .bs-popover-end{
+                right: 0;
+                left: initial !important;
+                transform: translate(7px, 41px) !important;
+            }
+        }
+    }
+    .rtl{
+        .bs-popover-start{
+            right: 0;
+            left: initial !important;
+            transform: translate(-30px, 41px) !important;
+        }
+    }
+}

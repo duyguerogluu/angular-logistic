@@ -1,0 +1,38 @@
+::ng-deep{
+    // .dark-mode{
+    //     .app.sidebar-mini.sidenav-toggled.sidenav-toggled-open .app-sidebar .side-header .header-brand-img.light-logo1{
+    //         display: none !important;
+    //     }
+    //     .app.sidebar-mini.sidenav-toggled.sidenav-toggled-open .app-sidebar .side-header .header-brand-img.desktop-logo{
+    //         display: block !important;
+    //     }
+    // }
+    // @media (min-width: 768px){
+    //     .dark-menu .app-sidebar .side-header .header-brand-img.light-logo1,
+    //     .gradient-menu .app-sidebar .side-header .header-brand-img.light-logo1
+    //      {
+    //         display: none !important;
+    //     }
+    // }
+    
+    .horizontal-hover .app-sidebar .has-sub{
+        pointer-events: none;
+    }
+
+    .horizontal app-sidemenu perfect-scrollbar{
+        position: static;
+    }
+
+    body:not(.horizontal) .badge + .angle{
+        display: none;
+    }
+    .layout-boxed .app-sidebar.fixed-header.visible-title{
+        max-width: 1400px;
+    }
+
+    .rtl{
+        app-sidemenu .angle{
+            transform: rotate(90deg);
+        }
+    }
+}

@@ -1,0 +1,132 @@
+<app-header-breadcrumb [title]="'ChartJs'" [items]="['Charts']" [active_item]="'ChartJs'"></app-header-breadcrumb>
+<!-- Row -->
+<div class="row row-sm">
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Line Chart</h6>
+                    <p class="text-muted  card-sub-title">Below is the basic line chart example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [legend]="lineChartLegend" [type]="lineChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Area Chart</h6>
+                    <p class="text-muted  card-sub-title">Below is the basic area chart example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="AreaChartData" [options]="AreaChartOptions" [type]="AreaChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Row -->
+
+<!-- Row -->
+<div class="row row-sm">
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Bar Chart1</h6>
+                    <p class="text-muted  card-sub-title">Below is the basic bar chart example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="barChartData" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [type]="barChartType" >
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Bar Chart2</h6>
+                    <p class="text-muted  card-sub-title">Below is the basic bar chart example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="barChart2Data" [options]="barChart2Options" [plugins]="barChart2Plugins" [legend]="barChart2Legend" [type]="barChart2Type">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Row -->
+
+<!-- Row -->
+<div class="row row-sm">
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Polar Chart</h6>
+                    <p class="text-muted  card-sub-title">Below are an example of data in a polar chart.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="polarChartData" [options]="polarChartOptions" [type]="polarChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Radar Chart</h6>
+                    <p class="text-muted  card-sub-title">Below are an example of data in a radar chart.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="radarChartData" [options]="radarChartOptions" [type]="radarChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Row -->
+
+<!-- Row -->
+<div class="row row-sm">
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Donut Chart</h6>
+                    <p class="text-muted  card-sub-title">Below are an example of data in a donut chart.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="PieChartData" [options]="PieChartOptions" [type]="DoughnutChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Pie Chart</h6>
+                    <p class="text-muted  card-sub-title">Below are an example of data in a pie chart.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <canvas baseChart [data]="PieChartData" [options]="PieChartOptions" [type]="PieChartType">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Row -->

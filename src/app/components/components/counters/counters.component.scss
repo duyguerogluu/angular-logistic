@@ -1,0 +1,8 @@
+::ng-deep{
+    .dark-mode{
+        .count-down.row span:first-child {
+            background: #30304d !important;
+            box-shadow: 0 5px 10px rgb(11 11 12 / 40%) !important;
+        }
+    }
+}

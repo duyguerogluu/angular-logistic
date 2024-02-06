@@ -1,0 +1,12 @@
+.chart-circle-value-3 .icon{
+    margin-top: 23px;
+}
+
+::ng-deep{
+    text tspan{
+        fill: #fff !important;
+    }
+    .dark-mode tspan{
+        fill: #fff !important;
+    }
+}

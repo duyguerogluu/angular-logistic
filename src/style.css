@@ -1,0 +1,293 @@
+
+
+
+
+.form-icon-btn{
+     padding: 6px 6px;
+     background-color: #333;
+     color: black;
+     border-radius: 5px;
+     margin-bottom: 4px;
+     opacity: 0.6;
+}
+
+.form-icon-btn :hover{
+     padding: 8px 8px;
+     background-color: transparent;
+     color: black;
+     border-radius: 5px;
+}
+
+.side-menu__item.active .side-menu__label {
+     color:  black !important;
+}
+
+.side-menu__item.active .side-menu__icon {
+     color:  black !important;
+}
+
+.side-menu__item.active .side-menu__icon :hover {
+     color:  #495584 !important;
+}
+
+
+
+
+.side-menu__item.active {
+     background-color: rgba(98,89,202,1) ;
+     background-image: linear-gradient(to bottom right, white, white);
+
+     /* background: linear-gradient(to bottom right, rgba(98,89,202,1) rgba(98, 89, 202, 0.6)) !important; */
+
+}
+.side-menu__item.active:hover {
+     background-color: rgba(98,89,202,1) !important ;
+     background-image: linear-gradient(to bottom right, white, white) !important;
+
+     /* background: linear-gradient(to bottom right, var(--primary-bg-color) 0%, var(--primary06) 100%) !important;
+*/
+
+}
+
+
+.form-label{
+     font-size: 10px;
+     padding-right: 0;
+     padding-left: 0;
+}
+
+/* .form-control1{
+     font-size: 8px;
+     line-height: 1;
+     height: 22px;
+     background-color: 	#EEEEEE;
+     border-radius: 4px;
+     color: #00375C;
+}
+
+.form-control1:hover{
+     font-size: 8px;
+     background-color: transparent;
+     border: 1px solid #00375C !important;
+     border-radius: 4px;
+     color: #00375C !important;
+}
+
+.form-control1:focus{
+     font-size: 8px;
+     background-color: transparent;
+     border: 1px solid #00375C !important;
+     border-radius: 4px;
+     color: #00375C !important;
+} */
+
+.card{
+     background-color: transparent;
+}
+
+.btn1{
+     font-size: 12px;
+     border: 0;
+     background-color: #00375C !important;
+}
+
+
+.app-sidebar{
+     background:#00375C;
+}
+
+.butonlar-div{
+     background: #D0CFCD;
+}
+
+.table-div{
+     background-color: #00375C;
+}
+
+.text-align-right{
+     text-align: right;
+}
+
+.app-content .side-app1 {
+     padding: 0 !important;
+}
+
+.jumps-prevent {
+     padding-top: 68px;
+}
+
+.color-white{
+     color: white;
+}
+
+.color-mavi{
+     color: #00375C;
+}
+
+.color-purple{
+     color: purple;
+}
+
+.bg-mavi{
+   background: #00375C ;
+}
+
+.fs-10{
+     font-size: 10px !important;
+}
+
+.fs-12{
+     font-size: 12px !important;
+}
+
+table thead tr th{
+     padding: 0 !important;
+     background: #D0CFCD !important;
+     color: #00375C !important;
+     text-transform: capitalize !important;
+}
+
+.parent {
+     position: relative;
+   }
+
+ .child {
+     position: absolute;
+     left: auto;
+     z-index: 100;
+   }
+
+   .nav-tabs .nav-link.active{
+     background:  #00375C !important;
+   }
+
+   .border{
+     border: 3px solid #D0CFCD;
+   }
+
+   .bg-white{
+     background: white;
+   }
+
+   .bg-grey{
+     background:  #EAE8E5 ;
+   }
+
+   body{
+     line-height: 1;
+   }
+
+   .custom-control-label{
+     vertical-align: text-bottom !important;
+   }
+
+   .fs-8{
+     font-size: 8px;
+   }
+
+   .prr-0{
+     padding-right: 0;
+   }
+
+   .pll-0{
+     padding-left: 0;
+   }
+
+.baslik{
+     border-radius: 4px;
+     background: #A8A8A8;
+}
+
+.paddingalakali{
+margin-left: -10px;
+margin-right: 9px;
+}
+
+.aciklama{
+     margin-left: -10px;
+
+}
+
+.mr--2{
+     margin-right: -9px;
+}
+
+.ml--2{
+     margin-left: -9px;
+}
+
+.mb--2{
+     margin-bottom: -10px;;
+}
+
+.pl-7px{
+     padding-left: 7px;
+}
+
+.pr-7px{
+     padding-right: 7px;
+}
+
+.slide-menu{
+     color: white;
+}
+
+.slide-menu a.active{
+     color: white;
+}
+
+.sub-slide-item{
+     color: white;
+}
+
+
+.side-menu__item{
+     color:white;
+}
+.slide-item {
+     color: white;
+}
+
+.side-menu__label{
+     color: white;
+}
+
+
+
+.side-menu .side-menu__icon {
+     color: white;
+}
+
+
+.side-menu .side-menu__icon:hover {
+     color: white;
+}
+
+.slide-menu a:before{
+     content: "" !important;
+}
+
+.form-control{
+  font-size: 8px !important;
+  line-height: 1 !important;
+  height: 22px !important;
+  background-color: 	#EEEEEE !important;
+  border-radius: 4px !important;
+  color: #00375C !important;
+}
+
+.form-control:hover{
+  background-color: transparent !important;
+  border: 1px solid #00375C !important;
+  color: #00375C !important;
+}
+
+.form-control:focus{
+  background-color: transparent !important;
+  border: 1px solid #00375C !important;
+  color: #00375C !important;
+}
+
+.justify-content-around{
+     justify-content: space-around;
+}

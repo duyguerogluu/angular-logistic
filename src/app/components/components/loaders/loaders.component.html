@@ -1,0 +1,146 @@
+<app-header-breadcrumb [title]="'Loaders'" [items]="['Components']" [active_item]="'Loaders'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row ">
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle()" [attr.aria-expanded]="!isCollapsed"> <i class="fe fe-chevron-{{ !isCollapsed ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle()" [attr.aria-expanded]="!isClosed"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed">
+                <div class="dimmer active">
+                    <div class="spinner1">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed1">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle1()" [attr.aria-expanded]="!isCollapsed1"> <i class="fe fe-chevron-{{ !isCollapsed1 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle1()" [attr.aria-expanded]="!isClosed1"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed1">
+                <div class="dimmer active">
+                    <div class="spinner2">
+                        <div class="cube1"></div>
+                        <div class="cube2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed2">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle2()" [attr.aria-expanded]="!isCollapsed2"> <i class="fe fe-chevron-{{ !isCollapsed2 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle2()" [attr.aria-expanded]="!isClosed2"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed2">
+                <div class="dimmer active">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card"  [(ngbCollapse)]="isClosed3">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle3()" [attr.aria-expanded]="!isCollapsed3"> <i class="fe fe-chevron-{{ !isCollapsed3 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle3()" [attr.aria-expanded]="!isClosed3"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed3">
+                <div class="dimmer active">
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card"  [(ngbCollapse)]="isClosed4">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle4()" [attr.aria-expanded]="!isCollapsed4"> <i class="fe fe-chevron-{{ !isCollapsed4 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle4()" [attr.aria-expanded]="!isClosed4"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body"  [(ngbCollapse)]="isCollapsed4">
+                <div class="dimmer active">
+                    <div class="lds-hourglass"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-12 col-lg-6 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed5">
+            <div class="card-header">
+                <h3 class="card-title">loaders</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle5()" [attr.aria-expanded]="!isCollapsed5"> <i class="fe fe-chevron-{{ !isCollapsed5 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle5()" [attr.aria-expanded]="!isClosed5"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed5">
+                <div class="dimmer active">
+                    <div class="lds-heart">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+</div>
+<!-- ROW-1 CLOSED -->
+
+<!-- ROW-2 OPEN -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">loaders big sizes</h3>
+            </div>
+            <div class="card-body">
+                <div class="dimmer active">
+                    <div class="spinner-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">loaders big sizes</h3>
+            </div>
+            <div class="card-body">
+                <div class="dimmer active">
+                    <div class="spinner1-lg">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+</div>
+<!-- ROW-2 CLOSED -->

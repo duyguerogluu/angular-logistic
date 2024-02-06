@@ -1,0 +1,53 @@
+<app-header-breadcrumb [title]="'Wishlist'" [items]="['ECommerce']" [active_item]="'Wishlist'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-xl-12 col-md-12">
+        <div class="card cart">
+            <div class="card-header">
+                <h3 class="card-title">My Wish List</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-vcenter text-nowrap">
+                        <thead>
+                            <tr class="border-top">
+                                <th class="w-15">Product</th>
+                                <th class="w-5">Title</th>
+                                <th class="w-15">Price</th>
+                                <th class="w-10">Status</th>
+                                <th class="w-10">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let obj of objectArray">
+                                <td>
+                                    <img src="{{obj.image}}" alt="" class="cart-img">
+                                </td>
+                                <td>{{obj.title}}</td>
+                                <td class="fw-bold">{{obj.price}}</td>
+                                <td>
+                                    <span class="badge bg-{{obj.stockStatus}}">{{obj.Stock}}</span>
+                                </td>
+                                <td>
+                                    <a routerLink="/pages/ecommerce/product-details" class="btn btn-primary-light btn-square  br-50 m-1"
+                                        ngbTooltip=" Quick View"><i
+                                            class="fe fe-eye fs-13"></i></a>
+                                    <a routerLink="/pages/ecommerce/shopping-cart" class="btn btn-info-light btn-square  br-50 m-1"
+                                        ngbTooltip="add to cart"><i
+                                            class="fe fe-shopping-cart fs-13"></i> </a>
+                                    <a class="btn btn-danger-light btn-square  br-50 m-1" (click)="RemoveElementFromObjectArray(obj.id)" 
+                                        ngbTooltip="Remove"><i
+                                            class="fe fe-trash fs-13"></i> </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class=" float-end">
+                    <ngb-pagination [collectionSize]="50" [(page)]="basicPage" aria-label="Default pagination"></ngb-pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW-1 CLOSED -->

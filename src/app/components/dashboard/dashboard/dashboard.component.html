@@ -1,0 +1,400 @@
+<app-header-breadcrumb [title]="'Ana Sayfa'" [items]="['Bölüm']" [active_item]="'Ana Sayfa'"></app-header-breadcrumb>
+    
+<!-- ROW-1 -->
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xl-3">
+                <div class="card overflow-hidden">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="">Toplam Satış</h6>
+                                <h3 class="mb-2 number-font">34,516</h3>
+                                <p class="text-muted mb-0">
+                                    <span class="text-primary"><i class="fa fa-chevron-circle-up text-primary me-1"></i>
+                                        3%</span> geçen ay
+                                </p>
+                            </div>
+                            <div class="col col-auto">
+                                <div class="counter-icon bg-primary-gradient box-shadow-primary brround ms-auto">
+                                    <i class="fe fe-trending-up text-white mb-5 "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xl-3">
+                <div class="card overflow-hidden">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="">Toplam Yönlendirmeler</h6>
+                                <h3 class="mb-2 number-font">56,992</h3>
+                                <p class="text-muted mb-0">
+                                    <span class="text-secondary"><i
+                                            class="fa fa-chevron-circle-up text-secondary me-1"></i> 3%</span> geçen ay
+                                </p>
+                            </div>
+                            <div class="col col-auto">
+                                <div class="counter-icon bg-danger-gradient box-shadow-danger brround  ms-auto">
+                                    <i class="icon icon-rocket text-white mb-5 "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xl-3">
+                <div class="card overflow-hidden">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="">Toplam Kar</h6>
+                                <h3 class="mb-2 number-font">$42,567</h3>
+                                <p class="text-muted mb-0">
+                                    <span class="text-success"><i
+                                            class="fa fa-chevron-circle-down text-success me-1"></i> 0.5%</span> geçen ay
+                                </p>
+                            </div>
+                            <div class="col col-auto">
+                                <div class="counter-icon bg-secondary-gradient box-shadow-secondary brround ms-auto">
+                                    <i class="fe fe-dollar-sign text-white mb-5 "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xl-3">
+                <div class="card overflow-hidden">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="">Toplam Tutar</h6>
+                                <h3 class="mb-2 number-font">$34,789</h3>
+                                <p class="text-muted mb-0">
+                                    <span class="text-danger"><i class="fa fa-chevron-circle-down text-danger me-1"></i>
+                                        0.2%</span> geçen ay
+                                </p>
+                            </div>
+                            <div class="col col-auto">
+                                <div class="counter-icon bg-success-gradient box-shadow-success brround  ms-auto">
+                                    <i class="fe fe-briefcase text-white mb-5 "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <!-- silmek istediğim bölüm -->
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+        <div class="card custom-card overflow-hidden">
+            <div class="card-header">
+                <h3 class="card-title">Recent Orders</h3>
+            </div>
+            <div class="card-body pt-0">
+                <!-- <div id="recentorders" class="apex-charts ht-150"></div> -->
+                <div id="recentorders" class="apex-charts ht-180">
+                    <apx-chart [series]="orderData.series" [chart]="orderData.chart"
+                    [plotOptions]="orderData.plotOptions" [fill]="orderData.fill" [stroke]="orderData.stroke"
+                    [labels]="orderData.labels">
+                    </apx-chart>
+                </div>
+
+                <div class="row sales-product-infomation pb-0 mb-0 mx-auto wd-100p mt-6">
+                    <div class="col-md-6 col justify-content-center text-center">
+                        <p class="mb-0 d-flex justify-content-center"><span class="legend bg-primary"></span>Delivered
+                        </p>
+                        <h3 class="mb-1 fw-bold">5238</h3>
+                        <div class="d-flex justify-content-center ">
+                            <p class="text-muted mb-0">Last 6 months</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col text-center float-end">
+                        <p class="mb-0 d-flex justify-content-center "><span
+                                class="legend bg-background2"></span>Cancelled</p>
+                        <h3 class="mb-1 fw-bold">3467</h3>
+                        <div class="d-flex justify-content-center ">
+                            <p class="text-muted mb-0">Last 6 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL END -->
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Total Transactions</h3>
+            </div>
+            <div class="card-body pb-0">
+                <!-- <div id="chartArea" class="chart-donut"></div> -->
+                <canvas baseChart class="h-300"
+                [data]="lineChartData" 
+                [options]="lineChartOptions" 
+                [legend]="lineChartLegend"
+                [type]="lineChartType">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <!-- COL END -->
+    
+</div>
+<!-- ROW-1 END -->
+
+<!-- ROW-3 -->
+<div class="row">
+    <div class="col-xl-4 col-md-12">
+        <div class="card overflow-hidden">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Timeline</h3>
+                </div>
+            </div>
+            <div class="card-body pb-0 pt-4">
+                <div class="activity1">
+                    <div class="activity-blog">
+                        <div class="activity-img brround bg-primary-transparent text-primary">
+                            <i class="fa fa-user-plus fs-20"></i>
+                        </div>
+                        <div class="activity-details d-flex">
+                            <div><b><span class="text-dark"> Mr John </span> </b> Started following you <span
+                                    class="d-flex text-muted fs-11">01 June 2020</span></div>
+                            <div class="ms-auto fs-13 text-dark fw-semibold"><span
+                                    class="badge bg-primary text-white">1m</span></div>
+                        </div>
+                    </div>
+                    <div class="activity-blog">
+                        <div class="activity-img brround bg-secondary-transparent text-secondary">
+                            <i class="fa fa-comment fs-20"></i>
+                        </div>
+                        <div class="activity-details d-flex">
+                            <div><b><span class="text-dark"> Lily </span> </b> 1 Commented applied <span
+                                    class="d-flex text-muted fs-11">01 July 2020</span> </div>
+                            <div class="ms-auto fs-13 text-dark fw-semibold"><span
+                                    class="badge bg-danger text-white">3m</span></div>
+                        </div>
+                    </div>
+                    <div class="activity-blog">
+                        <div class="activity-img brround bg-success-transparent text-success">
+                            <i class="fa fa-thumbs-up fs-20"></i>
+                        </div>
+                        <div class="activity-details d-flex">
+                            <div><b><span class="text-dark"> Kevin </span> </b> liked your site <span
+                                    class="d-flex text-muted fs-11">05 July 2020</span></div>
+                            <div class="ms-auto fs-13 text-dark fw-semibold"><span
+                                    class="badge bg-warning text-white">5m</span></div>
+                        </div>
+                    </div>
+                    <div class="activity-blog">
+                        <div class="activity-img brround bg-info-transparent text-info">
+                            <i class="fa fa-envelope fs-20"></i>
+                        </div>
+                        <div class="activity-details d-flex">
+                            <div><b><span class="text-dark"> Andrena </span> </b> posted a new article <span
+                                    class="d-flex text-muted fs-11">09 October 2020</span></div>
+                            <div class="ms-auto fs-13 text-dark fw-semibold"><span
+                                    class="badge bg-info text-white">5m</span></div>
+                        </div>
+                    </div>
+                    <div class="activity-blog">
+                        <div class="activity-img brround bg-danger-transparent text-danger">
+                            <i class="fa fa-shopping-bag fs-20"></i>
+                        </div>
+                        <div class="activity-details d-flex">
+                            <div><b><span class="text-dark"> Sonia </span> </b> Delivery in progress <span
+                                    class="d-flex text-muted fs-11">12 October 2020</span></div>
+                            <div class="ms-auto fs-13 text-dark fw-semibold"><span
+                                    class="badge bg-warning text-white">5m</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title fw-semibold ">Browser Usage</h4>
+            </div>
+            <div class="card-body pt-2 pb-2">
+                <div class="d-md-flex align-items-center browser-stats">
+                    <div class="d-flex">
+                        <i class="fa fa-chrome bg-secondary-gradient text-white me-2"></i>
+                        <p class="fs-16 my-auto mb-0">Chrome</p>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <div class="d-flex flex-wrap">
+                            <span class="my-auto ms-auto fs-16">35,502</span>
+                            <span class="text ms-auto-success fs-15"><i class="fe fe-arrow-up"></i>12.75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex align-items-center browser-stats">
+                    <div class="d-flex">
+                        <i class="fa fa-opera text-white bg-danger-gradient me-2"></i>
+                        <p class="fs-16 my-auto mb-0">Opera</p>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <div class="d-flex flex-wrap">
+                            <span class="my-auto ms-auto fs-16">12,563</span>
+                            <span class="text-danger ms-auto fs-15"><i class="fe fe-arrow-down"></i>15.12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex align-items-center browser-stats">
+                    <div class="d-flex">
+                        <i class="fa fa-firefox text-white bg-purple-gradient me-2"></i>
+                        <p class="fs-16 my-auto mb-0">IE</p>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <div class="d-flex flex-wrap">
+                            <span class="my-auto ms-auto fs-16">25,364</span>
+                            <span class="text ms-auto-success fs-15"><i class="fe fe-arrow-up"></i>24.37%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex align-items-center browser-stats">
+                    <div class="d-flex">
+                        <i class="fa fa-edge text-white bg-info-gradient me-2"></i>
+                        <p class="fs-16 my-auto mb-0">Firefox</p>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <div class="d-flex flex-wrap">
+                            <span class="my-auto ms-auto fs-16">14,635</span>
+                            <span class="text ms-auto-success fs-15"><i class="fe fe-arrow-up"></i>15,63%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex align-items-center browser-stats">
+                    <div class="d-flex">
+                        <i class="fa fa-android text-white bg-success-gradient me-2"></i>
+                        <p class="fs-16 my-auto mb-0">Android</p>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <div class="d-flex flex-wrap">
+                            <span class="my-auto ms-auto fs-16">15,453</span>
+                            <span class="text-danger ms-auto fs-15"><i class="fe fe-arrow-down"></i>23.70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title fw-semibold ">Daily Activity</h4>
+            </div>
+            <div class="card-body pb-0">
+                <ul class="task-list">
+                    <li>
+                        <i class="task-icon bg-primary"></i>
+                        <h6>Task Finished<span class="text-muted fs-11 ms-2">29 Oct 2020</span></h6>
+                        <p class="text-muted fs-12">Adam Berry finished task on<a href="javascript:;" class="fw-semibold"> Project
+                                Management</a></p>
+                    </li>
+                    <li>
+                        <i class="task-icon bg-secondary"></i>
+                        <h6>New Comment<span class="text-muted fs-11 ms-2">25 Oct 2020</span></h6>
+                        <p class="text-muted fs-12">Victoria commented on Project <a href="javascript:;" class="fw-semibold">
+                                AngularJS Template</a></p>
+                    </li>
+                    <li>
+                        <i class="task-icon bg-primary"></i>
+                        <h6>New Comment<span class="text-muted fs-11 ms-2">25 Oct 2020</span></h6>
+                        <p class="text-muted fs-12">Dyer commented on Project <a href="javascript:;" class="fw-semibold">
+                                Zanex Template</a></p>
+                    </li>
+                    <li>
+                        <i class="task-icon bg-secondary"></i>
+                        <h6>Task Overdue<span class="text-muted fs-11 ms-2">14 Oct 2020</span></h6>
+                        <p class="text-muted mb-0 fs-12">Petey Cruiser finished task <a href="javascript:;" class="fw-semibold">
+                                Integrated management</a></p>
+                    </li>
+                    <li>
+                        <i class="task-icon bg-primary"></i>
+                        <h6>Task Overdue<span class="text-muted fs-11 ms-2">29 Oct 2020</span></h6>
+                        <p class="text-muted mb-0 fs-12">Jake poole finished task <a href="javascript:;" class="fw-semibold">
+                                Integrated management</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- COL END -->
+<!-- ROW-3 END -->
+
+<!-- ROW-5 -->
+<div class="row">
+    <div class="col-12 col-sm-12">
+        <div class="card ">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Product Sales</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="data-table" class="table table-bordered text-nowrap mb-0">
+                        <thead class="border-top">
+                            <tr>
+                                <th class="bg-transparent border-bottom-0 w-5">S.no</th>
+                                <th class="bg-transparent border-bottom-0">Name</th>
+                                <th class="bg-transparent border-bottom-0">Date</th>
+                                <th class="bg-transparent border-bottom-0">Amount</th>
+                                <th class="bg-transparent border-bottom-0">Status</th>
+                                <th class="bg-transparent border-bottom-0">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-bottom" *ngFor="let obj of objectArray">
+                                <td class="text-muted fs-15 fw-semibold text-center">{{obj.id}}</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <span class="avatar avatar-md brround mt-1"
+                                            style="background-image: url({{obj.image}})"></span>
+                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
+                                            <h6 class="mb-0 fs-14 fw-semibold">
+                                                {{obj.name}}</h6>
+                                            <span class="fs-12 text-muted">{{obj.email}}</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-muted fs-15 fw-semibold">{{obj.date}} </td>
+                                <td class="text-muted fs-15 fw-semibold">{{obj.amount}}</td>
+                                <td class="text-{{obj.statusText}} fs-15 fw-semibold">{{obj.status}}</td>
+                                <td class="">
+                                    <a class="btn btn-primary btn-sm rounded-11 me-2" 
+                                        ngbTooltip="Edit"><i><svg class="table-edit"
+                                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                                width="16">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z" />
+                                            </svg></i></a>
+                                    <a class="btn btn-danger btn-sm rounded-11" 
+                                    (click)="RemoveElementFromObjectArray(obj.id)" 
+                                        ngbTooltip="Delete"><i><svg class="table-delete"
+                                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+                                                width="16">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+                                            </svg></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL END -->
+</div>

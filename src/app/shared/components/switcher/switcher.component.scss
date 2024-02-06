@@ -1,0 +1,22 @@
+::ng-deep{
+    .demo_changer.active{
+        margin-right: -10px !important;
+    }
+}
+
+
+@media (max-width: 992px){
+    .demo_changer .sidebar-right1{
+        max-height: 100vh;
+    }
+}
+.switch_section input {
+    width: 1.5rem;
+    height: 1.5rem !important;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    border: 1px solid #6259ca;
+    color: transparent;
+  }
+  

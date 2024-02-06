@@ -1,0 +1,24 @@
+<div class="horizontalMenucontainer">
+    <!-- switcher -->
+    <app-switcher></app-switcher>
+    <div class="page">
+        <div class="page-main">
+            <!-- header -->
+            <app-header></app-header>
+            <!-- sidebar -->
+            <app-sidemenu appHoverEffectSidebar></app-sidemenu>
+
+            <div class="jumps-prevent"></div>
+            <div class="main-content mt-0 app-content" appCloseSwitcher>
+                <div class="side-app">
+                    <div class="main-container container-fluid">
+                        <router-outlet> </router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-notification-sidemenu></app-notification-sidemenu>
+        <!-- footer  -->
+        <app-footer></app-footer>
+    </div>
+</div>

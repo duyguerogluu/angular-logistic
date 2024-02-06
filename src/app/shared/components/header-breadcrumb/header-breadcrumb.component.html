@@ -1,0 +1,23 @@
+<!-- PAGE-HEADER -->
+<div class="page-header">
+    <div>
+        <h1 class="page-title">{{title}}</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" *ngFor="let item of items"><a href="javascript:;">{{item}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{active_item}}</li>
+        </ol>
+    </div>
+    <div class="ms-auto pageheader-btn">
+        <a href="javascript:;" class="btn btn-primary btn-icon text-white me-2">
+            <span>
+                <i class="fe fe-plus"></i>
+            </span> Add Account
+        </a>
+        <a href="javascript:;" class="btn btn-success btn-icon text-white">
+            <span>
+                <i class="fe fe-log-in"></i>
+            </span> Export
+        </a>
+    </div>
+</div>
+<!-- PAGE-HEADER END -->

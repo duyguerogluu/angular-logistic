@@ -1,0 +1,21 @@
+.card-aside{
+    flex-direction: row !important;
+    flex: initial !important;
+}
+::ng-deep{
+    .dark-mode
+    app-blog{
+        a.icon:hover {
+            color: #eee !important;
+        }
+    }
+}
+.btn-primary-light {
+    color: #5e2dd8 !important;
+}
+.btn-primary-light:hover {
+    color: #fff !important;
+}
+img.card-aside-column{
+    max-height: 9rem;
+}

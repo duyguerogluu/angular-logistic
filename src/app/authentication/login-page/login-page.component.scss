@@ -1,0 +1,12 @@
+.nav-icon{
+    width: 25px;
+    height: 25px;
+}
+::ng-deep{
+    a.text-primary:hover, a.text-primary:focus {
+        color: #a884e6 !important;
+    }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #ffe4e433 !important;
+}

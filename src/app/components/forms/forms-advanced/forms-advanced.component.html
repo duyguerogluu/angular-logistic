@@ -1,0 +1,383 @@
+<app-header-breadcrumb [title]="'Form Advanced'" [items]="['Forms']" [active_item]="'Form Advanced'"></app-header-breadcrumb>
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <form method="post" class="card">
+            <div class="card-header">
+                <h3 class="card-title">File Upload</h3>
+            </div>
+            <div class=" card-body">
+                <div class="row mb-5">
+                    <div class="col-lg-4 col-sm-12 mb-4 mb-lg-0">
+                        <ngx-dropzone (change)="onSelect($event)">
+                            <ngx-dropzone-label>Drop it!</ngx-dropzone-label>
+                            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                            </ngx-dropzone-preview>
+                          </ngx-dropzone>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-4 mb-lg-0">
+                        <ngx-dropzone (change)="onSelect($event)" [expandable]="true">
+                            <ngx-dropzone-label>Drop it!</ngx-dropzone-label>
+                            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                            </ngx-dropzone-preview>
+                          </ngx-dropzone>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <ngx-dropzone (change)="onSelect($event)" [disabled]="true" [expandable]="true">
+                            <ngx-dropzone-label>Disabled</ngx-dropzone-label>
+                            <ngx-dropzone-preview *ngFor="let f of filesDisabled">
+                              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                            </ngx-dropzone-preview>
+                          </ngx-dropzone>
+                    </div>
+                </div>
+                <div class="form-group mb-0">
+                    <ngx-dropzone (change)="onPreviewFileSelect($event)">
+                        <ngx-dropzone-label>
+                          <div>
+                            <h2>preview file</h2>
+                          </div>
+                        </ngx-dropzone-label>
+                        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of filesPreview" [file]="f"
+                          [removable]="true" (removed)="onPreviewFileRemove(f)">
+                          <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                        </ngx-dropzone-image-preview>
+                      </ngx-dropzone>
+                </div>
+            </div>
+        </form>
+
+        <form method="post" class="card">
+            <div class="card-header">
+                <h3 class="card-title">Ngb select elements</h3>
+            </div>
+            <div class="card-body ">
+                <div class="form-group ">
+                    <label class="form-label">Beast</label>
+                    <ng-select class="form-control select2 custom-select" data-placeholder="Choose one">
+                        <ng-option value="1">Chuck Testa</ng-option>
+                        <ng-option value="2">Sage Cattabriga-Alosa</ng-option>
+                        <ng-option value="3">Nikola Tesla</ng-option>
+                        <ng-option value="4">Cattabriga-Alosa</ng-option>
+                        <ng-option value="5">Nikola Alosa</ng-option>
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Ngb select Select2</label>
+                    <ng-select [items]="select2Countries" bindLabel="title" bindvalue="id" groupBy="countryNames"
+                        [multiple]="false">
+                        <ng-template ng-optgroup-tmp let-item="item">{{item.title}}</ng-template>
+                        <ng-template ng-option-tmp let-item="item">{{item.title}}</ng-template>
+
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"> Ngb select with search box</label>
+                    <ng-select placeholder="Choose one (with searchbox)" [items]="select2Countries" bindLabel="title"
+                        bindValue="id" groupBy="countryNames" [multiple]="false">
+                        <ng-template ng-optgroup-tmp let-item="item">{{item.title}}</ng-template>
+                        <ng-template ng-option-tmp let-item="item">{{item.title}}</ng-template>
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Users list</label>
+                    <ng-select class="form-control p-0" [items]="selectValues" name="select" [multiple]="true"
+                        [(ngModel)]="select">
+                        <ng-option *ngFor="let select of selectValues">{{select.label}}</ng-option>
+                    </ng-select>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-6 ">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Time Picker</h3>
+            </div>
+            <div class=" card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Default Time Picker:</label>
+                        <div class="wd-150 mg-b-30">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <div class="">
+                                        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="18"
+                                            viewBox="0 0 24 24" width="18">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z"
+                                                opacity=".3" />
+                                            <path
+                                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <input placeholder="12hr format (default settings)" aria-label="12hr format"
+                                        [ngxTimepicker]="default" readonly>
+                                    <ngx-material-timepicker #default></ngx-material-timepicker>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Default Time Picker 24hours :</label>
+                        <div class="wd-150 mg-b-30">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <div class="">
+                                        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="18"
+                                            viewBox="0 0 24 24" width="18">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z"
+                                                opacity=".3" />
+                                            <path
+                                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <input placeholder="24hr format" aria-label="24hr format" [ngxTimepicker]="fullTime"
+                                        [format]="24" readonly>
+                                    <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="mt-4 ">ngx-timepicker-field:</label>
+                <div class="d-flex">
+                    <div class="input-group wd-150">
+                        <div class="ngx-timepicker-field-example">
+                            <ngx-timepicker-field [defaultTime]="'11:11 am'"></ngx-timepicker-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 ">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Color Picker</h3>
+            </div>
+            <div class=" card-body">
+                <p class="mg-b-20">Default Color-Picker example.</p>
+                <div>
+                    <input class="form-control wd-200 mg-b-20" [(colorPicker)]="color" [style.background]="color" />
+                </div>
+                <p class="mg-t-40 mg-t-40 mg-b-10">Color-Picker with value.</p>
+                <div>
+                    <input class="form-control wd-200 text-white mg-b-10" [value]="color1" name="color1"
+                        [style.background]="color1" [(colorPicker)]="color1" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Default Date picker</div>
+            </div>
+            <div class="card-body">
+                <p class="mg-b-20 mg-sm-b-40">The datepicker is tied to a standard form input field. Click on the input
+                    to open an interactive calendar in a small overlay. If a date is chosen, feedback is shown as the
+                    input's value.</p>
+                <div class="wd-200 mg-b-30">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                        </div>
+                        <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker
+                            (click)="d.toggle()" #d="ngbDatepicker" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Multiple Months </div>
+            </div>
+            <div class="card-body">
+                <p class="mg-b-20 mg-sm-b-40">The datepicker is tied to a standard form input field. Click on the input
+                    to open an interactive calendar in a small overlay. If a date is chosen, feedback is shown as the
+                    input's value.</p>
+                <div class="wd-200 mg-b-30">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <span class="fa fa-calendar tx-16 lh-0 op-6"></span>
+                        </div>
+                        <input type="text" name="selectd" ngxDaterangepickerMd [(ngModel)]="selected"
+                            class="form-control" autocomplete="off" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Multiple Select Styles</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="form-label">Basic MutipleSelect</label>
+                            <angular2-multiselect [data]="dropdownList" name="multiple" [(ngModel)]="multipleItems"
+                                [settings]="multipleSettings">
+                            </angular2-multiselect>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Disabled MutipleSelect</label>
+                            <angular2-multiselect [settings]="disableSettings">
+                            </angular2-multiselect>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Multiple Items With Group-Option</label>
+                            <angular2-multiselect [data]="itemList" name="multipleItem" [(ngModel)]="itemSelect"
+                                [settings]="itemSettings">
+                            </angular2-multiselect>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="form-label">Single Row</label>
+                            <ng-select [multiple]="true" class="single-select">
+                                <ng-option value="1">First</ng-option>
+                                <ng-option value="2">Second</ng-option>
+                                <ng-option value="3">Third</ng-option>
+                                <ng-option value="4" selected="selected">Fourth</ng-option>
+                            </ng-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Multiple Items</label>
+                            <ng-select [multiple]="true" class="multiselect">
+                                <ng-option value="1">1</ng-option>
+                                <ng-option value="2">2</ng-option>
+                                <ng-option value="3">3</ng-option>
+                                <ng-option value="4">4</ng-option>
+                                <ng-option value="5">5</ng-option>
+                                <ng-option value="6">6</ng-option>
+                                <ng-option value="7">7</ng-option>
+                                <ng-option value="8">8</ng-option>
+                                <ng-option value="9">9</ng-option>
+                                <ng-option value="10">10</ng-option>
+                                <ng-option value="11">11</ng-option>
+                                <ng-option value="12">12</ng-option>
+                                <ng-option value="13">13</ng-option>
+                                <ng-option value="14">14</ng-option>
+                                <ng-option value="15">15</ng-option>
+                                <ng-option value="16">16</ng-option>
+                                <ng-option value="17">17</ng-option>
+                                <ng-option value="18">18</ng-option>
+                                <ng-option value="19">19</ng-option>
+                                <ng-option value="20">20</ng-option>
+                                <ng-option value="21">21</ng-option>
+                                <ng-option value="22">22</ng-option>
+                                <ng-option value="23">23</ng-option>
+                                <ng-option value="24">24</ng-option>
+                                <ng-option value="25">25</ng-option>
+                                <ng-option value="26">26</ng-option>
+                                <ng-option value="27">27</ng-option>
+                                <ng-option value="28">28</ng-option>
+                                <ng-option value="29">29</ng-option>
+                                <ng-option value="30">30</ng-option>
+                            </ng-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hide SelectAll</label>
+                            <ng-select [multiple]="true" class="hide-select">
+                                <ng-option value="1">First</ng-option>
+                                <ng-option value="2">Second</ng-option>
+                                <ng-option value="3">Third</ng-option>
+                                <ng-option value="4">Fourth</ng-option>
+                            </ng-select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Select All Styles</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="mb-3 row">
+                            <label class="col-md-12 form-label">Single Select:</label>
+                            <angular2-multiselect [data]="dropdownList" name="droplist" [(ngModel)]="singleItem"
+                                [settings]="SingleSettings">
+                            </angular2-multiselect>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="mb-3 row">
+                            <label class="col-md-12 form-label">Multiple Select:</label>
+                            <div class="col-md-12 p-0">
+                                <angular2-multiselect [data]="dropdownList" name="dropdownList"
+                                    [(ngModel)]="multipleSelectItems" [settings]="multipleSettings">
+                                </angular2-multiselect>
+                            </div>
+                        </div>
+                    </div>
+                    <app-angular-material-select></app-angular-material-select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row -->
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Country selctor</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group telephone-input col-lg-6 col-md-8">
+                            <ngx-intl-tel-input [cssClass]="'custom'"
+                                [preferredCountries]="[CountryISO.UnitedStates, CountryISO.UnitedKingdom]"
+                                [enableAutoCountrySelect]="true" [enablePlaceholder]="true" [searchCountryFlag]="true"
+                                [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+                                [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.India"
+                                [phoneValidation]="true" name="phone" class="form-control">
+                            </ngx-intl-tel-input>
+                            <span class="input-group-btn">
+                                <button class="btn ripple btn-primary" type="button">Submit</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Row -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Dual List Box</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow-none border">
+                            <div class="card-body">
+                                <dual-list [sort]="keepSorted" [source]="source" [key]="key" [display]="display"
+                                    [filter]="filter" [(destination)]="confirmed" height="265px" [format]="format"
+                                    [disabled]="disabled"></dual-list>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Row-->

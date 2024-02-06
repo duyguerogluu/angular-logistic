@@ -1,0 +1,124 @@
+::ng-deep{
+    .dark-mode{
+        .mat-stepper-horizontal, .mat-stepper-vertical {
+            background-color: #30304d !important;
+        }
+        .mat-step-header .mat-step-label.mat-step-label-active{
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+        .mat-step-header .mat-step-label, .mat-step-header .mat-step-optional {
+            color: rgba(255, 255, 255, 0.54) !important;
+        }
+        .mat-horizontal-stepper-header::before, .mat-horizontal-stepper-header::after, .mat-stepper-horizontal-line {
+            border-top-color: rgba(148, 128, 238, 0.26) !important;
+        }
+        .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+            background-color: #6259ca !important;
+        }
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: rgb(46, 46, 74) !important;
+        }
+        .mat-input-element::placeholder{
+            color: #ccc;
+        }
+        .mat-form-field-label {
+            color: rgba(255, 255, 255, 0.78);
+        }
+        .mat-stepper-vertical-line::before {
+            border-left-color: rgb(255 255 255 / 12%);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li:not(:last-child):after,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li:not(:last-child):after,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li:not(:last-child):after {
+            background-color: rgb(255 255 255 / 20%);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li .step-indicator{
+            background-color: rgb(255,255,255,0.5);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li.current .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li.current .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li.current .step-indicator{
+            background-color: rgb(255,255,255,0.9);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li.done .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li.done .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li.done .step-indicator{
+            background-color: rgba(110, 247, 31, 0.6);
+            color: #fff;
+        }
+    }
+    .transparent-mode{
+        .mat-stepper-horizontal, .mat-stepper-vertical {
+            background-color: var(--transparent-body) !important;
+        }
+        .mat-step-header .mat-step-label.mat-step-label-active{
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+        .mat-step-header .mat-step-label, .mat-step-header .mat-step-optional {
+            color: rgba(255, 255, 255, 0.54) !important;
+        }
+        .mat-horizontal-stepper-header::before, .mat-horizontal-stepper-header::after, .mat-stepper-horizontal-line {
+            border-top-color: var(--transparent-border) !important;
+        }
+        .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+            background-color: var(--transparent-primary) !important;
+        }
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: var(--transparent-body) !important;
+        }
+        .mat-input-element::placeholder{
+            color: #ccc;
+        }
+        .mat-form-field-label {
+            color: rgba(255, 255, 255, 0.78);
+        }
+        .mat-stepper-vertical-line::before {
+            border-left-color: var(--transparent-border);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li:not(:last-child):after,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li:not(:last-child):after,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li:not(:last-child):after {
+            background-color: rgb(255 255 255 / 20%);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li .step-indicator{
+            background-color: rgb(255,255,255,0.5);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li.current .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li.current .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li.current .step-indicator{
+            background-color: rgb(255,255,255,0.9);
+        }
+        aw-wizard-navigation-bar.horizontal.small ul.steps-indicator li.done .step-indicator,
+        aw-wizard-navigation-bar.large-filled-symbols ul.steps-indicator li.done .step-indicator,
+        aw-wizard-navigation-bar.large-empty-symbols ul.steps-indicator li.done .step-indicator{
+            background-color: rgba(110, 247, 31, 0.6);
+            color: #fff;
+        }
+    }
+    .mat-stepper-horizontal-line{
+        margin: 0 !important;
+    }
+    aw-wizard-navigation-bar.vertical{
+        width: 25% !important;
+    }
+    @media (max-width: 991.8px) {
+        aw-wizard-navigation-bar.vertical{
+            display: none;
+        }
+    }
+
+    @media (max-width: 567.98px) {
+        .mat-step-text-label{
+            display: none;
+        }
+    }
+}
+.table> :not(caption)>*>* {
+    background: transparent;
+    box-shadow: none;
+    border-bottom-width: 1px;
+}

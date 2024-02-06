@@ -1,0 +1,7 @@
+::ng-deep{
+    body:not(.horizontal){
+        .jumps-prevent{
+            padding-top: 74px;
+        }
+    }
+}

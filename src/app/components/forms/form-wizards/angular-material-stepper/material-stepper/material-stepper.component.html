@@ -1,0 +1,227 @@
+
+<!-- Row -->
+<div class="row ">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Stepper with editable steps</div>
+			</div>
+			<div class="card-body">
+        <button class="btn btn-primary" mat-raised-button (click)="isEditable = !isEditable">
+            {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+        </button>
+        
+        <mat-stepper linear #stepper>
+          <mat-step [stepControl]="editablefirstFormGroup" [editable]="isEditable">
+            <form [formGroup]="editablefirstFormGroup">
+              <ng-template matStepLabel>Fill out your name</ng-template>
+              <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+              </mat-form-field>
+              <div>
+                <button class="btn btn-primary" mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="editablesecondFormGroup" [editable]="isEditable">
+            <form [formGroup]="editablesecondFormGroup">
+              <ng-template matStepLabel>Fill out your address</ng-template>
+              <mat-form-field appearance="fill">
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                      required>
+              </mat-form-field>
+              <div>
+                <button class="btn btn-secondary me-2" mat-button matStepperPrevious>Back</button>
+                <button class="btn btn-primary" mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+              <button class="btn btn-secondary me-2"  mat-button matStepperPrevious>Back</button>
+              <button class="btn btn-danger"  mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+          </mat-step>
+        </mat-stepper>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Stepper that displays errors in the steps</div>
+			</div>
+			<div class="card-body">
+        <mat-stepper #stepper>
+            <mat-step [stepControl]="stepErrorfirstFormGroup" errorMessage="Name is required.">
+              <form [formGroup]="stepErrorfirstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="fill">
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                  <p>Go to a different step to see the error state</p>
+                  <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="stepErrorsecondFormGroup" errorMessage="Address is required.">
+              <form [formGroup]="stepErrorsecondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="fill">
+                  <mat-label>Address</mat-label>
+                  <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl"
+                        required>
+                </mat-form-field>
+                <div>
+                  <p>Go to a different step to see the error state</p>
+                  <button class="btn btn-primary me-2"  mat-button matStepperPrevious>Back</button>
+                  <button class="btn btn-secondary"  mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              <p>You are now done.</p>
+              <div>
+                <button class="btn btn-secondary me-2"  mat-button matStepperPrevious>Back</button>
+                <button class="btn btn-danger"  mat-button (click)="stepper.reset()">Reset</button>
+              </div>
+            </mat-step>
+        </mat-stepper>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">lazy content rendering</div>
+			</div>
+			<div class="card-body">
+        <mat-stepper orientation="vertical">
+        <mat-step>
+          <ng-template matStepLabel>Step 1</ng-template>
+          <ng-template matStepContent>
+            <p>This content was rendered lazily</p>
+            <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+          </ng-template>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Step 2</ng-template>
+          <ng-template matStepContent>
+            <p>This content was also rendered lazily</p>
+            <button class="btn btn-secondary me-2"  mat-button matStepperPrevious>Back</button>
+            <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+          </ng-template>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Step 3</ng-template>
+          <p>This content was rendered eagerly</p>
+          <button class="btn btn-secondary me-2"  mat-button matStepperPrevious>Back</button>
+        </mat-step>
+        </mat-stepper>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Stepper with optional steps</div>
+			</div>
+			<div class="card-body">
+        <button class="btn btn-primary" mat-raised-button (click)="isOptional = !isOptional">
+        {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
+        </button>
+      
+        <mat-stepper linear #stepper>
+        <mat-step [stepControl]="optionalfirstFormGroup">
+          <form [formGroup]="optionalfirstFormGroup">
+            <ng-template matStepLabel>Fill out your name</ng-template>
+            <mat-form-field appearance="fill">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+              <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="optionalsecondFormGroup" [optional]="isOptional">
+          <form [formGroup]="optionalsecondFormGroup">
+            <ng-template matStepLabel>Fill out your address</ng-template>
+            <mat-form-field appearance="fill">
+              <mat-label>Address</mat-label>
+              <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                     required>
+            </mat-form-field>
+            <div>
+              <button  class="btn btn-secondary me-2" mat-button matStepperPrevious>Back</button>
+              <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <p>You are now done.</p>
+          <div>
+            <button  class="btn btn-secondary me-2" mat-button matStepperPrevious>Back</button>
+            <button class="btn btn-danger"  mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+        </mat-stepper>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Stepper with customized states</div>
+			</div>
+			<div class="card-body">
+        <mat-stepper>
+        <mat-step label="Step 1" state="phone">
+          <p>Put down your phones.</p>
+      <div>
+        <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step label="Step 2" state="chat">
+      <p>Socialize with each other.</p>
+      <div>
+        <button class="btn btn-secondary me-2"  mat-button matStepperPrevious>Back</button>
+        <button class="btn btn-primary"  mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step label="Step 3">
+      <p>You're welcome.</p>
+    </mat-step>
+  
+        <!-- Icon overrides. -->
+        <ng-template matStepperIcon="phone">
+          <mat-icon>call_end</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="chat">
+          <mat-icon>forum</mat-icon>
+        </ng-template>
+        </mat-stepper>
+      </div>
+    </div>
+  </div>
+</div>

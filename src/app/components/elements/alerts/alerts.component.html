@@ -1,0 +1,324 @@
+<app-header-breadcrumb [title]="'Alerts'" [items]="['Elements']" [active_item]="'Alerts'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Default alerts</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="primary" *ngIf="alertPrimary" (close)="alertPrimary = false">
+                            Primary alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                        <ngb-alert type="secondary" *ngIf="alertSecondary" (close)="alertSecondary = false">
+                            Secondary alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                        <ngb-alert type="success" *ngIf="alertSuccess" (close)="alertSuccess = false">
+                            Success alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertInfo" (close)="alertInfo = false">
+                            Info alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                        <ngb-alert type="warning" *ngIf="alertWarning" (close)="alertWarning = false">
+                            Warning alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                        <ngb-alert type="danger" *ngIf="alertDanger" (close)="alertDanger = false">
+                            Danger alert—At vero eos et accusamus praesentium!
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-1 CLOSED -->
+
+<!-- ROW-2 OPEN -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Links in alerts</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="success" *ngIf="alertLinkSuccess" (close)="alertLinkSuccess = false">
+                            <strong>Well done!</strong> You successfully read <a href="javascript:void(0)"
+                                class="alert-link">this important
+                                alert message.</a>
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertLinkInfo" (close)="alertLinkInfo = false">
+                            <strong>Heads up!</strong> This<a href="javascript:void(0)" class="alert-link"> alert needs your
+                                attention,</a> but
+                            it's not super important.
+                        </ngb-alert>
+                        <ngb-alert type="warning" *ngIf="alertLinkWarning" (close)="alertLinkWarning = false">
+                            <strong>Warning! </strong> Better check yourself, you're <a href="javascript:void(0)"
+                                class="alert-link">not looking
+                                too good.</a>
+                        </ngb-alert>
+                        <ngb-alert type="danger" *ngIf="alertLinkDanger" (close)="alertLinkDanger = false">
+                            <strong>Oh snap!</strong> <a href="javascript:void(0)" class="alert-link">Change a few things up
+                            </a>and try
+                            submitting again.
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-2 CLOSED -->
+
+<!-- ROW-3 OPEN -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Alert with icon</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <p>Add <code class="highlighter-rouge">.alert-icon</code> class.</p>
+                    <div class="example">
+
+                        <ngb-alert type="success" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false">
+                            <i class="fa fa-check-circle-o me-2" aria-hidden="true"></i> Well done! You successfully read this
+                            important alert message.
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertIconInfo" (close)="alertIconInfo = false">
+                            <i class="fa fa-bell-o me-2" aria-hidden="true"></i>Heads up! This
+                            alert needs your attention, but it's not super important.
+                        </ngb-alert>
+                        <ngb-alert type="warning" *ngIf="alertIconWarning" (close)="alertIconWarning = false">
+                            <i class="fa fa-exclamation me-2" aria-hidden="true"></i> Warning!
+                            Better check yourself, you're not looking too good.
+                        </ngb-alert>
+                        <ngb-alert type="danger" *ngIf="alertIconDanger" (close)="alertIconDanger = false">
+                            <i class="fa fa-frown-o me-2" aria-hidden="true"></i>Oh snap!Change
+                            a few things up and try submitting again.
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-3 CLOSED -->
+
+<!-- ROW-4 OPEN -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Alert with avatar</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="success" *ngIf="alertImgSuccess" (close)="alertImgSuccess = false">
+                            <img class="avatar brround cover-image me-2" src="./assets/images/users/14.jpg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertImgInfo" (close)="alertImgInfo = false">
+                            <img class="avatar brround cover-image me-2" src="./assets/images/users/5.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-4 CLOSED -->
+
+<!-- ROW-5 OPEN -->
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Alerts With Icons</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="default" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-download"></i></span>
+                            <span class="alert-inner--text"><strong>Default!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="primary" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-check-square"></i></span>
+                            <span class="alert-inner--text"><strong>Primary!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="success" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-thumbs-up"></i></span>
+                            <span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-bell"></i></span>
+                            <span class="alert-inner--text"><strong>Info!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="warning" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-info"></i></span>
+                            <span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="danger" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="false">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-slash"></i></span>
+                            <span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class=" card-title mb-0">Alerts With Icons Dismissing</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="default" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-download"></i></span>
+                            <span class="alert-inner--text"><strong>Default!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="primary" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-check-square"></i></span>
+                            <span class="alert-inner--text"><strong>Primary!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="success" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-thumbs-up"></i></span>
+                            <span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="info" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-bell"></i></span>
+                            <span class="alert-inner--text"><strong>Info!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="warning" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-info"></i></span>
+                            <span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                        <ngb-alert type="danger" *ngIf="alertIconSuccess" (close)="alertIconSuccess = false"  [dismissible]="true">
+                            <span class="alert-inner--icon me-2"><i class="fe fe-slash"></i></span>
+                            <span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an icon too!</span>
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-5 CLOSED -->
+
+<!-- ROW-6 OPEN -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Alerts Popovers</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap">
+                    <div class="example">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-success btn-block" container="body" placement="bottom"
+                                popoverTitle="alert sucess"
+                                ngbPopover="Well done! You successfully read this important alert message..">
+                                Show success
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-info btn-block" container="body" placement="top"
+                                popoverTitle="alert info"
+                                ngbPopover="Heads up! This alert needs your attention, but it's not super important...">
+                                Show info
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-warning btn-block" container="body" placement="top"
+                                popoverTitle="alert warning" ngbPopover="Warning! Best check yo self, you're not looking too good..">
+                                Show warning
+                                </button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-danger btn-block" container="body" placement="bottom"
+                                popoverTitle="alert danger" ngbPopover="Oh snap! Change a few things up and try submitting again.">
+                                Show danger
+                            </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-secondary btn-block" data-container="body" placement="top"
+                                popoverTitle="alert secondary"
+                                ngbPopover="Error! Please Check u r emial id..">
+                                Show secondary
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 mt-2 mb-2">
+                                <button type="button" class="btn btn-primary btn-block" data-container="body" placement="top"
+                                popoverTitle="alert primary"
+                                ngbPopover="Cool! This alert will close in 3 seconds. The data-delay attribute is in milliseconds.">
+                                Show primary
+                                </button>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Alerts style</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-wrap mb-4">
+                    <div class="example">
+                        <ngb-alert type="success" *ngIf="alertStyleSuccess" (close)="alertStyleSuccess = false">
+                            <strong>Success Message</strong>
+                            <hr class="message-inner-separator">
+                            <p>You successfully read this important alert message.</p>
+                        </ngb-alert>
+                    </div>
+                </div>
+                <div class="text-wrap mb-4">
+                    <div class="example">
+                        <ngb-alert type="info" *ngIf="alertStyleInfo" (close)="alertStyleInfo = false">
+                            <strong>Info Message</strong>
+                            <hr class="message-inner-separator">
+                            <p>This alert needs your attention, but it's not super important.</p>
+                        </ngb-alert>
+                    </div>
+                </div>
+                <div class="text-wrap mb-4">
+                    <div class="example">
+                        <ngb-alert type="warning" *ngIf="alertStyleWarning" (close)="alertStyleWarning = false">
+                            <strong>Warning Message</strong>
+                            <hr class="message-inner-separator">
+                            <p>Best check yo self, you're not looking too good.</p>
+                        </ngb-alert>
+                    </div>
+                </div>
+                <div class="text-wrap">
+                    <div class="example">
+                        <ngb-alert type="danger" *ngIf="alertStyleDanger" (close)="alertStyleDanger = false">
+                            <strong>Danger Message</strong>
+                            <hr class="message-inner-separator">
+                            <p>Change a few things up and try submitting again.</p>
+                        </ngb-alert>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-6 CLOSED -->

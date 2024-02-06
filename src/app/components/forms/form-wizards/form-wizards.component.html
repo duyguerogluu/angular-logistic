@@ -1,0 +1,482 @@
+<app-header-breadcrumb [title]="'Form Wizards'" [items]="['Forms']" [active_item]="'Form Wizards'"></app-header-breadcrumb>
+<!-- Row -->
+<div class="row ">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">
+					Basic Content Wizard
+				</div>
+			</div>
+			<div class="card-body">
+				<div id="wizard1">
+					<aw-wizard #wizard>
+
+						<aw-wizard-step [stepTitle]="'Steptitle 1'">
+
+							<form #firstStep="ngForm" novalidate>
+								<h6><b> Personal Information </b></h6>
+								<div class="control-group form-group">
+									<label class="form-control-label" for="name">Name</label>
+									<input class="form-control" ngModel #name="ngModel" required id="name" name="name"
+										type="text" placeholder="Name">
+
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="email">Email</label>
+									<input class="form-control input-md" ngModel #email="ngModel" required email
+										id="email" name="email" type="email" placeholder="Email">
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="contact">Phone Number</label>
+									<input class="form-control" ngModel #contact="ngModel" required id="contact"
+										contact="contact" type="number" name="contact" placeholder="Phone Number">
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="address"> Address</label>
+									<input class="form-control" ngModel #address="ngModel" required id="address"
+										address="address" name="address" type="text" placeholder="Address">
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right me-2" awNextStep>
+										Next
+									</button>
+									<button type="button" class="btn btn-secondary" awPreviousStep disabled>
+										Previous</button>
+								</div>
+							</form>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 2'">
+							<h3>Billing Information</h3>
+							<div class="table-responsive mg-t-20">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>Cart Subtotal</td>
+											<td class="text-right">$792.00</td>
+										</tr>
+										<tr>
+											<td><span>Totals</span></td>
+											<td class="text-right text-muted"><span>$792.00</span></td>
+										</tr>
+										<tr>
+											<td><span>Order Total</span></td>
+											<td>
+												<h2 class="price text-right mb-0">$792.00</h2>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary float-right me-2" awNextStep>
+									Next
+								</button>
+								<button type="button" class="btn btn-secondary" awPreviousStep>
+									Previous</button>
+							</div>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 3'">
+							<h3>Payment Details</h3>
+							<form #thirdStep="ngForm" novalidate>
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardName">CardHolder Name</label>
+									<input class="form-control" ngModel #cardName="ngModel" required id="cardName"
+										name="cardName" type="text" placeholder="First Name">
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardNum"> Card number</label>
+									<div class="input-group">
+										<input type="number" class="form-control" ngModel #cardNum="ngModel" required
+											id="cardNum" name="cardNum" placeholder="Search for...">
+									</div>
+								</div>
+
+								<div class="control-group form-group d-lg-flex">
+									<div class="col-sm-8 ps-0">
+										<div class="form-group mb-sm-0">
+											<label class="form-label">Expiration</label>
+											<div class="input-group row">
+												<div class="col-6">
+													<input class="form-control" ngModel #cardMonth="ngModel" required
+														id="cardMonth" name="cardMonth" type="number" placeholder="MM">
+
+												</div>
+
+												<div class="col-6">
+													<input class="form-control" ngModel #cardYear="ngModel" required
+														id="cardYear" name="cardYear" type="number" placeholder="YY">
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 pe-0">
+										<div class="form-group mb-0">
+											<label class="form-label">CVV <i class="fa fa-question-circle"></i></label>
+											<input class="form-control" ngModel #cvvNum="ngModel" required id="cvvNum"
+												name="cvvNum" type="number" placeholder="CVV">
+										</div>
+									</div>
+
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right me-2" awNextStep
+										(click)="finish()"> Finish </button>
+									<button type="button" class="btn btn-secondary" awPreviousStep> Previous</button>
+								</div>
+							</form>
+
+						</aw-wizard-step>
+					</aw-wizard>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/Row -->
+
+<!--Row -->
+<div class="row ">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">
+					Basic Wizard With Validation
+				</div>
+			</div>
+			<div class="card-body">
+				<div id="wizard2">
+
+					<aw-wizard #wizard2 [navBarLayout]="'large-empty-symbols'">
+						<aw-wizard-step [stepTitle]="'Steptitle 1'" [navigationSymbol]="{ symbol: '1' }">
+							<form #firstStep1="ngForm" novalidate>
+								<h3>Personal Information</h3>
+								<div class="form-group">
+									<label class="form-control-label" for="firstname">First Name <span
+											class="tx-danger">*</span> </label>
+									<input class="form-control" ngModel #firstname="ngModel" required id="firstname"
+										name="firstname" type="text" placeholder="Johan">
+									<small class="form-text text-danger"
+										*ngIf="!firstname.valid && (firstname.dirty || firstname.touched)">This field is
+										required!</small>
+								</div>
+								<div class="form-group">
+									<label class="form-control-label" for="lastname">Last Name <span
+											class="tx-danger">*</span> </label>
+									<input class="form-control input-md" ngModel #lastname="ngModel" required
+										id="lastname" name="lastname" type="text" placeholder="Deo">
+									<small class="form-text text-danger"
+										*ngIf="!lastname.valid && (lastname.dirty || lastname.touched)">This field is
+										required!</small>
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right "
+										[disabled]="!firstStep1.valid" awNextStep>
+										Next
+									</button>
+								</div>
+
+							</form>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 2'" [navigationSymbol]="{ symbol: '2' }">
+							<form #secondStep2="ngForm" novalidate>
+
+								<div class="form-group m-t-15">
+									<label class="form-control-label" for="email">Email <span class="tx-danger">*</span>
+									</label>
+									<input class="form-control input-md" ngModel #email="ngModel" required email
+										id="email" name="email" type="email">
+									<small class="form-text text-danger"
+										*ngIf="!email.valid && (email.dirty || email.touched)">Please enter a valid
+										email!</small>
+								</div>
+
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right"
+										[disabled]="!secondStep2.valid" awNextStep>
+										Next
+									</button>
+									<button type="button" class="btn btn-secondary mr-1 pull-right" awPreviousStep>
+										Previous
+									</button>
+								</div>
+							</form>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 3'" [navigationSymbol]="{ symbol: '3' }">
+							<h3>Payment Details</h3>
+							<form #thirdStep2="ngForm" novalidate>
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardName">CardHolder Name <span
+											class="tx-danger">*</span></label>
+									<input class="form-control" ngModel #cardName="ngModel" required id="cardName"
+										name="cardName" type="text" placeholder="First Name">
+									<small class="form-text text-danger"
+										*ngIf="!cardName.valid && (cardName.dirty || cardName.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardNum"> Card number <span
+											class="tx-danger">*</span></label>
+									<div class="input-group">
+										<input type="number" class="form-control" ngModel #cardNum="ngModel" required
+											id="cardNum" name="cardNum" placeholder="Search for...">
+										<span class="input-group-append">
+											<button class="btn btn-info" type="button"><i class="fa fa-cc-visa"></i>
+												&nbsp; <i class="fa fa-cc-amex"></i> &nbsp;
+												<i class="fa fa-cc-mastercard"></i></button>
+										</span>
+									</div>
+									<small class="form-text text-danger"
+										*ngIf="!cardNum.valid && (cardNum.dirty || cardNum.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group d-lg-flex">
+									<div class="col-sm-8 ps-0">
+										<div class="form-group mb-sm-0">
+											<label class="form-label">Expiration <span
+													class="tx-danger">*</span></label>
+											<div class="input-group row">
+												<div class="col-6">
+													<input class="form-control" ngModel #cardMonth="ngModel" required
+														id="cardMonth" name="cardMonth" type="number" placeholder="MM">
+													<small class="form-text text-danger"
+														*ngIf="!cardMonth.valid && (cardMonth.dirty || cardMonth.touched)">This
+														field is
+														required!
+													</small>
+
+												</div>
+
+												<div class="col-6">
+													<input class="form-control" ngModel #cardYear="ngModel" required
+														id="cardYear" name="cardYear" type="number" placeholder="YY">
+													<small class="form-text text-danger"
+														*ngIf="!cardYear.valid && (cardYear.dirty || cardYear.touched)">This
+														field is
+														required!
+													</small>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 pe-0">
+										<div class="form-group mb-0">
+											<label class="form-label">CVV <i class="fa fa-question-circle"></i></label>
+											<input class="form-control" ngModel #cvvNum="ngModel" required id="cvvNum"
+												name="cvvNum" type="number" placeholder="CVV">
+											<small class="form-text text-danger"
+												*ngIf="!cvvNum.valid && (cvvNum.dirty || cvvNum.touched)">This field is
+												required!
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right me-2" awNextStep
+										(click)="finish()" [disabled]="!thirdStep2.valid">
+										Finish
+									</button>
+									<button type="button" class="btn btn-secondary" awPreviousStep>
+										Previous</button>
+								</div>
+							</form>
+
+						</aw-wizard-step>
+					</aw-wizard>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/Row-->
+
+<!--Row-->
+<div class="row ">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">
+					Vertical Orientation Wizard
+				</div>
+			</div>
+			<div class="card-body">
+				<div id="wizard3">
+					<aw-wizard #wizard3 navBarLocation="left" [navBarLayout]="'large-filled-symbols'">
+
+						<aw-wizard-step [stepTitle]="'Steptitle 1'" [navigationSymbol]="{ symbol: '1' }">
+
+							<form #firstStep3="ngForm" novalidate>
+								<h6><b> Personal Information </b></h6>
+								<div class="control-group form-group">
+									<label class="form-control-label" for="name">Name</label>
+									<input class="form-control" ngModel #name="ngModel" required id="name" name="name"
+										type="text" placeholder="Name">
+									<small class="form-text text-danger"
+										*ngIf="!name.valid && (name.dirty || name.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="email">Email</label>
+									<input class="form-control input-md" ngModel #email="ngModel" required email
+										id="email" name="email" type="email" placeholder="Email">
+									<small class="form-text text-danger"
+										*ngIf="!email.valid && (email.dirty || email.touched)">Please enter a valid
+										email!</small>
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="contact">Phone Number</label>
+									<input class="form-control" ngModel #contact="ngModel" required id="contact"
+										contact="contact" type="number" name="contact" placeholder="Phone Number">
+									<small class="form-text text-danger"
+										*ngIf="!contact.valid && (contact.dirty || contact.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="address"> Address</label>
+									<input class="form-control" ngModel #address="ngModel" required id="address"
+										address="address" name="address" type="text" placeholder="Address">
+									<small class="form-text text-danger"
+										*ngIf="!address.valid && (address.dirty || address.touched)">This field is
+										required!</small>
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right me-2"
+										[disabled]="!firstStep3.valid" awNextStep>
+										Next
+									</button>
+									<button type="button" class="btn btn-secondary" awPreviousStep disabled>
+										Previous</button>
+								</div>
+							</form>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 2'" [navigationSymbol]="{ symbol: '2' }">
+							<h3>Billing Information</h3>
+							<div class="table-responsive mg-t-20">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>Cart Subtotal</td>
+											<td class="text-right">$792.00</td>
+										</tr>
+										<tr>
+											<td><span>Totals</span></td>
+											<td class="text-right text-muted"><span>$792.00</span></td>
+										</tr>
+										<tr>
+											<td><span>Order Total</span></td>
+											<td>
+												<h2 class="price text-right mb-0">$792.00</h2>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary float-right me-2" awNextStep>
+									Next
+								</button>
+								<button type="button" class="btn btn-secondary" awPreviousStep>
+									Previous</button>
+							</div>
+						</aw-wizard-step>
+						<aw-wizard-step [stepTitle]="'Steptitle 3'" [navigationSymbol]="{ symbol: '3' }">
+							<h3>Payment Details</h3>
+							<form #thirdStep3="ngForm" novalidate>
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardName">CardHolder Name</label>
+									<input class="form-control" ngModel #cardName="ngModel" required id="cardName"
+										name="cardName" type="text" placeholder="First Name">
+									<small class="form-text text-danger"
+										*ngIf="!cardName.valid && (cardName.dirty || cardName.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group">
+									<label class="form-control-label" for="cardNum"> Card number</label>
+									<div class="input-group">
+										<input type="number" class="form-control" ngModel #cardNum="ngModel" required
+											id="cardNum" name="cardNum" placeholder="Search for...">
+										<span class="input-group-append">
+											<button class="btn btn-info" type="button"><i class="fa fa-cc-visa"></i>
+												&nbsp; <i class="fa fa-cc-amex"></i> &nbsp;
+												<i class="fa fa-cc-mastercard"></i></button>
+										</span>
+									</div>
+									<small class="form-text text-danger"
+										*ngIf="!cardNum.valid && (cardNum.dirty || cardNum.touched)">This field is
+										required!</small>
+								</div>
+
+								<div class="control-group form-group d-lg-flex">
+									<div class="col-sm-8 ps-0">
+										<div class="form-group mb-sm-0">
+											<label class="form-label">Expiration</label>
+											<div class="input-group row">
+												<div class="col-6">
+													<input class="form-control" ngModel #cardMonth="ngModel" required
+														id="cardMonth" name="cardMonth" type="number" placeholder="MM">
+													<small class="form-text text-danger"
+														*ngIf="!cardMonth.valid && (cardMonth.dirty || cardMonth.touched)">This
+														field is
+														required!
+													</small>
+
+												</div>
+
+												<div class="col-6">
+													<input class="form-control" ngModel #cardYear="ngModel" required
+														id="cardYear" name="cardYear" type="number" placeholder="YY">
+													<small class="form-text text-danger"
+														*ngIf="!cardYear.valid && (cardYear.dirty || cardYear.touched)">This
+														field is
+														required!
+													</small>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 pe-0">
+										<div class="form-group mb-0">
+											<label class="form-label">CVV <i class="fa fa-question-circle"></i></label>
+											<input class="form-control" ngModel #cvvNum="ngModel" required id="cvvNum"
+												name="cvvNum" type="number" placeholder="CVV">
+											<small class="form-text text-danger"
+												*ngIf="!cvvNum.valid && (cvvNum.dirty || cvvNum.touched)">This field is
+												required!
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary float-right me-2" awNextStep
+										(click)="finish()" [disabled]="!thirdStep3.valid">
+										Finish
+									</button>
+									<button type="button" class="btn btn-secondary" awPreviousStep>
+										Previous</button>
+								</div>
+							</form>
+
+						</aw-wizard-step>
+					</aw-wizard>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Row -->
+<app-material-stepper></app-material-stepper>

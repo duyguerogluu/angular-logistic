@@ -1,0 +1,25 @@
+.custom-card{
+    height: calc(100vh - 250px);
+}
+.main-chat-header .nav-link+.nav-link {
+    margin-left: 0 !important;
+}
+.dropdown-toggle:after{
+    display: none;
+}
+
+::ng-deep{
+    .dark-mode .main-chat-list .media:focus{
+        background-color: #2e2e4a;
+    }
+}
+.main-nav-line-chat .nav-link:hover, .main-nav-line-chat .nav-link:focus, .main-nav-line-chat .nav-link:active{
+    color: #fff !important;
+}
+.main-content-left-chat .nav-tabs .nav-link {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 6px;
+}

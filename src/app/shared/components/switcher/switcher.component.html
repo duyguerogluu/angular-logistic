@@ -1,0 +1,281 @@
+<!-- Switcher -->
+<div class="switcher-wrapper">
+    <div #switcher class="demo_changer">
+        <div class="form_holder sidebar-right1">
+            <div class="row">
+                <div class="predefined_styles">
+                    <!--  <div class="swichermainleft text-center">
+                     <div class="p-3 d-grid gap-2">
+                            <a href="https://angular.spruko.com/zanex/" class="btn ripple btn-primary mt-0">View Demo</a>
+                            <a href="https://themeforest.net/item/zanex-bootstrap-5-admin-dashboard-template/32984858" class="btn ripple btn-secondary">Buy Now</a>
+                            <a href="https://themeforest.net/user/spruko/portfolio" class="btn ripple btn-red">Our Portfolio</a>
+                        </div>  
+                    </div>-->
+                    <div class="swichermainleft">
+                        <h4>Açık Renk Tema Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">Açık Renk Tema</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch7"
+                                            id="myonoffswitch6" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch6" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto mt-1">Temanın Ana Rengi</span>
+                                    <div class="">
+                                            <input class="wd-30 ht-30 input-color-picker color-primary-light"
+                                        value="#6c5ffc" id="colorID"
+                                        data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" [style.background]="color1"
+                                        [cpAlphaChannel]="'disabled'" [cpOutputFormat]="'hex'" [(colorPicker)]="color1"
+                                        (cpSliderDragEnd)="dynamicLightPrimary($event)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>Koyu Renk Tema Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Koyu Renk Tema</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch7"
+                                            id="myonoffswitch7" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch7" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto mt-1">Temanın Ana Rengi</span>
+                                    <div class="">
+                                        <input class="wd-30 ht-30 input-dark-color-picker color-primary-dark" 
+                                        value="#6259ca" id="darkPrimaryColorID"
+                                            data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary"
+                                            data-id8="transparentcolor" [style.background]="color2" [cpAlphaChannel]="'disabled'"
+                                            [cpOutputFormat]="'hex'" [(colorPicker)]="color2"
+                                            (cpSliderDragEnd)="dynamicDarkPrimary($event)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>Şeffaf Tema Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Şeffaf Tema</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch7"
+                                            id="myonoffswitchTransparent" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitchTransparent" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto mt-1">Temanın Ana Rengi</span>
+                                    <div class="">
+                                        <input class="color-primary-transparent" id="transparentPrimaryColorID" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary" data-id4="primary"  data-id9="transparentcolor" [style.background]="color3" [cpAlphaChannel]="'disabled'" [cpOutputFormat]="'hex'"  [(colorPicker)]="color3" (cpSliderDragEnd)="dynamicTranparentPrimary($event)" />
+                                    </div>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto mt-1">Temanın Arka Plan Rengi</span>
+                                    <div class="">
+                                        <input class="color-bg-transparent" id="transparentBgColorID" data-id5="body" data-id6="theme"  data-id9="transparentcolor" [style.background]="color4" [cpAlphaChannel]="'disabled'" [cpOutputFormat]="'hex'"  [(colorPicker)]="color4" (cpSliderDragEnd)="dynamicTranparentBgPrimary($event)" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>Şeffaf Stil Arka Plan Fotoğrafı</h4>
+                        <div class="skin-body switch_section">
+                            <div class="switch-toggle d-flex">
+                                <span class="me-auto mt-1">Arka Plan Fotoğrafı Rengi</span>
+                                <div class="">
+                                    <input class="color-primary-transparent-img" id="transparentBgImgPrimaryColorID" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border" data-id3="primary" data-id4="primary"  data-id9="transparentcolor" [style.background]="color5" [cpAlphaChannel]="'disabled'" [cpOutputFormat]="'hex'"  [(colorPicker)]="color5" (cpSliderDragEnd)="dynamicTranparentImgPrimary($event)" />
+                                </div>
+                            </div>
+                            <div class="switch-toggle d-flex mt-2">
+                                <a class="bg-img1 bg-img" (click)="bgImage($event.target)" href="javascript:void(0);"><img src="./assets/images/media/bg-img1.jpg" id="bgimage1" alt="switch-img"></a>
+                                        <a class="bg-img2 bg-img" (click)="bgImage($event.target)" href="javascript:void(0);"><img src="./assets/images/media/bg-img2.jpg"  id="bgimage2" alt="switch-img"></a>
+                                        <a class="bg-img3 bg-img" (click)="bgImage($event.target)" href="javascript:void(0);"><img src="./assets/images/media/bg-img3.jpg"  id="bgimage3" alt="switch-img"></a>
+                                        <a class="bg-img4 bg-img" (click)="bgImage($event.target)" href="javascript:void(0);"><img src="./assets/images/media/bg-img4.jpg"  id="bgimage4" alt="switch-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>Menü Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">Dikey Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch15"
+                                            id="myonoffswitch1" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch1" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Tıklayınca Açılan Yatay Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch15"
+                                            id="myonoffswitch2" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch2" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Otomatik Açılan Yatay Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch15"
+                                            id="myonoffswitch111" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch111" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft">
+                        <h4>LTR and RTL Versiyonları</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">LTR Versiyon</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch8"
+                                            id="myonoffswitch4" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch4" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">RTL Versiyon</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch8"
+                                            id="myonoffswitch5" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch5" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft menu-style">
+                        <h4>Başlık Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle lightHeader d-flex">
+                                    <span class="me-auto">Açık Renk Başlık</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch3"
+                                            id="myonoffswitch8" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch8" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle  colorHeader d-flex mt-2">
+                                    <span class="me-auto">Renkli Başlık</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch3"
+                                            id="myonoffswitch9" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch9" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle darkHeader d-flex mt-2">
+                                    <span class="me-auto">Kotu Renk Başlık</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch3"
+                                            id="myonoffswitch10" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch10" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+
+                                <div class="switch-toggle darkHeader d-flex mt-2">
+                                    <span class="me-auto">Geçişli Renk Başlık</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch3"
+                                            id="myonoffswitch11" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch11" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft menu-style">
+                        <h4>Menü Stili</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle lightMenu d-flex">
+                                    <span class="me-auto">Açık Renk Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                            id="myonoffswitch12" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch12" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle colorMenu d-flex mt-2">
+                                    <span class="me-auto">Renkli Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                            id="myonoffswitch13" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch13" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle darkMenu d-flex mt-2">
+                                    <span class="me-auto">Koyu Renkli Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                            id="myonoffswitch14" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch14" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle gradientMenu d-flex mt-2">
+                                    <span class="me-auto">Geçişli Menü</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                            id="myonoffswitch15" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch15" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <!-- <div class="swichermainleft">
+                        <h4>Layout Width Styles</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">Full Width</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch4"
+                                            id="myonoffswitch16" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch16" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Boxed</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch4"
+                                            id="myonoffswitch17" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch17" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- <div class="swichermainleft">
+                        <h4>Layout Positions</h4>
+                        <div class="skin-body">
+                            <div class="switch_section">
+                                <div class="switch-toggle d-flex">
+                                    <span class="me-auto">Fixed</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch5"
+                                            id="myonoffswitch18" class="onoffswitch2-checkbox" checked>
+                                        <label for="myonoffswitch18" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                                <div class="switch-toggle d-flex mt-2">
+                                    <span class="me-auto">Scrollable</span>
+                                    <p class="onoffswitch2"><input type="radio" name="onoffswitch5"
+                                            id="myonoffswitch19" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch19" class="onoffswitch2-label"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="swichermainleft">
+                        <h4>Stil Ayarlarını Sıfırla</h4>
+                        <div class="skin-body">
+                            <div class="switch_section my-4">
+                                <button class="btn btn-danger btn-block" (click)="reset()" type="button">Hepsini Sıfırla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Switcher -->

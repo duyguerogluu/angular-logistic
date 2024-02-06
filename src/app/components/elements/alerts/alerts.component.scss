@@ -1,0 +1,8 @@
+::ng-deep{
+    .dark-mode{
+        .arrow::after {
+            border-bottom-color: #22223d !important;
+            border-top-color: #22223d !important;
+        }        
+    }
+}

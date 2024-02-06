@@ -1,0 +1,29 @@
+.dropdown-toggle::after{
+    display: none;
+}
+::ng-deep{
+    .dark-mode{
+        .app-header .header-right-icons .nav-link.icon:hover{
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+        .sidebar-mini .app-header .light-logo1 {
+            display: none !important;
+        }
+        .app-header.header .header-brand-img.desktop-logo {
+            display: block !important;
+        }
+        .navresponsive-toggler span{
+            background: #30304d;
+            box-shadow: 0px 2px 3px #1a1a2f;
+        }
+    }
+    .color-header .app-sidebar__toggle,
+    .dark-header .app-sidebar__toggle,
+    .gradient-header .app-sidebar__toggle
+     {
+        color: #fff !important;
+    }
+}
+.icon i {
+    vertical-align: -3px !important;
+}

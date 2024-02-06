@@ -1,0 +1,154 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Tab group with aligned labels</h3>
+      </div>
+      <div class="card-body">
+        <mat-tab-group mat-align-tabs="start">
+          <mat-tab label="Tab1">Tab1 Content</mat-tab>
+          <mat-tab label="Tab2">Tab2 Content</mat-tab>
+          <mat-tab label="Tab3">Tab3 Content</mat-tab>
+        </mat-tab-group>
+
+        <mat-tab-group mat-align-tabs="center">
+          <mat-tab label="Tab1">Tab1 Content</mat-tab>
+          <mat-tab label="Tab2">Tab2 Content</mat-tab>
+          <mat-tab label="Tab3">Tab3 Content</mat-tab>
+        </mat-tab-group>
+
+        <mat-tab-group mat-align-tabs="end">
+          <mat-tab label="Tab1">Tab1 Content</mat-tab>
+          <mat-tab label="Tab2">Tab2 Content</mat-tab>
+          <mat-tab label="Tab3">Tab3 Content</mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Tab group with asynchronously loading tab contents</h3>
+      </div>
+      <div class="card-body">
+        <ng-container *ngIf="(asyncTabs | async) === null">
+          Loading tabs...
+        </ng-container>
+
+        <mat-tab-group>
+          <mat-tab *ngFor="let tab of asyncTabs | async">
+            <ng-template mat-tab-label>{{tab.label}}</ng-template>
+            {{tab.content}}
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">tabs with a custom label template</h3>
+      </div>
+      <div class="card-body">
+        <mat-tab-group>
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="material-icon">thumb_up</mat-icon>
+              Tab1
+            </ng-template>
+            Tab1 content
+          </mat-tab>
+
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="material-icon">thumb_up</mat-icon>
+              Tab2
+            </ng-template>
+            Tab2 Content
+          </mat-tab>
+
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="material-icon">thumb_up</mat-icon>
+              Tab3
+            </ng-template>
+
+            Tab3 Content
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Tab group with the headers on the bottom</h3>
+      </div>
+      <div class="card-body">
+
+        <mat-tab-group headerPosition="below">
+          <mat-tab label="Tab1"> Tab1 Content </mat-tab>
+          <mat-tab label="Tab2"> Tab2 Content </mat-tab>
+          <mat-tab label="Tab3"> Tab3 Content </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Tab group where the tab content is loaded lazily (when activated)</h3>
+      </div>
+      <div class="card-body">
+        <mat-tab-group>
+          <mat-tab label="Tab1">
+            <ng-template matTabContent>
+              Tab1 Content - Loaded: {{getTimeLoaded(1) | date:'medium'}}
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Tab2">
+            <ng-template matTabContent>
+              Tab2 Content - Loaded: {{getTimeLoaded(2) | date:'medium'}}
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Tab3">
+            <ng-template matTabContent>
+              Tab3 Content - Loaded: {{getTimeLoaded(3) | date:'medium'}}
+            </ng-template>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Customizing the theme options on the tab group</h3>
+      </div>
+      <div class="card-body">
+        <div>
+          <mat-button-toggle-group #colorToggle="matButtonToggleGroup" value="primary" aria-label="Change color">
+            <mat-button-toggle value="primary"> Primary </mat-button-toggle>
+            <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+          </mat-button-toggle-group>
+          <span class="example-button-toggle-label"> Color </span>
+        </div>
+
+        <div class="mb-2">
+          <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup" value="primary"
+            aria-label="Change color">
+            <mat-button-toggle value="primary"> Primary </mat-button-toggle>
+            <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+          </mat-button-toggle-group>
+          <span class="example-button-toggle-label"> Background Color </span>
+        </div>
+
+        <mat-tab-group [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value">
+          <mat-tab label="Tab1"> Tab1 Content </mat-tab>
+          <mat-tab label="Tab2"> Tab2 Content </mat-tab>
+          <mat-tab label="Tab3"> Tab3 Content </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>

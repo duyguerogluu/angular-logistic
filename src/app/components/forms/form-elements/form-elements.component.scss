@@ -1,0 +1,22 @@
+.custom-select{
+    padding: 0 ;
+}
+::ng-deep {
+    .input-icon-addon {
+        color: #0d0c22;
+    }
+    
+    .form-control {
+        &::-webkit-file-upload-button {
+            color: #fff;
+            background-color: #6259ca;
+            transition: none;
+            padding: 0.65rem 0.75rem;
+            margin: -0.575rem -0.75rem;
+            margin-inline-end: 0.75rem;
+        }
+        &:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+            background-color: #6259ca;
+        }
+    }
+} 

@@ -1,0 +1,181 @@
+<app-header-breadcrumb [title]="'Accordion'" [items]="['Advanced Elements']" [active_item]="'Accordion'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row ">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Default Accordion</h3>
+            </div>
+            <div class="card-body">
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                    <ngb-panel title="Collapsible Group Item #1">
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel title="Collapsible Group Item #2" >
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel title="Collapsible Group Item #3" >
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                            squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                            nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Bootstrap Accordion</h3>
+            </div>
+            <div class="card-body">
+                <ngb-accordion [closeOthers]="true">
+                    <ngb-panel id="static-1" title="Collapsible Group Item #1">
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable.
+                          </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-2" title="Collapsible Group Item #2"  >
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore.
+                          </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-3" title="Collapsible Group Item #3" >
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squidsingle-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore.
+                          </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Closed Accordion</h3>
+            </div>
+            <div class="card-body">
+                <!-- ACCORDION BEGIN -->
+                <ngb-accordion [closeOthers]="true">
+                    <ngb-panel>
+                        <ng-template ngbPanelTitle >
+                            <i class="mx-2 fa fa-minus-circle"></i> 
+                            Select 1
+                          </ng-template>
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable.
+                          </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-2" >
+                        <ng-template ngbPanelTitle >
+                            <i class="mx-2 fa fa-minus-circle"></i> 
+                            Select 2
+                          </ng-template>
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore.
+                          </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-3" >
+                        <ng-template ngbPanelTitle >
+                            <i class="mx-2 fa fa-minus-circle"></i> 
+                            Select 3
+                          </ng-template>
+                          <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squidsingle-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore.
+                          </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+</div>
+<!-- ROW-1 CLOSED -->
+
+<!-- ROW-2 OPEN -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Accordion style</h3>
+            </div>
+            <div class="card-body">
+                <div class="panel-group1" id="accordion1">
+                    <div class="panel panel-default mb-4 overflow-hidden">
+                        <div class="panel-heading1">
+                            <h4 class="panel-title1">
+                                <a class="accordion-toggle firstgradient bg-gradient-primary collapsed "
+                                    (click)="FirstGradient()">Section 1</a>
+                            </h4>
+                        </div>
+                        <div *ngIf="isFirstGradient">
+                            <div class="panel-collapse">
+                                <div class="panel-body">
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a
+                                        dictionary of over 200 Latin words </p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled.Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+                                        because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                                        physical exercise</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default overflow-hidden">
+                      <div class="panel-heading1">
+                        <h4 class="panel-title1">
+                          <a class="accordion-toggle secondgradient bg-gradient-primary collapsed" (click)="SecondGradient()">Section 2</a>
+                          </h4>
+                      </div>
+                      <div class="panel-collapse" *ngIf="isSecondGradient">
+                        <div class="panel-body">
+                          <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words </p>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                          unknown printer took a galley of type and scrambled.Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+                          because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                          physical exercise</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div><!-- COL-END -->
+</div>
+<!-- ROW-2 CLOSED OPEN -->

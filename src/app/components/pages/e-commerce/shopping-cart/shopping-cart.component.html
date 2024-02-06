@@ -1,0 +1,110 @@
+<app-header-breadcrumb [title]="'Shopping Cart'" [items]="['ECommerce']" [active_item]="'Shopping Cart'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-xl-8 col-md-12">
+        <div class="card cart">
+            <div class="card-header">
+                <h3 class="card-title">Shopping Cart</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-vcenter text-nowrap mb-0">
+                        <thead>
+                            <tr class="border-top">
+                                <th class="w-5">Product</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th class="w-25">Quantity</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let obj of objectArray">
+                                <td>
+                                    <img src="{{obj.image}}" alt="" class="cart-img">
+                                </td>
+                                <td>{{obj.title}}</td>
+                                <td class="fw-bold">{{obj.price}}</td>
+                                <td>
+                                    <div class="input-group input-indec">
+                                        <span class="input-group-btn">
+                                            <button id="minus" type="button"
+                                                class="minus btn btn-light btn-number br-tl-4 br-tr-0 br-bl-4 br-br-0 ">
+                                                <i class="fa fa-minus fs-10"></i>
+                                            </button>
+                                        </span>
+                                        <input type="text" name="quantity" class="form-control text-center qty"
+                                            value="{{obj.quantity}}">
+                                        <span class="input-group-btn">
+                                            <button id="plus" type="button"
+                                                class="quantity-right-plus btn btn-light btn-number br-tr-4 br-tl-0 br-br-4 br-bl-0  add">
+                                                <i class="fa fa-plus fs-10"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)" class="btn btn-square btn-danger-light me-1"
+                                        placement="top" ngbTooltip="Save for Wishlist" routerLink="/pages/ecommerce/wishlist" ><i
+                                            class="icon icon-heart  fs-13"></i></a>
+                                    <a href="javascript:void(0)" class="btn btn-square btn-info-light me-1" (click)="RemoveElementFromObjectArray(obj.id)" 
+                                        placement="top" ngbTooltip="Remove"><i
+                                            class="icon icon-trash  fs-13"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Have coupon?</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group"> <input type="text" class="form-control coupon"
+                                placeholder="Coupon code"> <span class="input-group-btn"> <button
+                                    class="btn btn-primary btn-apply coupon">Apply</button> </span> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Price Details</h3>
+            </div>
+            <div class="card-body">
+                <table class="table border-top-0">
+                    <tr>
+                        <td class="border-top-0">Sub Total</td>
+                        <td class="text-end fw-bold border-top-0">$4,360</td>
+                    </tr>
+                    <tr>
+                        <td class="border-top-0">Discount</td>
+                        <td class="text-end fw-bold border-top-0">5%</td>
+                    </tr>
+                    <tr>
+                        <td class="border-top-0">Shipping</td>
+                        <td class="text-end fw-bold border-top-0">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-20 fw-bold border-top-0">Total</td>
+                        <td class="text-end fs-20 fw-bold border-top-0">$3,976</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer">
+                <div class="step-footer text-end">
+                    <a routerLink="/pages/ecommerce/products" class="btn btn-primary me-2"><i class="fa fa-arrow-left me-1"></i>Continue
+                        Shopping</a>
+                    <a routerLink="/pages/ecommerce/checkout" class="btn btn-success">Check out<i class="fa fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- COL-END -->
+<!-- ROW-1 CLOSED -->

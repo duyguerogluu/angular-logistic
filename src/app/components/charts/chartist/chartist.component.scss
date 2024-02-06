@@ -1,0 +1,11 @@
+::ng-deep{
+    .dark-mode,
+    .transparent-mode{
+        .ct-label {
+            color: rgb(239 239 239 / 50%);
+        }
+        .ct-grid {
+            stroke: #fffcfc33 !important;
+        }
+    }
+}

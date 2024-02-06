@@ -1,0 +1,20 @@
+.mat-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.mat-margin {
+    margin: 0 10px;
+}
+::ng-deep {
+    .dark-mode {
+        .mat-progress-bar-buffer {
+            background-color: #22223d;
+        }
+        .mat-progress-bar-background {
+            fill: #22223d;
+        }
+    }
+}

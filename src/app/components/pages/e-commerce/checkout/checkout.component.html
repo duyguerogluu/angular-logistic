@@ -1,0 +1,237 @@
+<app-header-breadcrumb [title]="'Checkout'" [items]="['ECommerce']" [active_item]="'Checkout'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-xl-8 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Billing Information</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">First Name <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Last Name <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Company Name <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Company name">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Email address <span class="text-red">*</span></label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Country <span class="text-red">*</span></label>
+                            <ng-select class="form-control form-select custom-select">
+                                <!-- <ng-option label="Select"></ng-option> -->
+                                <ng-option value="1">Germany</ng-option>
+                                <ng-option value="2">Canada</ng-option>
+                                <ng-option value="3">Usa</ng-option>
+                                <ng-option value="4">Aus</ng-option>
+                            </ng-select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Address <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="Home Address">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">City <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" placeholder="City">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Postal Code <span class="text-red">*</span></label>
+                            <input type="number" class="form-control" placeholder="ZIP Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Payment Information</h3>
+            </div>
+            <div class="card-body">
+                <div class="card-pay">
+                    <ul ngbNav #nav1="ngbNav" [(activeId)]="TabStyle1" class="tabs-menu">
+                        <li [ngbNavItem]="1"><a ngbNavLink ><i
+                            class="fa fa-credit-card"></i> Credit Card</a>
+                            <ng-template ngbNavContent>
+                                <div class="bg-danger-transparent-2 text-danger br-3 mb-4" role="alert">Please Enter Valid
+                                    Details</div>
+                                <div class="form-group">
+                                    <label class="form-label">Card Holder Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Card number</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for...">
+                                        <span class="input-group-text btn btn-success shadow-none">
+                                            <i class="fa fa-cc-visa"></i> &nbsp; <i class="fa fa-cc-amex"></i> &nbsp;
+                                            <i class="fa fa-cc-mastercard"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label class="form-label">Expiration</label>
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" placeholder="MM" name="Month">
+                                                <input type="number" class="form-control" placeholder="YY" name="Year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="form-label">CVV <i class="fa fa-question-circle"></i></label>
+                                            <input type="number" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="btn  btn-lg btn-primary">Confirm</a>
+                            </ng-template>
+                        </li>
+                        <li [ngbNavItem]="2"><a ngbNavLink ><i class="fa fa-paypal"></i> Paypal</a>
+                            <ng-template ngbNavContent>
+                                <p>Paypal is easiest way to pay online</p>
+                                <p><a href="javascript:;" class="btn btn-primary"><i class="fa fa-paypal"></i> Log in my Paypal</a></p>
+                                <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                    voluptatem sequi nesciunt.
+                                </p>
+                            </ng-template>
+                        </li>
+                        <li [ngbNavItem]="3"><a ngbNavLink ><i class="fa fa-university"></i> Bank Transfer</a>
+                            <ng-template ngbNavContent>
+                                <p>Bank account details</p>
+                                <dl class="card-text">
+                                    <dt>BANK: </dt>
+                                    <dd> THE UNION BANK 0456</dd>
+                                </dl>
+                                <dl class="card-text">
+                                    <dt>Account Number: </dt>
+                                    <dd> 67542897653214</dd>
+                                </dl>
+                                <dl class="card-text">
+                                    <dt>IBAN: </dt>
+                                    <dd>543218769</dd>
+                                </dl>
+                                <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                    voluptatem sequi nesciunt.
+                                </p>
+                            </ng-template>
+                        </li>
+                    </ul>
+                    <div  [ngbNavOutlet]="nav1" class="tab-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-md-12">
+        <div class="card cart">
+            <div class="card-header">
+                <h3 class="card-title">Your Order</h3>
+            </div>
+            <div class="card-body">
+                <div class="d-md-flex">
+                    <div class="d-flex">
+                        <img class="img-fluid avatar-lg border p-0 br-7" src="./assets/images/pngs/9.png" alt="img">
+                        <div class="ms-3 mt-2">
+                            <h4 class="mb-1 fw-semibold fs-14"><a href="javascript:;">bracelets</a></h4>
+                            <div class="mb-2 text-warning fs-14">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <span class="me-4 my-auto fs-16 fw-semibold">$438</span>
+                    </div>
+                </div>
+                <div class="d-md-flex mt-5">
+                    <div class="d-flex">
+                        <img class="img-fluid avatar-lg border p-0 br-7" src="./assets/images/pngs/1.png" alt="img">
+                        <div class="ms-3 mt-2">
+                            <h4 class="mb-1 fw-semibold fs-14"><a href="javascript:;">Cup</a></h4>
+                            <div class="mb-2 text-warning fs-14">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <span class="me-4 my-auto fs-16 fw-semibold">$765</span>
+                    </div>
+                </div>
+                <div class="d-md-flex mt-5">
+                    <div class="d-flex">
+                        <img class="img-fluid avatar-lg border p-0 br-7" src="./assets/images/pngs/6.png" alt="img">
+                        <div class="ms-3 mt-2">
+                            <h4 class="mb-1 fw-semibold fs-14"><a href="javascript:;">Goggles</a></h4>
+                            <div class="mb-2 text-warning fs-14">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-auto my-auto">
+                        <span class="me-4 my-auto fs-16 fw-semibold">$543</span>
+                    </div>
+                </div>
+                <table class="table mt-5">
+                    <tr>
+                        <td class="border-top-0">Sub Total</td>
+                        <td class="text-end fw-bold border-top-0">$4,360</td>
+                    </tr>
+                    <tr>
+                        <td class="border-top-0">Discount</td>
+                        <td class="text-end fw-bold border-top-0">5%</td>
+                    </tr>
+                    <tr>
+                        <td class="border-top-0">Shipping</td>
+                        <td class="text-end fw-bold border-top-0">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-20 fw-bold border-top-0">Total</td>
+                        <td class="text-end fs-20 fw-bold border-top-0">$3,976</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer text-end">
+                <button type="button" class="btn ripple btn-primary" id='swal-basic' (click)="successAlert()">
+                    Proceed to pay
+                </button>
+            </div>
+        </div>
+    </div>
+</div><!-- COL-END -->

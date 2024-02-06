@@ -1,0 +1,270 @@
+<app-header-breadcrumb [title]="'Carousel'" [items]="['Advanced Elements']" [active_item]="'Carousel'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-md-12 col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Carousel</h3>
+            </div>
+            <div class="card-body h-100">
+                <ngb-carousel class="carousel1" [interval]="3000" [showNavigationArrows]="showNavigationArrows"
+                    [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/19.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/20.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/21.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/22.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/23.jpg">
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Carousel with indicators</h3>
+            </div>
+            <div class="card-body h-100">
+                <ngb-carousel [interval]="3000" [showNavigationArrows]="showNavigationArrows">
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/24.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/25.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/1.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/2.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/3.jpg">
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Carousel with controls</h3>
+            </div>
+            <div class="card-body h-100">
+                <ngb-carousel [interval]="3000" [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/4.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/5.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/6.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/7.jpg">
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/8.jpg">
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-4 col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Carousel with captions</h3>
+            </div>
+            <div class="card-body h-100">
+                <ngb-carousel [interval]="2000" [showNavigationArrows]="showNavigationArrows">
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/9.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>First Slide</h3>
+                            <p>Secure other greater pleasures</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/10.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second Slide</h5>
+                            <p>Secure other greater pleasures</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/11.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third Slide</h5>
+                            <p>Secure other greater pleasures</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/12.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Slide Four</h5>
+                            <p>Secure other greater pleasures</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/13.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fifth Slide</h5>
+                            <p>Secure other greater pleasures</p>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-xl-4 col-md-6">
+        <div class="card custom-card">
+            <div class="card-body h-100">
+                <div>
+                    <h6 class="main-content-label mb-1">Global configuration of carousels</h6>
+                    <p class="text-muted card-sub-title">Here’s a carousel with slides only.</p>
+                </div>
+                <ngb-carousel [interval]="5000" [wrap]="false" [keyboard]="false" [pauseOnHover]="false">
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/8.jpg">
+                        <div class="carousel-caption">
+                            <h5>5 seconds between slides...</h5>
+                            <p class="tx-14">This carousel uses customized default values.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/9.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse events...</h5>
+                            <p class="tx-14">This carousel doesn't pause or resume on mouse events</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/10.jpg">
+                        <div class="carousel-caption">
+                            <h5>No keyboard...</h5>
+                            <p class="tx-14">This carousel uses customized default values.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/11.jpg">
+                        <div class="carousel-caption">
+                            <h5>And no wrap after last slide.</h5>
+                            <p class="tx-14">This carousel uses customized default values.</p>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-xl-4 col-md-6">
+        <div class="card custom-card">
+            <div class="card-body h-100">
+                <div>
+                    <h6 class="main-content-label mb-1">Navigation arrows and indicators</h6>
+                    <p class="text-muted card-sub-title">Add Navigation arrows and indicators to slides using buttons.
+                    </p>
+                </div>
+                <ngb-carousel [interval]="2000" [showNavigationArrows]="showArrow"
+                    [showNavigationIndicators]="showIndicator">
+                    <ng-template ngbSlide class="carousel-fade">
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/20.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse navigation</h5>
+                            <p class="tx-14">This carousel hides navigation arrows and indicators.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/1.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse navigation</h5>
+                            <p class="tx-14">This carousel hides navigation arrows and indicators.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/2.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse navigation</h5>
+                            <p class="tx-14">This carousel hides navigation arrows and indicators.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/3.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse navigation</h5>
+                            <p class="tx-14">This carousel hides navigation arrows and indicators.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <img alt="img" class="d-block w-100" src="./assets/images/media/4.jpg">
+                        <div class="carousel-caption">
+                            <h5>No mouse navigation</h5>
+                            <p class="tx-14">This carousel hides navigation arrows and indicators.</p>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+                <div class="btn-group mt-2 d-flex flex-wrap" role="group" aria-label="Carousel toggle controls">
+                    <button type="button" (click)="showArrows()" class="btn btn-outline-primary btn-md ">Toggle
+                        navigation arrows</button>
+                    <button type="button" (click)="showIndicators()" class="btn btn-outline-primary btn-md">Toggle
+                        navigation indicators</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-6 col-md-6">
+        <div class="card custom-card">
+            <div class="card-body h-100">
+                <div>
+                    <h6 class="main-content-label mb-1">Pause/cycle</h6>
+                    <p class="text-muted card-sub-title">The Pause/cycle Carousel controls</p>
+                </div>
+                <ngb-carousel #carousel [interval]="2000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                    (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let caroImg of carouselImages">
+                        <img alt="img" class="d-block w-100" src="{{caroImg.img}}">
+                        <div class="carousel-caption">
+                            <h5>Slide {{caroImg.slide}}</h5>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+                <div class="mt-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pauseOnHover" [(ngModel)]="pauseOnHover">
+                        <label class="form-check-label" for="pauseOnHover">Pause on hover</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pauseOnFocus" [(ngModel)]="pauseOnFocus">
+                        <label class="form-check-label" for="pauseOnFocus">Pause on focus</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="unpauseOnArrow"
+                            [(ngModel)]="unpauseOnArrow">
+                        <label class="form-check-label" for="unpauseOnArrow">Unpause when clicking on arrows</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pauseOnIndicator"
+                            [(ngModel)]="pauseOnIndicator">
+                        <label class="form-check-label" for="pauseOnIndicator">Pause when clicking on navigation
+                            indicator</label>
+                    </div>
+                    <button type="button" (click)="togglePaused()" class="btn btn-outline-primary btn-md">
+                        {{paused ? 'Cycle' : 'Pause' }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

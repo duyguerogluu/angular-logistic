@@ -1,0 +1,51 @@
+.custom-select{
+    padding: 0 !important;
+}
+::ng-deep {
+    .carousel.slide {
+      outline: 0;
+    }
+    .owl-theme .owl-nav [class*="owl-"] {
+      display: inline-table;
+    }
+    .owl-theme:before,
+    .owl-theme:after {
+      content: none;
+    }
+  
+    .owl-theme .owl-nav [class*="owl-"] {
+      color: #252542;
+      font-size: 14px;
+      margin: 5px;
+      padding: 8px 16px;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 1px solid  #d6d6d6;
+    }
+    
+  
+    // .horizontalmenu .owl-carousel.owl-drag .owl-item{
+    //   width: 253.75px !important;
+    // }
+  
+    .dark-mode{
+      .owl-theme .owl-nav [class*=owl-] {
+        color: #fff !important;
+        background: #30304d !important;
+        border: 1px solid #22223d !important;
+    }
+    }
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1000 ms;
+    animation-duration: 1000 ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+//   .btn-custom {
+//     background: #5e2dd8;
+// }
+  

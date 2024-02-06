@@ -1,0 +1,51 @@
+.custom-select{
+    padding: 0 !important;
+}
+
+ng-select.sm{
+    width: 50%;
+}
+
+
+
+::ng-deep {
+
+    .star {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        color: #f0f0f2;
+    }
+    .full {
+        color:#ff9b21;
+    }
+    .half {
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        color:#ff9b21;
+    }
+    @media (max-width:768px) {
+        .star{
+            font-size: 1.7rem;
+        }
+    }
+    .dark-mode {
+        .star {
+            color: #23233c;
+            &.filled {
+                color: #ff9b21;
+                &.bad {
+                    color: #f16d75;
+                }
+            }
+        }
+    }
+    .avatar-fit{
+        background-size: cover;
+    }
+}
+
+
+
+

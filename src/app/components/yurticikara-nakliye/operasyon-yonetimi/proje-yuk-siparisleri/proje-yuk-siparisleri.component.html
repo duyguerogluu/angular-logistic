@@ -1,0 +1,562 @@
+<div class="row butonlar-div mb-2" >
+  <div class="d-flex justify-content-between ">
+      <span class="m-2 color-mavi mt-3 ml-4 fs-12">Proje Yük Siparişleri</span>
+      <span >
+          <button type="button" class="btn btn-primary btn1 m-1">+</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Filitrele</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Temizle</button>
+          <button type="button" class="btn btn-primary btn1 m-1">Kapat</button>
+      </span>
+ </div>
+ </div>
+
+<div class="row mt-2">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Başlık Bilgileri</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+                <form class="form-horizontal">
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Referans No</label>
+                    <div class="col-md-9 inputShadow">
+                      <input
+                        type="number"
+                        class="form-control form-control1 inputShadow"
+                        value="" />
+                    </div>
+                  </div>
+                  <!--Referans No-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Müşteri</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Müşteri-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Sipariş Durumu</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Sipariş Durumu Combobox-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Sipariş Türü</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Sipariş Türü Combobox-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label"
+                      >Sipariş Son Durumu</label
+                    >
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Sipariş Son Durumu-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label" for="example-email"
+                      >Toplam Brüt Ağırlık</label
+                    >
+                    <div class="col-md-9">
+                      <input
+                        type="number"
+                        id="example-email"
+                        name="example-email"
+                        class="form-control form-control1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!--Toplam Brüt Ağırlık-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Toplam Desi</label>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Toplam Desi-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Toplam Hacim</label>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Toplam Hacim-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Toplam Koli Sayısı</label>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Toplam Koli Sayısı-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Toplam Adet</label>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Toplam Adet-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Şube</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Şube Combobox-->
+                </form>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <form class="form-horizontal">
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Ücret Ağırlığı</label>
+                    <div class="col-md-9 inputShadow">
+                      <input
+                        type="text"
+                        class="form-control form-control1 inputShadow"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <!--Ücret Ağırlığı-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label"
+                      >Toplam Palet Sayısı</label
+                    >
+                    <div class="col-md-9">
+                      <input type="number" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Toplam Palet Sayısı-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Yükleme Tipi</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Yükleme Tipi Combobox-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Açıklama</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control form-control1 mb-4"placeholder=""rows="3"></textarea>
+                    </div>
+                  </div>
+                  <!--Açıklama-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">Araç Tipi</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Araç Tipi Combobox-->
+                  <div class="form-group mr-4 mt-6 mb-6">
+                    <div class="form-label"></div>
+                    <div class="custom-controls-stacked">
+                      <label class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          name="example-checkbox4"
+                          value="option4"
+                        />
+                        <span class="custom-control-label m-4">Dönüş mü?</span>
+                      </label>
+                    </div>
+                  </div>
+                  <!--Checkboxes-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label" for="example-email"
+                      >Pozisyona Atayan Kullanıcı Tanımı</label
+                    >
+                    <div class="col-md-9">
+                      <input
+                        type="text"
+                        id="example-email"
+                        name="example-email"
+                        class="form-control form-control1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <!--Pozisyona Atayan Kullanıcı Tanımı-->
+                  <div class="row mb-2">
+                    <label class="col-md-3 form-label">İrsaliye Seri No</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--İrsaliye Seri No-->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-6">
+    <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Tarih Bilgiler</h4>
+    </div>
+    <div class="card-body">
+          <form class="form-horizontal">
+            <div class="row ">
+              <label class="col-md-3 form-label">Sipariş Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Sipariş Tarihi-->
+            <div class="row ">
+              <label class="col-md-3 form-label">Tahmini Varış Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Tahmini Varış Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Yükleme Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Yükleme Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Varış Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Varış Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Boşaltma Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Boşaltma Tarihi-->
+
+            <div class="row">
+              <label class="col-md-3 form-label">İrsaliye Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--İrsaliye Tarihi-->
+          </form>
+    </div>
+  </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Tarih Bilgiler</h4>
+    </div>
+    <div class="card-body">
+          <form class="form-horizontal">
+            <div class="row ">
+              <label class="col-md-3 form-label">Sipariş Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Sipariş Tarihi-->
+            <div class="row ">
+              <label class="col-md-3 form-label">Tahmini Varış Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Tahmini Varış Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Yükleme Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Yükleme Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Varış Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Varış Tarihi-->
+            <div class="row">
+              <label class="col-md-3 form-label">Boşaltma Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--Boşaltma Tarihi-->
+
+            <div class="row">
+              <label class="col-md-3 form-label">İrsaliye Tarihi</label>
+              <div class="col-md-9 pll-0">
+                <input type="date" class="form-control form-control1" value="" />
+              </div>
+            </div>
+            <!--İrsaliye Tarihi-->
+          </form>
+    </div>
+      </div>
+      </div>
+    </div>
+    <div class="row px-3">
+      <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Firma Bilgileri</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 px-8">
+            <form class="form-horizontal">
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <label class="col-md-3 form-label">Gönderici Firma</label>
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Gönderici Firma-->
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <label class="col-md-3 form-label">Alıcı Firma</label>
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Alıcı Firma-->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <label class="col-md-3 form-label">Yükleme Firması</label>
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Yükleme Firması-->
+                  <div class="row">
+                    <label class="col-md-3 form-label"
+                      >Yükleme Firması Adres Tipi</label
+                    >
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Yükleme Firması Adres Tipi Combobox-->
+                  <div class="row">
+                    <label class="col-md-3 form-label"
+                      >Yükleme Firması Adresi Metin</label
+                    >
+                    <div class="col-md-9 pll-0">
+                      <textarea
+                        class="form-control form-control1 mb-4"
+                        placeholder=""
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!--Yükleme Firması Adresi Metin-->
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <label class="col-md-3 form-label">Boşaltma Firması</label>
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Boşaltma Firması-->
+                  <div class="row">
+                    <label class="col-md-3 form-label"
+                      >Boşaltma Firması Tipi</label
+                    >
+                    <div class="col-md-9 pll-0">
+                      <input type="text" class="form-control form-control1" value="" />
+                    </div>
+                  </div>
+                  <!--Boşaltma Firması Tipi Combobox-->
+                  <div class="row">
+                    <label class="col-md-3 form-label"
+                      >Boşaltma Firması Adresi Metin</label
+                    >
+                    <div class="col-md-9 pll-0">
+                      <textarea
+                        class="form-control form-control1 mb-4"
+                        placeholder=""
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!--Boşaltma Firması Adresi Metin-->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Lokasyon Bilgileri</h4>
+      </div>
+      <div class="card-body">
+            <form class="form-horizontal">
+              <div class="row d-flex justify-content-around">
+
+             </div>
+              <div class="row">
+                <div class="col-3">
+                    <label class=" form-label">Mesafe km</label>
+                    <div class=" pll-0">
+                      <input type="number" class="form-control form-control1" value="0,00" />
+                   </div>
+                    <label class=" form-label">Süre (Saat)</label>
+                    <div class="pll-0">
+                      <input type="number" class="form-control form-control1" value="0,00" />
+                    </div>
+                    <div class="">
+                    <button type="button" class="btn btn-primary btn1 m-1">Mesafe Göster</button>
+                   </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Yükleme</h4>
+                    </div>
+                    <div class="card-body">
+                          <form class="form-horizontal">
+                            <div class="row">
+                              <label class="col-md-3 form-label">Yükleme Şehri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Yükleme Şehri-->
+                            <div class="row">
+                              <label class="col-md-3 form-label">Yükleme İlçesi</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Yükleme İlçesi-->
+                            <div class="row">
+                              <label class="col-md-3 form-label">Yükleme Şehri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Yükelem Şehri-->
+                          </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Boşaltma</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                          <form class="form-horizontal">
+                            <div class="row">
+                              <label class="col-md-3 form-label">Boşaltma Şehri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Boşaltma Şehri-->
+                            <div class="row">
+                              <label class="col-md-3 form-label">Boşaltma İlçesi</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Boşaltma İlçesi-->
+                            <div class="row">
+                              <label class="col-md-3 form-label">Boşaltma Şehri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Boşaltma Şehri-->
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Diğer Lokasyon Blgileri</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                          <form class="form-horizontal">
+                            <div class="row">
+                              <label class="col-md-3 form-label">Yükleme Yeri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Yükleme Yeri-->
+                            <div class="row">
+                              <label class="col-md-3 form-label">Boşaltma Yeri</label>
+                              <div class="col-md-9 pll-0">
+                                <input type="text" class="form-control form-control1" value="" />
+                              </div>
+                            </div>
+                            <!--Boşaltma Yeri-->
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+      </div>
+    </div><!--Lokasyon Bilgileri-->
+
+<div class="row mt-2">
+  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Sipariş Detayları</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> <!--Sipariş Detayları-->
+
+

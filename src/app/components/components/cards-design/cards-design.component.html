@@ -1,0 +1,900 @@
+<app-header-breadcrumb [title]="'Card Design'" [items]="['Components']" [active_item]="'Card Design'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="javascript:;" class="card-link">Card link</a>
+                <a href="javascript:;" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Card-Header</div>
+            </div>
+            <div class="card-body">
+                <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="javascript:;" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="javascript:;" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer">
+                <div class="card-title">Card-footer</div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-1 CLOSED -->
+
+<!-- ROW-2 OPEN -->
+<div class="row">
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-secondary">
+            <div class="card-body">
+                <h4 class="card-title">Secondary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <h4 class="card-title">Success card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-danger">
+            <div class="card-body">
+                <h4 class="card-title">Danger card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-info">
+            <div class="card-body">
+                <h4 class="card-title">Info card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-4">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <h4 class="card-title">Warning card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed">
+            <div class="card-header" >
+                <h3 class="card-title">Basic card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle()" [attr.aria-expanded]="!isCollapsed"> <i class="fe fe-chevron-{{ !isCollapsed ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove"  (click)="Closetoggle()" [attr.aria-expanded]="!isClosed"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed">
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                laoreet </div>
+            <div class="card-footer" [(ngbCollapse)]="isCollapsed">
+                This is Basic card footer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed1">
+            <div class="card-header bg-primary br-tr-3 br-tl-3" >
+                <h3 class="card-title text-white">Basic color card-header</h3>
+                <div class="card-options ">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle1()" [attr.aria-expanded]="!isCollapsed1"><i class="fe fe-chevron-{{ !isCollapsed1 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle1()" [attr.aria-expanded]="!isClosed1"><i
+                            class="fe fe-x text-white"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed1">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+            <div class="card-footer" [(ngbCollapse)]="isCollapsed1">
+                This is Basic card footer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed2">
+            <div class="card-header" >
+                <h3 class="card-title">Basic color card-footer</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle2()" [attr.aria-expanded]="!isCollapsed2">
+                        <i class="fe fe-chevron-{{ !isCollapsed2 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle2()" [attr.aria-expanded]="!isClosed2"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed2">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+            <div class="card-footer bg-danger br-br-3 br-bl-3" [(ngbCollapse)]="isCollapsed2">
+                <div class="text-white">Basic card footer</div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Panel with custom buttons</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="btn btn-primary btn-sm">Action 1</a>
+                    <a href="javascript:;" class="btn btn-secondary btn-sm ms-2">Action 2</a>
+                </div>
+            </div>
+            <div class="card-body">
+                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                not know how to pursue pleasure rationally encounter consequences that are extremely painful actual
+                teachings of the great explorer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Card with search form</h3>
+                <div class="card-options">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Search something..."
+                                name="s">
+                            <span class="input-group-btn ms-0">
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                    <span class="fe fe-search text-white"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-body">
+                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                not know how to pursue pleasure rationally encounter consequences that are extremely painful actual
+                teachings of the great explorer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card"  [(ngbCollapse)]="isClosed4">
+            <div class="card-header">
+                <h3 class="card-title">Card with alert</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle4()" [attr.aria-expanded]="!isCollapsed4">
+                        <i class="fe fe-chevron-{{ !isCollapsed4 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle4()" [attr.aria-expanded]="!isClosed4"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-alert alert  alert-success mb-0" [(ngbCollapse)]="isCollapsed4">
+                Adding action was successful
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed4">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed5">
+            <div class="card-header">
+                <h3 class="card-title">Card with alert</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle5()" [attr.aria-expanded]="!isCollapsed5">
+                        <i class="fe fe-chevron-{{ !isCollapsed5 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle5()" [attr.aria-expanded]="!isClosed5"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-alert alert alert-danger mb-0" [(ngbCollapse)]="isCollapsed5">
+                Adding action failed
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed5">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed6" [ngClass]="toggleClass === 'fe fe-minimize'? 'card-fullscreen':''">
+            <div class="card-header">
+                <h3 class="card-title">fullscreen button</h3>
+                <div class="card-options">
+                    <a href="javascript:void(0)" class="card-options-collapse me-2" (click)="Collapsetoggle6()" [attr.aria-expanded]="!isCollapsed6"> <i class="fe fe-chevron-{{ !isCollapsed6 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:void(0)" class="card-options-fullscreen me-2" (click)="fullScreenToggle()"><i class="fe fe-maximize"></i></a>
+                    <a href="javascript:void(0)" class="card-options-remove" (click)="Closetoggle6()" [attr.aria-expanded]="!isClosed6"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed6">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card" >
+            <div class="card-header">
+                <h3 class="card-title">Card with switch</h3>
+                <div class="card-options">
+                    <label class="custom-switch m-0">
+                        <input type="checkbox" value="1" class="custom-switch-input" checked="">
+                        <span class="custom-switch-indicator"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="card-body">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card"  [(ngbCollapse)]="isClosed7">
+            <div class="card-header">
+                <h3 class="card-title">Initial collapsed card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle7()" [attr.aria-expanded]="!isCollapsed7">
+                        <i class="fe fe-chevron-{{ !isCollapsed7 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle7()" [attr.aria-expanded]="!isClosed7"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed7">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-2 CLOSED -->
+
+<!-- ROW-3 OPEN -->
+<div class="row">
+    <div class="col-md-12 col-xl-4">
+        <div class="card " [(ngbCollapse)]="isClosed8">
+            <div class="card-header ">
+                <h3 class="card-title ">Employee card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle8()" [attr.aria-expanded]="!isCollapsed8">
+                        <i class="fe fe-chevron-{{ !isCollapsed8 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle8()" [attr.aria-expanded]="!isClosed8">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body text-center" [(ngbCollapse)]="isCollapsed8">
+                <img class="avatar avatar-xxl brround cover-image cover-image"
+                    src="./assets/images/users/18.jpg">
+                <h4 class="h4 mb-0 mt-3">James Thomas</h4>
+                <p class="card-text">Web designer</p>
+            </div>
+            <div class="card-footer text-center" [(ngbCollapse)]="isCollapsed8">
+                <div class="row user-social-detail">
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a>
+
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card " [(ngbCollapse)]="isClosed9">
+            <div class="card-header ">
+                <h3 class="card-title ">Employee card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle9()" [attr.aria-expanded]="!isCollapsed9">
+                        <i class="fe fe-chevron-{{ !isCollapsed9 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle9()" [attr.aria-expanded]="!isClosed9">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body text-center" [(ngbCollapse)]="isCollapsed9">
+                <img class="avatar avatar-xxl brround cover-image"
+                    src="./assets/images/users/18.jpg">
+                <h4 class="h4 mb-0 mt-3">Rebacca Thomas</h4>
+                <p class="card-text">Web designer</p>
+            </div>
+            <div class="card-footer text-center" [(ngbCollapse)]="isCollapsed9">
+                <div class="row user-social-detail">
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a>
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card " [(ngbCollapse)]="isClosed10">
+            <div class="card-header ">
+                <h3 class="card-title ">Employee card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle10()" [attr.aria-expanded]="!isCollapsed10">
+                        <i class="fe fe-chevron-{{ !isCollapsed10 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle10()" [attr.aria-expanded]="!isClosed10">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body text-center" [(ngbCollapse)]="isCollapsed10">
+                <img class="avatar avatar-xxl brround cover-image"
+                    src="./assets/images/users/8.jpg">
+                <h4 class="h4 mb-0 mt-3"> Thomas symson</h4>
+                <p class="card-text">Web designer</p>
+            </div>
+            <div class="card-footer text-center" [(ngbCollapse)]="isCollapsed10">
+                <div class="row user-social-detail">
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a>
+                    <a href="javascript:;" class="social-profile me-4 rounded text-center"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-3 CLOSED -->
+
+<!-- ROW-4 OPEN -->
+<div class="row ">
+    <div class="col-md-12 col-xl-4">
+        <div class="card ">
+            <div class="card-body text-start">
+                <blockquote class="quote">
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <small class="text-muted">
+                        so awesome this title <cite title="Source Title">-magna aliqua</cite>
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card ">
+            <div class="card-body text-center">
+                <blockquote class="quote">
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <small class="text-muted">
+                        so awesome this title <cite title="Source Title">-magna aliqua</cite>
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card ">
+            <div class="card-body text-end">
+                <blockquote class="quote">
+                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <small class="text-muted">
+                        so awesome this title <cite title="Source Title">-magna aliqua</cite>
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class=" col-xl-4 col-md-12 ">
+        <div class="card m-b-20" [(ngbCollapse)]="isClosed11">
+            <div class="card-header">
+                <h3 class="card-title">Card With List</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle11()" [attr.aria-expanded]="!isCollapsed11">
+                        <i class="fe fe-chevron-{{ !isCollapsed11 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle11()" [attr.aria-expanded]="!isClosed11">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed11">
+                <div class="visitor-list">
+                    <div class="media m-0 mt-0 border-bottom">
+                        <img class="avatar brround avatar-md me-3" alt="avatra-img"
+                            src="./assets/images/users/18.jpg">
+                        <div class="media-body">
+                            <a href="javascript:;" class="text-default fw-semibold">John Paige</a>
+                            <p class="text-muted ">Uploaded new invoices for RedBus</p>
+                        </div>
+                    </div>
+                    <div class="media mt-2 border-bottom">
+                        <img class="avatar brround avatar-md me-3" alt="avatra-img"
+                            src="./assets/images/users/20.jpg">
+                        <div class="media-body">
+                            <a href="javascript:;" class="text-default fw-semibold">Lillian Quinn</a>
+                            <p class="text-muted">Created new work flow for the current</p>
+                        </div>
+                    </div>
+                    <div class="media mt-2">
+                        <img class="avatar brround avatar-md me-3" alt="avatra-img"
+                            src="./assets/images/users/18.jpg">
+                        <div class="media-body">
+                            <a href="javascript:;" class="text-default fw-semibold">Irene Harris</a>
+                            <p class="text-muted mb-0">Submitted the project schedule to the manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-xl-4 col-md-12">
+        <div class="card m-b-20" [(ngbCollapse)]="isClosed12">
+            <div class="card-header">
+                <h3 class="card-title">Sample card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle12()" [attr.aria-expanded]="!isCollapsed12">
+                        <i class="fe fe-chevron-{{ !isCollapsed12 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle12()" [attr.aria-expanded]="!isClosed12">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed12">
+                <p>Put toy mouse in food bowl run out of litter box at full speed drool but pee in Put toy mouse Put toy
+                    mouse the shoe purr when being pet but chew foot.</p>
+                <p class="mb-0">Scratch the postman wake up lick paw Duis aute irure dolor in reprehenderit wake up
+                    owner meow meow lick plastic bags Scratch the postman wake up lick paw wake Duis aute irure dolor
+                    having their mate disturbing sleeping humans.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-xl-4 col-md-12">
+        <div class="card d-flex m-b-20">
+            <div class="card-header">
+                <h3 class="card-title">Card with Toolbar</h3>
+                <div class="card-options">
+                    <a class="text-gray" href="javascript:void(0)">
+                        <i class="mdi mdi-refresh"></i>
+                    </a>
+                    <a class="text-gray" href="javascript:void(0)">
+                        <i class="mdi mdi-bookmark-outline"></i>
+                    </a>
+                    <a class="text-gray" href="javascript:void(0)">
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Put toy mouse in food bowl run out of litter box at full speed drool but pee in Put toy mouse Put toy
+                    mouse the shoe purr when being pet but chew foot.</p>
+                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit Scratch the postman wake up
+                    lick paw wake up owner meow meow lick plastic bags Scratch the postman wake up lick paw wake having
+                    their mate disturbing sleeping humans.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-4 CLOSED -->
+
+<!-- ROW-5 OPEN -->
+<div class="row ">
+    <div class="col-md-12 col-xl-4">
+        <div class="card card-blog-overlay1">
+            <div class="card-body  text-white">
+                <h3 class="card-title text-white">card-with image</h3>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+            <div class="card-footer  text-white z-index2 border-transparent">
+                This is Basic card footer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card card-blog-overlay2">
+            <div class="card-body  text-white">
+                <h3 class="card-title text-white">card-with image</h3>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+            <div class="card-footer text-white z-index2 border-transparent">
+                This is Basic card footer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card card-blog-overlay" [(ngbCollapse)]="isClosed17">
+            <div class="card-header z-index2  border-transparent">
+                <h3 class="card-title text-white ">card-with image</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle17()" [attr.aria-expanded]="!isCollapsed17">
+                        <i class="fe fe-chevron-{{ !isCollapsed17 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle17()" [attr.aria-expanded]="!isClosed17">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body  text-white" [(ngbCollapse)]="isCollapsed17">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-6 col-xl-6">
+        <div class="card card-aside">
+            <div class="card-body d-flex flex-column">
+                <h4><a href="javascript:;">Play Music</a></h4>
+                <div class="text-muted">Some quick example text to build on the card title and make up the bulk of the
+                    card's</div>
+                <div class="d-flex align-items-center pt-5 mt-auto text-center ">
+                    <div class="text-muted">
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i
+                                class="fa fa-step-backward"></i></a>
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i class="fa fa-play "></i></a>
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i
+                                class="fa fa-step-forward"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-6 col-xl-6">
+        <div class="card card-aside bg-primary">
+            <div class="card-body d-flex flex-column">
+                <h4><a href="javascript:;" class="text-white">Play Music</a></h4>
+                <div class="text-muted text-white">Some quick example text to build on the card title and make up the
+                    bulk of the card's </div>
+                <div class="d-flex align-items-center pt-5 mt-auto text-center ">
+                    <div class="text-muted">
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i
+                                class="fa fa-step-backward text-white"></i></a>
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i
+                                class="fa fa-play text-white "></i></a>
+                        <a href="javascript:void(0)" class="icon d-md-inline-block ms-3"><i
+                                class="fa fa-step-forward text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-primary"  [(ngbCollapse)]="isClosed18">
+            <div class="card-header border-primary">
+                <h3 class="card-title ">primary card title</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle18()" [attr.aria-expanded]="!isCollapsed18">
+                        <i class="fe fe-chevron-{{ !isCollapsed18 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle18()" [attr.aria-expanded]="!isClosed18">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed18">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-secondary"  [(ngbCollapse)]="isClosed19">
+            <div class="card-header border-secondary">
+                <h3 class="card-title ">Secondary card title</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle19()" [attr.aria-expanded]="!isCollapsed19">
+                        <i class="fe fe-chevron-{{ !isCollapsed19 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle19()" [attr.aria-expanded]="!isClosed19">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed19">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card text-white bg-success"  [(ngbCollapse)]="isClosed20">
+            <div class="card-header border-success">
+                <h3 class="card-title ">Success card title</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle20()" [attr.aria-expanded]="!isCollapsed20">
+                        <i class="fe fe-chevron-{{ !isCollapsed ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle20()" [attr.aria-expanded]="!isClosed20">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed20">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Panel with custom buttons</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="btn btn-primary btn-sm">Action 1</a>
+                    <a href="javascript:;" class="btn btn-secondary btn-sm ms-2">Action 2</a>
+                </div>
+            </div>
+            <div class="card-body">
+                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                not know how to pursue pleasure rationally encounter consequences that are extremely painful actual
+                teachings of the great explorer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Card with search form</h3>
+                <div class="card-options">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Search something..."
+                                name="s">
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                    <span class="fe fe-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-body">
+                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                not know how to pursue pleasure rationally encounter consequences that are extremely painful actual
+                teachings of the great explorer
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed13">
+            <div class="card-header">
+                <h3 class="card-title">Card with loader</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle13()" [attr.aria-expanded]="!isCollapsed13">
+                        <i class="fe fe-chevron-{{ !isCollapsed13 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle13()" [attr.aria-expanded]="!isClosed13">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed13">
+                <div class="dimmer active">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed14">
+            <div class="card-header">
+                <h3 class="card-title">Card with loader</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle14()" [attr.aria-expanded]="!isCollapsed14">
+                        <i class="fe fe-chevron-{{ !isCollapsed14 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle14()" [attr.aria-expanded]="!isClosed14">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed14">
+                <div class="dimmer active">
+                    <div class="spinner1">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-4">
+        <div class="card" [(ngbCollapse)]="isClosed15">
+            <div class="card-header">
+                <h3 class="card-title">Card with loader</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle15()" [attr.aria-expanded]="!isCollapsed15">
+                        <i class="fe fe-chevron-{{ !isCollapsed15 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle15()" [attr.aria-expanded]="!isClosed15">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed15">
+                <div class="dimmer active">
+                    <div class="spinner2">
+                        <div class="cube1"></div>
+                        <div class="cube2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- COL END -->
+<!-- ROW-5 CLOSED -->
+
+<!-- ROW-6 OPEN -->
+<div class="row">
+    <div class="col-md-12  col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed16" [ngClass]="toggleClass === 'fe fe-minimize'? 'card-fullscreen':''">
+            <div class="card-header">
+                <h3 class="card-title">fullscreen button</h3>
+                <div class="card-options">
+                    <a href="javascript:void(0)" class="card-options-collapse me-2" (click)="Collapsetoggle16()" [attr.aria-expanded]="!isCollapsed16"> <i class="fe fe-chevron-{{ !isCollapsed16 ? 'up' : 'down'}}"></i></a>
+                    <a href="javascript:void(0)" class="card-options-fullscreen me-2" (click)="fullScreenToggle()"><i class="fe fe-maximize"></i></a>
+                    <a href="javascript:void(0)" class="card-options-remove" (click)="Closetoggle16()" [attr.aria-expanded]="!isClosed16"><i class="fe fe-x"></i></a>
+                </div>
+            </div>
+            <div class="card-body"  [(ngbCollapse)]="isCollapsed16">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Card with switch</h3>
+                <div class="card-options">
+                    <label class="custom-switch m-0">
+                        <input type="checkbox" value="1" class="custom-switch-input" checked>
+                        <span class="custom-switch-indicator"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="card-body">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed21">
+            <div class="card-header">
+                <h3 class="card-title">Initial collapsed card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle21()" [attr.aria-expanded]="!isCollapsed21">
+                        <i class="fe fe-chevron-{{ !isCollapsed21 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle21()" [attr.aria-expanded]="!isClosed21">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed21">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed22">
+            <div class="card-header">
+                <h3 class="card-title">Built card</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle22()" [attr.aria-expanded]="!isCollapsed22">
+                        <i class="fe fe-chevron-{{ !isCollapsed22 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle22()" [attr.aria-expanded]="!isClosed22">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed22">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12  col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed23">
+            <div class="card-status bg-blue br-tr-7 br-tl-7"></div>
+            <div class="card-header">
+                <h3 class="card-title">Card blue</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle23()" [attr.aria-expanded]="!isCollapsed23">
+                        <i class="fe fe-chevron-{{ !isCollapsed23 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle23()" [attr.aria-expanded]="!isClosed23">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed23">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+    <div class="col-md-12 col-xl-6">
+        <div class="card" [(ngbCollapse)]="isClosed24">
+            <div class="card-status card-status-left bg-red br-bl-7 br-tl-7"></div>
+            <div class="card-header">
+                <h3 class="card-title">Card status on left side</h3>
+                <div class="card-options">
+                    <a href="javascript:;" class="card-options-collapse" (click)="Collapsetoggle24()" [attr.aria-expanded]="!isCollapsed24">
+                        <i class="fe fe-chevron-{{ !isCollapsed24 ? 'up' : 'down'}}"></i>
+                    </a>
+                    <a href="javascript:;" class="card-options-remove" (click)="Closetoggle24()" [attr.aria-expanded]="!isClosed24">
+                        <i class="fe fe-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-body" [(ngbCollapse)]="isCollapsed24">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </div>
+        </div>
+    </div><!-- COL END -->
+</div>
+<!-- ROW-6 CLOSED -->

@@ -1,0 +1,75 @@
+::ng-deep{
+    .dark-mode{
+        
+
+        .ck.ck-editor__main>.ck-editor__editable {
+            background: #10163a;
+        }
+
+        .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+            border-color: #252c4a;
+        }
+        .ck.ck-toolbar {
+            background: #10163a;
+            border: 1px solid #252c4a;
+        }        
+        .ck.ck-toolbar .ck.ck-toolbar__separator {
+            background: #272e4c;
+        }
+
+        .ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover,
+        .ck.ck-button.ck-on, a.ck.ck-button.ck-on {
+            background: #10163a ;
+        }
+        .ck.ck-list {
+            background: #242a49;
+        }
+        .ck.ck-button, a.ck.ck-button {
+            background: #222848;
+            color: #fff;
+        }
+        .ck.ck-reset, .ck.ck-reset_all, .ck.ck-reset_all *{
+            background: #10163a;
+        }
+
+        .ck.ck-dropdown__panel {
+            border: 1px solid #272e4c;
+        }
+
+        .ql-snow .ql-stroke{
+            stroke: #fff !important;
+        }
+        .ql-snow .ql-picker,
+        .ql-editor.ql-blank::before{
+            color: #ccc !important;
+        }
+    }
+    .ql-toolbar.ql-snow {
+        border: 1px solid #eaedf1;
+    }
+    .ql-container.ql-snow {
+        border: 1px solid #eaedf1;
+    }
+    .ck.ck-toolbar {
+        background: #f1f2f8;
+        border: 1px solid #eaedf1;
+    }
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+        border-color: #eaedf1;
+        border-top: 0 !important;
+    }
+    .ck.ck-toolbar .ck.ck-toolbar__separator {
+        background: #d1d6dc;
+    }
+    .angular-editor-textarea:focus {
+        outline: 0;
+    }
+    .angular-editor-toolbar {
+        background-color: #f1f2f8 !important;
+        border: 1px solid #eaedf1 !important;
+    }
+    .angular-editor-toolbar .angular-editor-toolbar-set .angular-editor-button {
+        border: 1px solid #eaedf1 !important;
+        border-right: 0 !important;
+    }
+}

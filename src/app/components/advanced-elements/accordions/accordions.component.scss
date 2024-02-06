@@ -1,0 +1,69 @@
+::ng-deep{
+    .btn-link.collapsed .fa-minus-circle:before{
+        content: "\f055"!important;
+    }
+    ngb-accordion{
+        .card{
+            box-shadow: none;
+            margin-bottom: 0;
+            border-radius: 0.25rem;
+        }
+        .card-header {
+            padding: 0;
+            border-radius: 0;
+            color: #76839a;
+            background-color: #f4f5fb;
+            font-size: 12px;
+        }
+        .card-header button.btn-link{
+            color: #76839a;
+        }
+        .card-body {
+            border: 0;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .btn-link{
+            font-weight: 400;
+        }
+
+        .btn-link:focus, .btn-link.focus,
+        .btn-link:hover {
+            text-decoration: none;
+            border-color: transparent;
+        }
+        .btn-link{
+            width: 100%;
+            text-align: left;
+        }
+
+        #ngb-panel-0-header button.btn-link,
+        #ngb-panel-1-header button.btn-link,
+        #ngb-panel-2-header button.btn-link{
+            color: #6259ca;
+        }
+
+        .btn{
+            font-size: 15px !important;
+        }
+    }
+}
+
+::ng-deep{
+    .dark-mode{
+        app-accordion{
+            ngb-accordion .card-header {
+                background-color: #191f48;
+            }
+            
+            .btn-link{
+                color: #fff !important;
+            }
+        }
+        ngb-accordion .card-body {
+            border: 1px solid #272c49 !important;
+        }
+        
+
+    }
+}

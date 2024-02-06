@@ -1,0 +1,266 @@
+<app-header-breadcrumb [title]="'Product Details'" [items]="['ECommerce']" [active_item]="'Product Details'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row">
+    <div class="col-lg-8 col-md-12">
+        <div class="card productdesc">
+            <div class="card-body">
+                <div class="productdec text-center">
+                    <div class="bg-light-gray p-6 text-center br-5">
+                        <img alt="Product" src="./assets/images/pngs/31.png">
+                    </div>
+                </div>
+                <div class="text-center mt-5 pb-5 border-bottom">
+                    <a routerLink="/pages/ecommerce/shopping-cart" class="btn btn-primary me-2"><i class="ti-shopping-cart"> </i> Add to cart</a>
+                    <a routerLink="/pages/ecommerce/checkout" href="javascript:;" class="btn btn-secondary"><i class="ti-shopping-cart"> </i> Buy Now</a>
+                </div>
+
+                <div class="mt-4 mb-4">
+                    <h3>Lenovo Headset 330 Pentium Quad Core </h3>
+                    <h5 class="mb-3 mt-2">Description</h5>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fuga.</p>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                        demoralized .</p>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="tab-menu-heading">
+                        <div class="tabs-menu ">
+                            <!-- Tabs -->
+                            <ul ngbNav #nav1="ngbNav" [(activeId)]="TabStyle1" class="panel-tabs">
+                                <li [ngbNavItem]="1" class="me-2"><a ngbNavLink >Specification</a>
+                                    <ng-template ngbNavContent>
+                                        <h4 class="mb-5 mt-3">General</h4>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="row">
+                                                <div class="col-sm-3 text-muted">Brand</div>
+                                                <div class="col-sm-3">CASAMOTION</div>
+                                            </li>
+                                            <li class=" row">
+                                                <div class="col-sm-3 text-muted">Model Number</div>
+                                                <div class="col-sm-3">AHLF016</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Model Name</div>
+                                                <div class="col-sm-3">casamotion</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Suitable For</div>
+                                                <div class="col-sm-3">Table, Floor</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Material</div>
+                                                <div class="col-sm-3">Wood</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Color</div>
+                                                <div class="col-sm-3">Brown</div>
+                                            </li>
+                                        </ul>
+                                    </ng-template>
+                                </li>
+                                <li [ngbNavItem]="2" class="me-2"><a ngbNavLink >Dimensions</a>
+                                    <ng-template ngbNavContent>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="row">
+                                                <div class="col-sm-3 text-muted">Width</div>
+                                                <div class="col-sm-3">6.1 inch</div>
+                                            </li>
+                                            <li class=" row">
+                                                <div class="col-sm-3 text-muted">Height</div>
+                                                <div class="col-sm-3">24 inch</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Depth</div>
+                                                <div class="col-sm-3">6.1 inch</div>
+                                            </li>
+                                            <li class="p-b-20 row">
+                                                <div class="col-sm-3 text-muted">Other Dimensions</div>
+                                                <div class="col-sm-3">15.5*15.5*24CM</div>
+                                            </li>
+                                        </ul>
+                                    </ng-template>
+                                </li>
+                                <li [ngbNavItem]="3" class="me-2"><a ngbNavLink >Reviews <span
+                                    class="badge bg-secondary ms-1">2</span> </a>
+                                    <ng-template ngbNavContent>
+                                        <div class="media mb-5">
+                                            <div class=" me-3">
+                                                <a href="javascript:;"> <img class="media-object rounded-circle thumb-sm" alt="64x64"
+                                                        src="./assets/images/users/5.jpg"> </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-0">Gavin Murray</h5>
+                                                <div class="text-warning mb-0">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <p class="font-13 text-muted mb-0">Good Looking.........</p>
+                                                <a href="javascript:;"><span class="badge btn-custom rounded-pill">Reply</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-5">
+                                            <div class=" me-3">
+                                                <a href="javascript:;"> <img class="media-object rounded-circle thumb-sm" alt="64x64"
+                                                        src="./assets/images/users/15.jpg"> </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-0">Paul Smith</h5>
+                                                <div class="text-warning mb-0">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <p class="font-13 text-muted mb-0">Very nice ! On the other hand, we denounce
+                                                    with righteous indignation and dislike men who are so beguiled and
+                                                    demoralized by the </p>
+                                                <a href="javascript:;"><span class="badge btn-custom rounded-pill">Reply</span></a>
+                                            </div>
+                                        </div>
+                                        <h5 class="mb-3">Add Review</h5>
+                                        <form class="form-horizontal  m-t-20" action="index.html">
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="text" required="" placeholder="Username*">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="email" required="" placeholder="Email*">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <textarea class="form-control" rows="5">Your Review*</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="javascript:;"
+                                                    class="btn btn-primary btn-rounded  waves-effect waves-light">Submit</a>
+                                            </div>
+                                        </form>
+                                    </ng-template>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div [ngbNavOutlet]="nav1" class="panel-body tabs-menu-body"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+    <div class="col-lg-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title"> Categories &amp; Fliters</div>
+            </div>
+            <div class="card-body">
+                <div class="custom-checkbox custom-control">
+                    <input type="checkbox" data-bs-checkboxes="mygroup" class="custom-control-input" id="checkbox-1"
+                        checked="">
+                    <label for="checkbox-1" class="custom-control-label">Mens</label>
+                </div>
+                <div class="custom-checkbox custom-control">
+                    <input type="checkbox" data-bs-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
+                    <label for="checkbox-2" class="custom-control-label">Womens</label>
+                </div>
+                <div class="custom-checkbox custom-control">
+                    <input type="checkbox" data-bs-checkboxes="mygroup" class="custom-control-input" id="checkbox-3">
+                    <label for="checkbox-3" class="custom-control-label">Kids</label>
+                </div>
+                <div class="custom-checkbox custom-control">
+                    <input type="checkbox" data-bs-checkboxes="mygroup" class="custom-control-input" id="checkbox-4">
+                    <label for="checkbox-4" class="custom-control-label">Others</label>
+                </div>
+                <div class="form-group mt-3">
+                    <label class="form-label">Category</label>
+                    <ng-select name="beast" id="select-beast" class="form-control form-select custom-select">
+                        <ng-option value="0">--Select--</ng-option>
+                        <ng-option value="1">Dress</ng-option>
+                        <ng-option value="2">Bags &amp; Purses</ng-option>
+                        <ng-option value="3">Coat &amp; Jacket</ng-option>
+                        <ng-option value="4">Beauty</ng-option>
+                        <ng-option value="5">Jeans</ng-option>
+                        <ng-option value="5">Jewellery</ng-option>
+                        <ng-option value="5">Electronics</ng-option>
+                        <ng-option value="5">Sports</ng-option>
+                        <ng-option value="5">Technology</ng-option>
+                        <ng-option value="5">Watches</ng-option>
+                        <ng-option value="5">Accessories</ng-option>
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Brand</label>
+                    <ng-select name="beast" id="select-beast1" class="form-control form-select custom-select">
+                        <ng-option value="0">--Select--</ng-option>
+                        <ng-option value="1">White</ng-option>
+                        <ng-option value="2">Black</ng-option>
+                        <ng-option value="3">Red</ng-option>
+                        <ng-option value="4">Green</ng-option>
+                        <ng-option value="5">Blue</ng-option>
+                        <ng-option value="6">Yellow</ng-option>
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Type</label>
+                    <ng-select name="beast" id="select-beast2" class="form-control form-select custom-select">
+                        <ng-option value="0">--Select--</ng-option>
+                        <ng-option value="1">Extra Small</ng-option>
+                        <ng-option value="2">Small</ng-option>
+                        <ng-option value="3">Medium</ng-option>
+                        <ng-option value="4">Large</ng-option>
+                        <ng-option value="5">Extra Large</ng-option>
+                    </ng-select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Color</label>
+                    <ng-select name="beast" id="select-beast3" class="form-control form-select custom-select">
+                        <ng-option value="0">--Select--</ng-option>
+                        <ng-option value="1">White</ng-option>
+                        <ng-option value="2">Black</ng-option>
+                        <ng-option value="3">Red</ng-option>
+                        <ng-option value="4">Green</ng-option>
+                        <ng-option value="5">Blue</ng-option>
+                        <ng-option value="6">Yellow</ng-option>
+                    </ng-select>
+                </div>
+                <a class="btn btn-primary me-2" href="javascript:;">Apply Filter</a>
+                <a class="btn btn-danger" href="javascript:;">Search Now</a>
+            </div>
+        </div>
+        <div class="card productdesc-1">
+            <div class="card-body bg_gray">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let owlData of owlCarouselData">
+                        <div class="card">
+                            <div class="card-body user-card text-center">
+                                <div class="text-center">
+                                    <img alt="avatar" class="pro_img" [src]="owlData.img">
+                                </div>
+                                <div class="carouselproduct mt-4 text-center">
+                                    <h5 class="">
+                                        <a routerLink="/pages/ecommerce/product-details">
+                                            {{owlData.details}}
+                                        </a>
+                                    </h5>
+                                    <ul class="product_price list-unstyled">
+                                        <li class="old_price">{{owlData.oldValue}}</li>
+                                        <li class="new_price">{{owlData.newValue}}</li>
+                                    </ul>
+                                    <a routerLink="/pages/ecommerce/checkout" class="btn btn-primary"><i class="ti-shopping-cart"></i> Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div><!-- COL-END -->
+</div>
+<!-- ROW-1 CLOSED -->

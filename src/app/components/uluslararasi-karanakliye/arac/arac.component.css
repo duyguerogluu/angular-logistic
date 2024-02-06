@@ -1,0 +1,48 @@
+p {
+     font-size: 30px;
+     font-weight: 600;
+ }
+ 
+ 
+ input{
+     box-shadow: 10px 3px 6px rgba(187, 195, 197, 0.6);
+ }
+
+ 
+ input:focus{
+     background-color: #FFEBEE;
+ }
+
+ textarea{
+    box-shadow: 10px 3px 6px rgba(187, 195, 197, 0.6);
+ 
+ }
+
+ textarea:focus{
+    background-color: #FFEBEE;
+ }
+ 
+ .card-header{
+     background-image: linear-gradient(white, white, #E0F7FA);
+ }
+ 
+ .scrolbar{
+     overflow-y: scroll;
+     height: 300px;
+     overflow-x: hidden;
+ }
+ 
+ .ScrollShadow{
+     box-shadow: 1px 3px 6px #FFEBEE;
+     border-radius: 5px;
+ }
+ 
+ 
+ .browser-stats{
+     min-height: auto;
+ }
+ 
+ .margin0{
+     margin: 0;
+ }
+ 

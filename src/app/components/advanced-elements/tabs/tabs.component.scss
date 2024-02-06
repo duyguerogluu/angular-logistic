@@ -1,0 +1,94 @@
+.tab_wrapper > ul li a.active {
+    color: #fff;
+    border-color: #5e2dd8 !important;
+    background: #5e2dd8;
+}
+@media (min-width:568px) {
+    .tab_wrapper.right_side > ul {
+        width: 25%;
+        float: right;
+        border-bottom: 1px solid #f0f0f4;
+        li{
+            width: 100%;
+            a{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 12px 18px;
+                border-width: 1px;
+                border-right: 1px solid #f0f0f4;
+                border-left: 1px solid #f0f0f4;
+                text-align: right;
+                border-top: 1px solid #f0f0f4;
+                width: 100%;
+            }
+        }
+    
+    }
+    .tab_wrapper.right_side .content_wrapper.tab-content{
+        width: 75%;
+    }
+}
+.nav-link {
+    color: #5e2dd8 !important;
+}
+.col-md-12 .nav-link.active{
+    color: #fff !important;
+}
+.tabs-menu1 .nav-link.active{
+    color: #5e2dd8 ;
+}
+.tabs-menu ul li a {
+    margin: 0 0.25rem 0 0;
+}
+.tabs-menu1 ul li a {
+    margin: 0 0.25rem 0 0;
+}
+
+
+::ng-deep{
+    .dark-mode{
+        @media (min-width: 568px){
+            .tab_wrapper.right_side > ul {
+                border-bottom: 1px solid #272c49 !important;
+            }
+        }
+
+        .nav-link {
+            color: #eee !important;
+        }
+        .tabs-menu1 .nav-link.active{
+            color: #fff !important;
+        }
+        .mat-tab-label, .mat-tab-link {
+            color: #fff !important;
+        }
+        .tab_wrapper > ul li a {
+            border-color: rgba(255,255,255,0.1) !important;
+        }
+    }
+    .transparent-mode{
+        @media (min-width: 568px){
+            .tab_wrapper.right_side > ul {
+                border-bottom: 1px solid var(--transparent-border) !important;
+            }
+        }
+
+        .nav-link {
+            color: #eee !important;
+        }
+        .tabs-menu1 .nav-link.active{
+            color: #fff !important;
+        }
+        .mat-tab-label, .mat-tab-link {
+            color: #fff !important;
+        }
+        .tab_wrapper > ul li a {
+            border-color: var(--transparent-border) !important;
+        }
+    }
+    @media (min-width: 568px){
+        .tab_wrapper.right_side > ul li a {
+            border-bottom: 1px solid;
+        }
+    }
+}

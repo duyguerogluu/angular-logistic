@@ -1,0 +1,37 @@
+
+
+::ng-deep{
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+      background-color: rgba(139,121,232,.06) !important;
+  }
+  .dark-mode{
+    mat-label, .mat-select-value, mat-option {
+      color: #fff !important;
+    }
+    .mat-select-panel {
+      background: #30304d !important;
+  }
+  .mat-select-arrow{
+    color: rgba(255, 255, 255, 0.54);
+  }
+  }
+  .transparent-mode{
+    mat-label, .mat-select-value, mat-option {
+      color: #fff !important;
+    }
+    .mat-select-panel {
+      background: var(--transparent-body) !important;
+  }
+  .mat-select-arrow{
+    color: rgba(255, 255, 255, 0.54);
+  }
+  }
+
+  .mat-snack-bar-container {
+    background: #30304d !important;
+  }
+  
+  .cdk-overlay-container{
+    z-index: 1000 !important;
+  }
+}

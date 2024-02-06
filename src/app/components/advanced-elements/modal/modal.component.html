@@ -1,0 +1,228 @@
+<app-header-breadcrumb [title]="'Modal'" [items]="['Advanced Elements']" [active_item]="'Modal'"></app-header-breadcrumb>
+<!-- Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <!--div-->
+        <div class="card" id="modal">
+            <div class="card-header border-bottom-0">
+                <div class="card-title">
+                    Basic Modal
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="p-5 bg-light border border-bottom-0">
+                    <div class="modal d-block pos-static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content-demo">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Message Preview</h6>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Why We Use Electoral College, Not Popular Vote</h6>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                        that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary">Save changes</button> <button
+                                        class="btn btn-light">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- pd-y-50 -->
+                <div class="text-center py-4 bg-light border">
+                    <button class="btn btn-primary" (click)="BasicOpen(basicmodal)">View Live Demo</button>
+                    <ng-template #basicmodal let-modal>
+                        <!-- BASIC MODAL -->
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="modal-basic-title">Message Preview</h6>
+                            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Why We Use Electoral College, Not Popular Vote</h6>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                distribution of letters, as opposed to using 'Content here, content here', making it look like
+                                readable English.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-indigo" type="button">Save changes</button>
+                            <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+                        </div>
+                    </ng-template>
+                </div><!-- pd-y-30 -->
+            </div>
+        </div>
+        <!--/div-->
+        <!--div-->
+        <div class="card" id="modal3">
+            <div class="card-header border-bottom-0">
+                <div class="card-title">
+                    Success Alert Messages
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="p-5 bg-light border border-bottom-0">
+                    <div class="modal d-block pos-static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center p-5">
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"></button>
+                                    <i class="fe fe-check-circle fs-100 text-success lh-1 mb-4 d-inline-block"></i>
+                                    <h4 class="text-success mb-4">Congratulations!</h4>
+                                    <p class="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available,
+                                        but the majority have suffered alteration.</p><button
+                                        class="btn btn-success pd-x-25">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- modal-wrapper-demo -->
+                <div class="text-center py-4 bg-light border">
+                    <button class="btn btn-primary" (click)="SuccessOpen(successmodal)">View Live Demo</button>
+                    <ng-template #successmodal let-modal>
+                        <!-- Congratulations MODAL -->
+                        <div class="modal-body text-center p-5">
+                            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            <i class="fe fe-check-circle fs-100 text-success lh-1 mb-5 d-inline-block"></i>
+                            <h4 class="text-success tx-semibold">Congratulations!</h4>
+                            <p class="mg-b-20 mg-x-20">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration.
+                            </p>
+                            <button type="button" class="btn btn-success pd-x-25 mr-0"
+                                (click)="modal.close('Close click')">Continue</button>
+                        </div>
+                    </ng-template>
+                </div><!-- modal-footer-demo -->
+            </div>
+        </div>
+        <!--/div-->
+        <!--div-->
+        <div class="card" id="modal4">
+            <div class="card-header border-bottom-0">
+                <div class="card-title">
+                    Warning Alert Messages
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="p-5 bg-light border border-bottom-0 mg-t-20">
+                    <div class="modal d-block pos-static">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center p-5">
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"></button>
+                                    <i class="fe fe-x-circle fs-65 text-danger lh-1 mb-4 d-inline-block"></i>
+                                    <h4 class="text-danger mb-20">Error: Cannot process your entry!</h4>
+                                    <p class="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available,
+                                        but the majority have suffered alteration.</p><button aria-label="Close"
+                                        class="btn btn-danger pd-x-25">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- modal-wrapper-demo -->
+                <div class="text-center py-4 bg-light border">
+                    <button class="btn btn-primary" (click)="WarningOpen(warningmodal)">View Live Demo</button>
+                    <ng-template #warningmodal let-modal>
+                        <!-- Warning MODAL -->
+                        <div class="modal-body text-center p-5">
+                            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            <i class="fe fe-x-circle fs-100 text-danger lh-1 mb-5 d-inline-block"></i>
+                            <h4 class="text-danger">Error: Cannot process your entry!</h4>
+                            <p class="mg-b-20 mg-x-20">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration.
+                            </p>
+                            <button type="button" class="btn btn-danger pd-x-25 mr-0" (click)="modal.close('Close click')">Continue</button>
+                        </div>
+                    </ng-template>
+                </div><!-- modal-footer-demo -->
+            </div>
+        </div>
+        <!--/div-->
+
+        <!-- Row -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card">
+                    <div class="card-header border-bottom-0">
+                        <h3 class="card-title">Modal Sizes & Types</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-primary mt-3 me-2" (click)="SmallSizeOpen(smallsizemodal)">Small Modal</button>
+                        <button type="button" class="btn btn-info mt-3 me-2" (click)="DefaultSizeOpen(defaultsizemodal)">Default Modal</button>
+                        <button type="button" class="btn btn-secondary mt-3 me-2" (click)="LargeSizeOpen(largesizemodal)">large Modal</button>
+                        <button type="button" class="btn btn-danger mt-3" (click)="openScrollableContent(longContent)">View modal</button>
+
+
+                        <ng-template #longContent let-modal>
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal title</h4>
+                              <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. </p>
+                                <p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p> No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </ng-template>
+                        <ng-template #smallsizemodal let-modal>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+                                <button type="button" class="btn btn-indigo" >Save changes</button>
+                            </div>
+                        </ng-template>
+
+                        <ng-template #defaultsizemodal let-modal>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+                                <button type="button" class="btn btn-indigo" >Save changes</button>
+                            </div>
+                        </ng-template>
+
+                        <ng-template #largesizemodal let-modal>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+                                <button type="button" class="btn btn-indigo" >Save changes</button>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Row -->
+    </div>
+</div>
+<!-- End Row -->

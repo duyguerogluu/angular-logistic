@@ -1,0 +1,140 @@
+<div class="login-img">
+    <div class="page">
+        <div class="">
+            <!-- CONTAINER OPEN -->
+            <!-- CONTAINER OPEN -->
+            <div class="col col-login mx-auto">
+                <div class="text-center">
+                    <img src="./assets/images/brand/logo.png" class="header-brand-img" alt="">
+                </div>
+            </div>
+                <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills container-login100">
+                    <li ngbNavItem="Firebase">
+                        <a ngbNavLink>
+                            <img src="./assets/images/firebase.svg" alt="" class="nav-icon">
+                        </a>
+                        <ng-template ngbNavContent>
+
+						<div class="wrap-login100 p-0">
+							<div class="card-body">
+                                <form (ngSubmit)="login()" class="login100-form validate-form">
+
+                                    <span class="login100-form-title">
+                                        Firebase Login
+                                    </span>
+
+
+                                    <div class="wrap-input100 validate-input">
+                                        <input type="email" name="email" class="form-control input100" [(ngModel)]="email" placeholder="Enter email Id" required>
+                                        <span class="focus-input100"></span>
+                                        <span class="symbol-input100">
+                                            <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <div class="wrap-input100 validate-input">
+                                        <input type="password" name="password" class="form-control input100" [(ngModel)]="password" placeholder="Enter Password" re
+                                        quired>
+                                        <span class="focus-input100"></span>
+                                        <span class="symbol-input100">
+                                            <i class="zmdi zmdi-lock" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="text-end pt-1">
+                                        <p class="mb-0"><a routerLink="/custom-pages/forget-password" class="text-primary ms-1">Forgot Password?</a></p>
+                                    </div>
+                                    <div class="container-login100-form-btn">
+                                        <button type="submit" class="login100-form-btn btn-primary"> Login</button>
+                                    </div>
+                                    <div class="form-group">
+                                    <p *ngIf="errorMessage.length > 0" class="text-danger">
+                                        {{errorMessage}}</p>
+
+                                    <p *ngIf="_error.message.length > 0" class="text-danger">
+                                        {{_error.message}} </p>
+                                    </div>
+                                    <div class="text-center pt-3">
+                                        <p class="text-dark mb-0">Not a member?<a routerLink="/auth/register" class="text-primary ms-1">Sign UP now</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+								<div class="d-flex justify-content-center my-3">
+									<a href="javascript:;" class="social-login  text-center me-4">
+										<i class="fa fa-google"></i>
+									</a>
+									<a href="javascript:;" class="social-login  text-center me-4">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="javascript:;" class="social-login  text-center">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</div>
+                        </div>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem="Angular">
+                        <a ngbNavLink>
+                            <img src="./favicon.ico" alt="" class="nav-icon">
+                        </a>
+                        <ng-template ngbNavContent>
+                            <div class="wrap-login100 p-0">
+                                <div class="card-body">
+                                    <form [formGroup]="loginForm" class="login100-form validate-form" (ngSubmit)="Submit()">
+                                        <span class="login100-form-title">
+                                            Login
+                                        </span>
+
+                                        <div class="wrap-input100 validate-input">
+                                            <input type="text" class="form-control input100" placeholder="Username" autocomplete formControlName="username">
+                                            <span class="focus-input100"></span>
+                                            <span class="symbol-input100">
+                                                <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <div class="wrap-input100 validate-input">
+                                            <input type="password" class="form-control input100" placeholder="Password" autocomplete formControlName="password">
+                                            <span class="focus-input100"></span>
+                                            <span class="symbol-input100">
+                                                <i class="zmdi zmdi-lock" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        {{error}}
+
+                                        <div class="text-end pt-1">
+                                            <p class="mb-0"><a routerLink="/custom-pages/forget-password" class="text-primary ms-1">Forgot Password?</a></p>
+                                        </div>
+                                        <div class="container-login100-form-btn">
+                                            <button [disabled]="!loginForm.valid" type="submit" class="login100-form-btn btn-primary"> Login</button>
+                                        </div>
+                                        <div class="text-center pt-3">
+                                            <p class="text-dark mb-0">Not a member?<a routerLink="/auth/register" class="text-primary ms-1">Sign UP now</a></p>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-center my-3">
+                                        <a href="javascript:;" class="social-login  text-center me-4">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="javascript:;" class="social-login  text-center me-4">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="javascript:;" class="social-login  text-center">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </li>
+                </ul>
+            <div class="container-login100">
+                <div class="wrap-login100 p-0">
+                    <div [ngbNavOutlet]="nav" class="ml-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,824 @@
+<div class="row butonlar-div mb-2">
+     <div class="d-flex justify-content-between ">
+          <span class="m-2 color-mavi mt-3 ml-4 fs-12">Defter / MalGirişi</span>
+          <span>
+               <button type="button" class="btn btn-primary btn1 m-1">Filitrele</button>
+               <button type="button" class="btn btn-primary btn1 m-1">Temizle</button>
+          </span>
+     </div>
+</div>
+
+<div class="row ">
+     <div >
+
+          <div class="row">
+
+               <div class="col-xl-4 col-lg-4 col-md-4 ">
+                    <div class="px-4">
+                         <form class="form-horizontal">
+                              <div class="row">
+
+                                   <div class=" mb-2 mt-2">
+                                        <div class="row  px-2">
+                                             <label class="col-md-3 form-label">Defter No</label>
+                                             <div class="col-md-9 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!--Defter No otomatik gelicek-->
+
+                                   <div class=" mb-2 mt-2">
+                                        <div class="baslik paddingalakali">
+                                             <p class="fs-10  ml-4 p-2 color-white ">FİRMA BİLGİLERİ</p>
+                                        </div>
+                                        <!--Baslik-->
+                                        <div class="row  px-2">
+                                             <label class="col-md-3 form-label prr-0">Mal Sahibi</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        
+                                             <label class="col-md-2  form-label prr-0">Vekalet Sahibi</label>
+                                             <div class="col-md-3 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Vekalet Sahibi-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Fatura Firması</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                             <label class="col-md-2 form-label prr-0">Alıcı/ Gönderici</label>
+                                             <div class="col-md-3 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Alıcı/Gönderici-->
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Komisyoncu</label>
+                                             <div class="col-md-9 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Komisyoncu-->
+
+                                   </div>
+                                   <!--Firma Bilgileri-->
+
+                                   <div class=" mb-2 mt-2">
+                                        <div class="baslik paddingalakali">
+                                             <p class="fs-10  ml-4 p-2 color-white">MÜŞTERİ REFERANS</p>
+                                        </div>
+                                        <!--Baslik-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label ">Müşteri Referans No</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+
+                                             <label class="col-md-1 form-label ">Tarihi</label>
+                                             <div class="col-md-4">
+                                                  <input type="date" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Müşteri Referans Tarihi-->
+
+                                   </div>
+                                   <!--Müşteri Referans-->
+
+                                   <div class="mb-2 mt-2">
+                                        <div class="baslik paddingalakali">
+                                             <p class="fs-10  ml-4 p-2 color-white">BEYANNAME BİLGİLERİ</p>
+                                   </div>
+                                    <!--Baslik-->
+
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Özel Beyan No</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        
+                                             <label class="col-md-1 form-label">Tarihi</label>
+                                             <div class="col-md-4">
+                                                  <input type="date" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Özel Beyan no-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">TCGB Tescil No</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        
+                                             <label class="col-md-1 form-label">Tarihi</label>
+                                             <div class="col-md-4">
+                                                  <input type="date" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--TCGB Tescil Tarihi-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Kalem No</label>
+                                             <div class="col-md-5 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                             <div class="col-md-4">
+                                                  <label class="custom-control custom-checkbox"
+                                                       style="align-self: center;">
+                                                       <input type="checkbox" class="custom-control-input"
+                                                            name="example-checkbox1" value="option1" checked>
+                                                       <span class="custom-control-label fs-10"
+                                                            style="align-self: center;">Dökme mi?</span>
+                                                  </label>
+                                             </div>
+                                        </div>
+                                        <!--Kalem No-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Gümrük Müşaviri</label>
+                                             <div class="col-md-9 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Gümrük Müşaviri-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label ">Marka No</label>
+                                             <div class="col-md-9 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Marka No-->
+
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Konteyner No</label>
+                                             <div class="col-md-9 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Konteyner No-->
+
+                                   </div>
+                                   <!--Beyanname Bilgileri-->
+
+                                   <div class="mb-2 mt-2 ">
+                              <div class="baslik paddingalakali mt-2">
+                                   <p class="fs-10  ml-4 p-2 color-white">AÇIKLAMA</p>
+                              </div>
+                              <!--Baslik-->
+
+                              <div class="pll-0  aciklama pr-7px">
+                              <textarea class="form-control fs-10 " placeholder="Açıklama" rows="3"></textarea>
+                             </div>
+
+                              </div>
+                         </div>
+                         </form>
+                    </div>
+               </div>
+
+               <div class="col-xl-3 col-lg-3 col-md-3 ">
+                    <form class="form-horizontal">
+                         <div class="row">
+
+                              <div class="">
+
+
+                                   <div class=" mt-2 mb-2 ml--2">
+                                        <div class="baslik paddingalakali ">
+                                             <p class="fs-10  ml-4 p-2 color-white">MALZEME BİLGİLERİ</p>
+                                        </div>
+                                        <!--Baslik-->
+     
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label ">Stok Kodu</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                     
+                                             <label class="col-md-2 form-label ">Gtip Kodu</label>
+                                             <div class="col-md-3 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Gtip Kodu combobox-->
+     
+                                        <div class="row px-2">
+                                             <label class="col-md-3 form-label">Malzeme Sınıfı</label>
+                                             <div class="col-md-4 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                       
+                                             <label class="col-md-2 form-label">Malzeme Adı</label>
+                                             <div class="col-md-3 pll-0">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                        <!--Malzeme Adı-->
+     
+                                   </div>
+                                   <!--Malzeme Bilgileri-->
+     
+                                   <div class=" mb-2 mt-2">
+                                        <div class="row  px-2 ">
+                                             <div class="col-md-4 pll-0 prr-0">
+                                              <div class="baslik  paddingalakali ">
+                                                    <p class="fs-10  ml-4  p-2 color-white ">SATIŞ TARİFESİ</p>
+                                             </div>
+                                             </div>
+                                             <div class="col-md-8 mr--2">
+                                                  <input type="text" class="form-control form-control1" value="" />
+                                             </div>
+                                        </div>
+                                   </div><!--Satış Tarifesi-->
+     
+
+                                   <div class="row px-1 ">
+                                        <label class="col-md-3 form-label ">Miktar</label>
+                                        <div class="col-md-6  pll-0">
+                                             <input type="text" class="form-control form-control1" value="" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1 " value=""
+                                                  placeholder="ADET" />
+                                        </div>
+                                   </div>
+                                   <!--Miktar combobox-->
+
+                                   <div class="row px-1 ">
+                                        <label class="col-md-3 form-label">Palet Miktarı</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value="" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="ADET" />
+                                        </div>
+                                   </div>
+                                   <!--Palet Miktarı combobox-->
+
+                                   <div class="row  px-1">
+                                        <label class="col-md-3 form-label">Mal Miktarı</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value="" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="ADET" />
+                                        </div>
+                                   </div>
+                                   <!--Mal Miktarı combobox-->
+
+                                   <div class="row px-1 ">
+                                        <label class="col-md-3 form-label">Mal Bedeli</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value="" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="TRY" />
+                                        </div>
+                                   </div>
+                                   <!--Mal Bedeli combobox-->
+
+                                   <div class="row px-1 ">
+                                        <label class="col-md-3 form-label">İstatistiki Kıymet</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                   </div>
+                                   <!--İstatistiki Kıymet combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Yükseklik</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                   </div>
+                                   <!--Yükseklik combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Genişlik</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                        </div>
+                                   </div>
+                                   <!--Genişilik combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Derinlik</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="CM" />
+                                        </div>
+                                   </div>
+                                   <!--Derinlik combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Hacim</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="Arac" />
+                                        </div>
+                                   </div>
+                                   <!--Hacim combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Ağırlık</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="KG" />
+                                        </div>
+                                   </div>
+                                   <!--Ağırlık combobox-->
+
+                                   <div class="row px-1">
+                                        <label class="col-md-3 form-label">Net Ağırlık</label>
+                                        <div class="col-md-6 pll-0">
+                                             <input type="text" class="form-control form-control1" value=""
+                                                  placeholder="0.000" />
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                   </div>
+                                   <!--Net Ağırlık combobox-->
+
+                                  
+
+                                  <div class="row  ">
+                                   <div class="col-md-4 pll-0 prr-0">
+                                   <label class=" form-label baslik color color-white p-2 ">Muhafiyet Günü</label>
+                                   </div>
+                                   <div class="col-md-8 mt-3 ">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                                   
+                              </div>
+                              <!--Muhafiyet Günü combobox-->
+
+                           <div class="ml--2 mr--2 pl-7px mt-2">
+                              <div class="baslik paddingalakali " >
+                                   <p class="fs-10  ml-5 p-2 color-white">MÜŞTERİ REFERANS</p>
+                              </div>
+                              <!--Baslik-->
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Gün Sayısı</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value="" />
+                                   </div>
+                              </div>
+                              <!--Kalan Gün Sayısı -->
+
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Adet</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value="" />
+                                   </div>
+                              </div>
+                              <!--Kalan Adet-->
+
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Mal Adedi</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+
+                              </div>
+                              <!--Kalan Mal Adedi-->
+
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Hacim</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Kalan Hacim-->
+
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Net Ağırlık</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Kalan Net Ağırlık-->
+
+                              <div class="row  px-2">
+                                   <label class="col-md-4 form-label">Kalan Mal Bedeli</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.00" />
+                                   </div>
+                              </div>
+                              <!--Kalan Mal Bedeli-->
+                         </div>
+                         <!--Firma Bilgileri-->
+
+
+                         <div class="row  ">
+                              <div class="col-md-4 pll-0 prr-0">
+                              <label class=" form-label baslik color color-white p-2 ">Plaka</label>
+                              </div>
+                              <div class="col-md-8 mt-3 ">
+                                   <input type="text" class="form-control form-control1" value=""
+                                        placeholder="0.000" />
+                              </div>
+                              
+                         </div>
+                         <!--Plaka combobox-->
+
+                              </div>
+                              
+
+                         </div>
+                    </form>
+               </div>
+
+               
+               <div class="col-xl-5 col-lg-5 col-md-5  px-4">
+                  <div class="row m-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                         <li class="nav-item" role="presentation">
+                               <button (click)="btnhesaplancakhizmetlerOnclick()" [class.active]="hesaplanacakhizmetler === true"
+                                class="nav-link p-2 fs-10" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                                role="tab" aria-controls="home" aria-selected="true">Hesaplanacak Hizmetler</button>
+                         </li>
+                         <li class="nav-item" role="presentation">
+                               <button (click)="btndigermasraflarOnclick()" [class.active]="digermasraflar === true"
+                               class="nav-link p-2 fs-10" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                               aria-controls="profile" aria-selected="false">Diğer Masraflar</button>
+                         </li>
+                         <li class="nav-item" role="presentation">
+                               <button (click)="btndepokonumOnclick()" [class.active]="depokonum === true" class="nav-link p-2 fs-10"
+                               data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                               aria-selected="false">Depo Konum Bilgileri</button>
+                         </li>
+                    </ul>
+                   <!--Tap Panel-->
+                  </div>
+       <div class="row ">
+       <div class="tab-content" id="myTabContent">
+       <div *ngIf="hesaplanacakhizmetler" class="tab-pane fade show active bg-grey">
+                         <div class="row">
+                         <div class="col-12 bg-white">
+                         <div class="row ">
+                         <div class="col-6">
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Hizmet Kodu</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value="" />
+                                   </div>
+                              </div>
+                              <!--Hizmet Kodu-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Fat. Firma</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value="" />
+                                   </div>
+                              </div>
+                              <!--Fat. Firma-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Hizmet Miktarı</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Hizmet Miktarı-->
+
+                              <div class="border mt-2">
+                                   <p class="fs-10 p-0 mb-4- text-center color-purple">Kalan Değerler</p>
+                                   <div class="row">
+                                        <div class="col-md-6 p-0 m-0 ">
+                                             <p class="fs-10">Miktar :<span class="color-purple">0.000</span></p>
+                                             <p class="fs-10">Mal Adedi :<span class="color-purple">0.000</span>
+                                             </p>
+                                             <p class="fs-10">H.Oranı:<span class="color-purple">0.000</span></p>
+                                        </div>
+                                        <div class="col-6 p-0 m-0">
+                                             <p class="fs-10">Ağırlık :<span class="color-purple">0.000</span></p>
+                                             <p class="fs-10">Net Ağırlık :<span class="color-purple">0.000</span>
+                                             </p>
+                                             <p class="fs-10">Hacim:<span class="color-purple">0.000</span></p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!--Kalan Değerler-->
+
+                         </div>
+                         <!--sol-->
+
+                         <div class="col-6 ">
+                              <div class="row px-4 d-flex justify-content-end">
+                                   <label class="col-md-4 form-label text-right">Miktar</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.0000" />
+                                   </div>
+                              </div>
+                              <!--Miktar-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Mal Miktarı</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.0000" />
+                                   </div>
+                              </div>
+                              <!--Mal Miktarı-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Ağırlık</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Ağırlık-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label"> Net Ağırlık</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.0000" />
+                                   </div>
+                              </div>
+                              <!--Net Ağırlık-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label text-right">Yükseklik</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Yükseklik-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Genişlik</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Genişlik-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label">Derinlik</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Derinlik-->
+
+                              <div class="row px-4">
+                                   <label class="col-md-4 form-label"> Hacim</label>
+                                   <div class="col-md-8">
+                                        <input type="text" class="form-control form-control1" value=""
+                                             placeholder="0.000" />
+                                   </div>
+                              </div>
+                              <!--Hacim-->
+                         </div>
+                         <!--sağ-->
+                         </div>
+                          </div>
+                            <!--soldaki alan-->
+                     <div class="col-12">
+                    <div class="text-center bg-mavi ">
+                         <p class="color-white p-2  fs-10">Hesaplanacak Hizmetler</p>
+                    </div>
+                    <table class="table table-bordered">
+                         <thead>
+                              <tr>
+                                   <th scope="col" class="fs-10 p-2">Şube Kodu</th>
+                                   <th scope="col" class="fs-10 p-2">Dosya No</th>
+                                   <th scope="col" class="fs-10 p-2">Dosya Tarihi</th>
+                                   <th scope="col" class="fs-10 p-2">Nak. Op. Kodu</th>
+                                   <th scope="col" class="fs-10 p-2">Fat. Firma Adı</th>
+                                   <th scope="col" class="fs-10 p-2">Beyanname No</th>
+                                   <th scope="col" class="fs-10 p-2">Beyanname Tarihi</th>
+                                   <th scope="col" class="fs-10 p-2">Tescil Bt. No</th>
+                                   <th scope="col" class="fs-10 p-2">Ant Fiş No</th>
+                                   <th scope="col" class="fs-10 p-2">Gemi Adı</th>
+                                   <th scope="col" class="fs-10 p-2">Sefer No</th>
+                                   <th scope="col" class="fs-10 p-2">Konşimento No</th>
+                                   <th scope="col" class="fs-10 p-2">Araç plaka</th>
+                                   <th scope="col" class="fs-10 p-2">Defter No</th>
+                                   <th scope="col" class="fs-10 p-2">ÖZBY No</th>
+                                   <th scope="col" class="fs-10 p-2">ÖZBY Tarihi</th>
+                              </tr>
+                         </thead>
+                         <tbody class="bg-white">
+                              <tr>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                                   <th scope="col" class="fs-10 p-2"></th>
+                              </tr>
+                         </tbody>
+                    </table>
+               </div>
+               <!--tabloo-->
+          </div>
+      </div>
+      <!--Hesaplanacak Hizmetler-->
+
+     <div *ngIf="digermasraflar" class="tab-pane fade show active">
+          <table class="table table-bordered">
+               <thead>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2">Şube Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Dosya No</th>
+                         <th scope="col" class="fs-10 p-2">Dosya Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Nak. Op. Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Fat. Firma Adı</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname No</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Tescil Bt. No</th>
+                         <th scope="col" class="fs-10 p-2">Ant Fiş No</th>
+                         <th scope="col" class="fs-10 p-2">Gemi Adı</th>
+                         <th scope="col" class="fs-10 p-2">Sefer No</th>
+                         <th scope="col" class="fs-10 p-2">Konşimento No</th>
+                         <th scope="col" class="fs-10 p-2">Araç plaka</th>
+                         <th scope="col" class="fs-10 p-2">Defter No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY Tarihi</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                    </tr>
+               </tbody>
+          </table>
+     </div>
+     <!--Diğer Masraflar-->
+
+     <div *ngIf="depokonum" class="tab-pane fade show active">
+          <table class="table table-bordered">
+               <thead>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2">Şube Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Dosya No</th>
+                         <th scope="col" class="fs-10 p-2">Dosya Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Nak. Op. Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Fat. Firma Adı</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname No</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Tescil Bt. No</th>
+                         <th scope="col" class="fs-10 p-2">Ant Fiş No</th>
+                         <th scope="col" class="fs-10 p-2">Gemi Adı</th>
+                         <th scope="col" class="fs-10 p-2">Sefer No</th>
+                         <th scope="col" class="fs-10 p-2">Konşimento No</th>
+                         <th scope="col" class="fs-10 p-2">Araç plaka</th>
+                         <th scope="col" class="fs-10 p-2">Defter No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY Tarihi</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                    </tr>
+               </tbody>
+          </table>
+     </div>
+     <!--Depo Konum-->
+                     </div> 
+                   <!--Tap Panel Content-->
+                  </div>
+               </div>
+
+          </div>
+
+     </div>
+
+     <div class="mt-2">
+          <div class="text-center bg-mavi ">
+               <p class="color-white p-2  fs-10">Raporlar</p>
+          </div>
+          
+          <table class="table table-bordered">
+               <thead>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2">Şube Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Dosya No</th>
+                         <th scope="col" class="fs-10 p-2">Dosya Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Nak. Op. Kodu</th>
+                         <th scope="col" class="fs-10 p-2">Fat. Firma Adı</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname No</th>
+                         <th scope="col" class="fs-10 p-2">Beyanname Tarihi</th>
+                         <th scope="col" class="fs-10 p-2">Tescil Bt. No</th>
+                         <th scope="col" class="fs-10 p-2">Ant Fiş No</th>
+                         <th scope="col" class="fs-10 p-2">Gemi Adı</th>
+                         <th scope="col" class="fs-10 p-2">Sefer No</th>
+                         <th scope="col" class="fs-10 p-2">Konşimento No</th>
+                         <th scope="col" class="fs-10 p-2">Araç plaka</th>
+                         <th scope="col" class="fs-10 p-2">Defter No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY No</th>
+                         <th scope="col" class="fs-10 p-2">ÖZBY Tarihi</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                         <th scope="col" class="fs-10 p-2"></th>
+                    </tr>
+               </tbody>
+          </table>
+     </div><!--En Alttaki tablo-->
+
+</div>
+
+
+

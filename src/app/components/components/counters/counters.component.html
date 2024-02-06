@@ -1,0 +1,156 @@
+<app-header-breadcrumb [title]="'Counters'" [items]="['Components']" [active_item]="'Counters'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row row-cards">
+    <div class="col-md-12 col-lg-4 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Numbers counter
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="counter-icon bg-primary-gradient box-shadow-primary brround mx-auto">
+                    <i class="fe fe-users text-white mb-5 "></i>
+                </div>
+                <h5>Employess</h5>
+                <h2 class="counter counter1">2569</h2>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12 col-lg-4 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Numbers counter
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="counter-icon bg-danger-gradient box-shadow-danger brround mx-auto">
+                    <i class="fe fe-dollar-sign text-white mb-5 "></i>
+                </div>
+                <h5>Profit</h5>
+                <h2 class="counter counter2"> 2,56989.32</h2>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12 col-lg-4 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Numbers counter
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="counter-icon bg-secondary-gradient  box-shadow-secondary brround mx-auto">
+                    <i class="fe fe-alert-octagon text-white mb-5 "></i>
+                </div>
+                <h5>Errors</h5>
+                <h2 class="counter counter3">0.8998</h2>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Time Counting From 0
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="example bg-primary br-7">
+                    <cd-timer class="h3 text-white" format="hms">[hours] hours [minutes] minutes [seconds] seconds</cd-timer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Time Counting From 60 to 20
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="example bg-secondary br-7">
+                    <cd-timer class="h3 text-white" format="hms" [startTime]="60" [endTime]="20" [countdown]="true" ></cd-timer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12 col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Time 1 minute counter
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="example bg-info br-7">
+                    <cd-timer class="h3 text-white" format="hms" [startTime]="60" [countdown]="true"(onComplete)="onComplete($event)"
+                    (onTick)="onTick($event)" (onStart)="onStart($event)"></cd-timer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Time Counting days Limit
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class=" example bg-success br-7">
+                            <cd-timer class="h3 text-white" format="default" [startTime]="222222" [countdown]="true"></cd-timer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Day Counter
+                </h3>
+            </div>
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="mx-auto">
+                        <div class="count-down row">
+                            <div class="col-lg-3 col-md-6 countdown  mb-6 mb-lg-0">
+                                <span class="days text-primary mx-2">35</span>
+                                <span class="text-dark">Days</span>
+                            </div>
+                            <div class="col-lg-3 col-md-6 countdown mb-6 mb-lg-0">
+                                <span class="hours text-primary mx-2">27</span>
+                                <span class="text-dark">Hrs</span>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 countdown  mb-6 mb-lg-0">
+                                <span class="minutes text-primary mx-2">50</span>
+                                <span class="text-dark">Mins</span>
+                            </div>
+                            <div class="col-lg-3 col-md-6 countdown ">
+                                <span class="seconds text-primary mx-2">39</span>
+                                <span class="text-dark">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COL-END -->
+</div>
+<!-- ROW-1 CLOSED CLOSED -->

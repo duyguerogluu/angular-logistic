@@ -1,0 +1,644 @@
+.dropzone {
+    border: 1px solid #f0f0f4;
+    border-radius: 0.25rem;
+}
+
+::ng-deep {
+    .md-drppicker {
+        left: 0% !important;
+        width: 100%;
+        top: 52px !important;
+    }
+
+    mat-form-field {
+        width: 100%;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background-color: rgba(139, 121, 232, .06) !important;
+    }
+}
+
+
+.select2 {
+    padding: 0;
+}
+
+.dropzone {
+    border: 1px solid #e0e2f7;
+    border-radius: 4px;
+}
+
+.disable {
+    cursor: not-allowed;
+    touch-action: none;
+}
+
+h6,
+.h6 {
+    font-size: 0.85rem !important;
+    font-weight: 400;
+}
+
+.select2 {
+    padding: 0;
+}
+
+.input-group-text {
+    // border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+ng-select.form-control {
+    border: none;
+}
+
+::ng-deep {
+    app-forms-advanced {
+        .form-control input {
+            width: 100%;
+        }
+
+        .selected-list {
+            border: 1px solid rgba($color: #000000, $alpha: 0.11);
+        }
+
+        .ng-select .ng-select-container {
+            // border: 1px solid rgba(0,0,0,0.11) !important;
+        }
+
+        .pure-checkbox input[type=checkbox]+label:before {
+            border: 1px solid rgba($color: #000000, $alpha: 0.05);
+            background: rgba(0, 0, 0, 0.11);
+        }
+
+        .pure-checkbox input[type=checkbox]+label:after {
+            color: #333;
+        }
+
+        .selected-list .c-list .c-token .c-remove svg {
+            fill: rgb(19, 18, 18);
+        }
+
+        .c-btn.disabled {
+            background: #e9ecef !important;
+        }
+
+        .gutters-xs .ng-select .ng-select-container {
+            border: none !important;
+        }
+
+        .gutters-xs .ng-select {
+            padding: 0 !important;
+        }
+
+        .selected-list .c-btn {
+            line-height: 0.25 !important;
+        }
+    }
+
+    .dark-mode {
+        app-forms-advanced {
+            .selected-list .c-list .c-token .c-remove svg {
+                fill: #eee !important;
+            }
+
+            .ng-option-disabled {
+                background-color: #22223dba;
+            }
+
+            .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup {
+                color: #ccc;
+            }
+
+            .list-filter,
+            .select-all {
+                border-bottom: 1px solid #7668d896 !important;
+            }
+
+            .c-input {
+                background-color: #30304d !important;
+                color: #ccc !important;
+            }
+
+            .c-input::placeholder {
+                color: #ccc;
+            }
+
+            .iti__country-list,
+            input::placeholder {
+                color: #eee;
+            }
+
+            .search-container input {
+                border-bottom: 1px solid #6259ca6b !important;
+            }
+
+            .iti__selected-flag {
+                border-right: 1px solid #6259ca6b;
+            }
+
+            .record-picker li {
+                border: 1px solid #6259ca6b !important;
+            }
+
+            div.record-picker {
+                border: 1px solid #8c7ae829 !important;
+            }
+
+            .record-picker li:hover {
+                background-color: #22223d !important;
+            }
+
+            .record-picker li.selected {
+                background-color: #23223d !important;
+            }
+
+            .iti input[type=tel],
+            .iti input[type=text] {
+                border: none !important;
+            }
+
+            div.record-picker::-webkit-scrollbar-track {
+                background: #30304d !important;
+                box-shadow: inset 0 0 3px #9480ee !important;
+            }
+
+            .ng-star-inserted {
+                fill: #eee;
+            }
+
+            .pure-checkbox input[type=checkbox]+label:before {
+                background: rgb(242 242 242 / 78%) !important;
+            }
+
+            .dropzone {
+                border: 1px solid #796bdb42 !important;
+                background: #30304d !important;
+            }
+
+            .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+                color: #fff;
+                background-color: #7668d8;
+            }
+
+            .form-control>input {
+                background-color: transparent;
+                color: #fff;
+            }
+
+            .form-control>input::placeholder {
+                color: #ccc;
+            }
+
+            svg.svg-icon {
+                fill: #fff;
+            }
+
+            .ngx-timepicker-control>input {
+                background-color: transparent;
+                color: #fff;
+            }
+
+            .ngx-timepicker-control__arrow {
+                color: #ccc;
+            }
+
+            .c-btn.disabled {
+                background: #22223d99 !important;
+            }
+
+            .list-area {
+                border: 1px solid #7f6fdf4f;
+                border-radius: 3px;
+                background: #30304d;
+                margin: 0;
+            }
+
+            .arrow-down,
+            .arrow-up {
+                border-bottom-color: #917eec30;
+            }
+
+            mat-label,
+            .mat-select-value,
+            mat-option {
+                color: #fff !important;
+            }
+
+            .mat-hint {
+                color: #ccc !important;
+            }
+
+            .mat-select-panel {
+                background: #30304d !important;
+            }
+
+            .mat-checkbox-frame {
+                color: #eee !important;
+            }
+
+            .selected-list,
+            .ng-select .ng-select-container {
+                border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+        }
+
+        .mat-checkbox-frame {
+            border-color: #eee !important;
+        }
+
+        .mat-optgroup-label {
+            color: rgb(213, 213, 213, 0.54);
+        }
+
+        .mat-option.mat-option-disabled {
+            color: rgba(255, 255, 255, 0.445) !important;
+            cursor: not-allowed;
+        }
+
+        .mat-option.mat-active,
+        .mat-option.mat-selected {
+            background: rgb(34, 34, 61);
+            color: #fff;
+        }
+
+        .mat-select-panel {
+            background: #30304d;
+        }
+
+        .mat-option,
+        .mat-pseudo-checkbox {
+            color: #ccc;
+        }
+
+        .timepicker__body,
+        .timepicker__actions {
+            background: #222236 !important;
+        }
+
+        .clock-face {
+            background-color: #18182a !important;
+        }
+
+        .period-selector {
+            background-color: #262439 !important;
+
+            button {
+                color: #fff;
+            }
+
+            .period-selector__button--active {
+                color: #00bfff !important;
+            }
+        }
+
+        .period-selector__button:focus {
+            background-color: #22223d !important;
+        }
+
+        .ngx-material-timepicker-toggle span svg {
+            fill: #fff !important;
+        }
+
+        .ngb-dp-header,
+        .ngb-dp-weekdays {
+            background-color: #2e2e4b !important;
+        }
+
+        .md-drppicker {
+            background-color: #252439 !important;
+        }
+
+        .md-drppicker .calendar-table {
+            border: 1px solid #5a5a5a87 !important;
+            background-color: #2e2e4b !important;
+        }
+
+        .md-drppicker td.off,
+        .md-drppicker td.off.end-date,
+        .md-drppicker td.off.in-range,
+        .md-drppicker td.off.start-date {
+            background-color: #24233b !important;
+            color: #adadad !important;
+        }
+
+        .md-drppicker td.available.prev,
+        .md-drppicker th.available.prev,
+        .md-drppicker td.available.next,
+        .md-drppicker th.available.next,
+        .md-drppicker td.available:hover,
+        .md-drppicker th.available:hover {
+            // background-color: #262439 !important;
+            filter: invert(1);
+        }
+
+        .md-drppicker td.in-range {
+            background-color: #426fc1ad !important;
+            color: #fff !important;
+        }
+
+        .custom-file-label::after {
+            background-color: #5e2dd8;
+        }
+    }
+
+    .transparent-mode {
+        app-forms-advanced {
+            .selected-list .c-list .c-token .c-remove svg {
+                fill: #eee !important;
+            }
+
+            .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup {
+                color: #ccc;
+            }
+
+            .list-filter,
+            .select-all {
+                border-bottom: 1px solid var(--transparent-border) !important;
+            }
+
+            .c-input {
+                background-color: var(--transparent-body) !important;
+                color: #ccc !important;
+            }
+
+            .c-input::placeholder {
+                color: #ccc;
+            }
+
+            .iti__country-list,
+            input::placeholder {
+                color: #eee;
+            }
+
+            .search-container input {
+                border-bottom: 1px solid var(--transparent-border) !important;
+            }
+
+            .iti__selected-flag {
+                border-right: 1px solid var(--transparent-border);
+            }
+
+            .record-picker li {
+                border: 1px solid var(--transparent-border) !important;
+            }
+
+            div.record-picker {
+                border: 1px solid var(--transparent-border) !important;
+            }
+
+            .record-picker li:hover {
+                background-color: var(--transparent-body) !important;
+            }
+
+            .record-picker li.selected {
+                background-color: var(--transparent-body) !important;
+            }
+
+            .iti input[type=tel],
+            .iti input[type=text] {
+                border: none !important;
+            }
+
+            div.record-picker::-webkit-scrollbar-track {
+                background: var(--transparent-body) !important;
+                box-shadow: inset 0 0 3px #9480ee !important;
+            }
+
+            .ng-star-inserted {
+                fill: #eee;
+            }
+
+            .pure-checkbox input[type=checkbox]+label:before {
+                background: rgb(242 242 242 / 78%) !important;
+            }
+
+            .dropzone {
+                border: 1px solid var(--transparent-border) !important;
+                background: var(--transparent-body) !important;
+            }
+
+            .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+                color: #fff;
+                background-color: var(--transparent-primary);
+            }
+
+            .form-control>input {
+                background-color: transparent;
+                color: #fff;
+            }
+
+            .form-control>input::placeholder {
+                color: #ccc;
+            }
+
+            svg.svg-icon {
+                fill: #fff;
+            }
+
+            .ngx-timepicker-control>input {
+                background-color: transparent;
+                color: #fff;
+            }
+
+            .ngx-timepicker-control__arrow {
+                color: #ccc;
+            }
+
+            .c-btn.disabled {
+                background: var(--transparent-theme) !important;
+            }
+
+            .list-area {
+                border: 1px solid var(--transparent-border);
+                border-radius: 3px;
+                background: var(--transparent-body);
+                margin: 0;
+            }
+
+            .arrow-down,
+            .arrow-up {
+                border-bottom-color: #917eec30;
+            }
+
+            mat-label,
+            .mat-select-value,
+            mat-option {
+                color: #fff !important;
+            }
+
+            .mat-hint {
+                color: #ccc !important;
+            }
+
+            .mat-select-panel {
+                background: var(--transparent-body) !important;
+            }
+
+            .mat-checkbox-frame {
+                color: #eee !important;
+            }
+
+            .selected-list,
+            .ng-select .ng-select-container {
+                border: 1px solid var(--transparent-border) !important;
+            }
+        }
+
+        .mat-checkbox-frame {
+            border-color: #eee !important;
+        }
+
+        .mat-optgroup-label {
+            color: rgb(213, 213, 213, 0.54);
+        }
+
+        .mat-option.mat-option-disabled {
+            color: rgba(255, 255, 255, 0.445) !important;
+            cursor: not-allowed;
+        }
+
+        .mat-option.mat-active,
+        .mat-option.mat-selected {
+            background: var(--transparent-body);
+            color: #fff;
+        }
+
+        .mat-select-panel {
+            background: var(--transparent-body);
+        }
+
+        .mat-option,
+        .mat-pseudo-checkbox {
+            color: #ccc;
+        }
+
+        .timepicker__body,
+        .timepicker__actions {
+            background: var(--transparent-body) !important;
+        }
+
+        .clock-face {
+            background-color: var(--transparent-body) !important;
+        }
+
+        .period-selector {
+            background-color: var(--transparent-body) !important;
+
+            button {
+                color: #fff;
+            }
+
+            .period-selector__button--active {
+                color: var(--transparent-primary) !important;
+            }
+        }
+
+        .period-selector__button:focus {
+            background-color: var(--transparent-body) !important;
+        }
+
+        .ngx-material-timepicker-toggle span svg {
+            fill: #fff !important;
+        }
+
+        .ngb-dp-header,
+        .ngb-dp-weekdays {
+            background-color: var(--transparent-body) !important;
+        }
+
+        .md-drppicker {
+            background-color: var(--transparent-body) !important;
+        }
+
+        .md-drppicker .calendar-table {
+            border: 1px solid var(--transparent-border) !important;
+            background-color: var(--transparent-body) !important;
+        }
+
+        .md-drppicker td.off,
+        .md-drppicker td.off.end-date,
+        .md-drppicker td.off.in-range,
+        .md-drppicker td.off.start-date {
+            background-color: var(--transparent-body) !important;
+            color: #adadad !important;
+        }
+
+        .md-drppicker td.available.next,
+        .md-drppicker th.available.next,
+        .md-drppicker td.available.prev,
+        .md-drppicker th.available.prev,
+        .md-drppicker td.available:hover,
+        .md-drppicker th.available:hover {
+            // background-color: var(--transparent-body) !important;
+            filter: invert(1);
+        }
+
+        .md-drppicker td.in-range {
+            background-color: var(--transparent-primary) !important;
+            color: #fff !important;
+        }
+
+        .custom-file-label::after {
+            background-color: var(--transparent-primary);
+        }
+
+        [ngbDatepickerDayView] {
+            border-radius: 0;
+        }
+    }
+
+    div.record-picker::-webkit-scrollbar-thumb {
+        background: var(--dark-primary) !important;
+    }
+
+    .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+        border-right: 1px solid #ffffff;
+    }
+
+    .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+        color: #fff;
+        background-color: var(--dark-primary);
+    }
+
+    .record-picker li.selected {
+        background-color: var(--primary-bg-color) !important;
+        color: #fff;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background-color: transparent !important;
+    }
+
+    .input-group-text {
+        background-color: #f2f2f9;
+    }
+
+    .record-picker li:hover {
+        background-color: var(--transparent-primary);
+        color: #fff;
+    }
+
+    .iti {
+        margin-bottom: 0;
+    }
+
+    @media (max-width:767.98px) {
+        .dual-list {
+            flex-wrap: wrap;
+            row-gap: 10px;
+            .listbox {
+                width: 100% !important;
+            }
+            .listbox:not(:first-child){
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+ngx-intl-tel-input {
+    display: flex;
+    align-items: center;
+
+}
